@@ -1,0 +1,12 @@
+[
+  {
+    "word": "Algoritëm",
+    "definition": "Një seri hapash logjikë për zgjidhjen e një problemi.",
+    "example": "Renditja e numrave përdor një algoritëm."
+  },
+  {
+    "word": "Program",
+    "definition": "Një grup udhëzimesh që kompjuteri i ekzekuton.",
+    "example": "Ky program është shkruar në JavaScript."
+  }
+]

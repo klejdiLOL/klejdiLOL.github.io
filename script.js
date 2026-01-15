@@ -99,3 +99,31 @@ function applyFilters() {
 [searchInput, fKlasa, fFormim, fNeo].forEach(e =>
   e.addEventListener("input", applyFilters)
 );
+
+function openFromHash() {
+  const hash = location.hash.replace("#", "");
+
+  if (!hash) return;
+
+  // Word view: #fjala/liber
+  if (hash.startsWith("fjala/")) {
+    const id = hash.replace("fjala/", "");
+    const el = document.getElementById(id);
+    if (el) {
+      el.open = true;
+      el.scrollIntoView({ block: "start" });
+    }
+  }
+
+  // Category view
+  if (hash.startsWith("kategori/")) {
+    const [, type, value] = hash.split("/");
+    const filtered = words.filter(w =>
+      (w.tags[type] || []).includes(value)
+    );
+    render(filtered);
+  }
+}
+
+window.addEventListener("hashchange", openFromHash);
+

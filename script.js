@@ -1,11 +1,14 @@
+// --------------------
 // ELEMENTS
+// --------------------
 const dict = document.getElementById("dictionary");
 const searchInput = document.getElementById("search");
 const themeBtn = document.getElementById("themeToggle");
 const alphabetNav = document.getElementById("alphabet");
+const container = document.getElementById("container");
 
 let words = [];
-let letterSections = {}; // store references for smooth scroll + highlighting
+let letterSections = {}; // for A-Z navigation
 
 // --------------------
 // HELPERS
@@ -31,16 +34,17 @@ if (themeBtn) {
 }
 
 // --------------------
-// BACK BUTTON + BREADCRUMB
+// BREADCRUMB + BACK BUTTON
 // --------------------
 let breadcrumbDiv = document.getElementById("breadcrumb");
-let backButton = document.getElementById("backButton");
 if (!breadcrumbDiv) {
   breadcrumbDiv = document.createElement("div");
   breadcrumbDiv.id = "breadcrumb";
   breadcrumbDiv.style.display = "none";
-  document.body.insertBefore(breadcrumbDiv, dict);
+  container.parentNode.insertBefore(breadcrumbDiv, container); // before container
 }
+
+let backButton = document.getElementById("backButton");
 if (!backButton) {
   backButton = document.createElement("button");
   backButton.id = "backButton";
@@ -53,7 +57,7 @@ if (!backButton) {
     backButton.style.display = "none";
     location.hash = "";
   };
-  document.body.insertBefore(backButton, dict);
+  container.parentNode.insertBefore(backButton, container);
 }
 
 // --------------------
@@ -65,7 +69,6 @@ fetch("words.json")
     words = data.sort((a, b) =>
       a.word.localeCompare(b.word, "sq", { sensitivity: "base" })
     );
-
     renderGrouped(words);
     buildAlphabet();
     openFromHash();
@@ -73,7 +76,7 @@ fetch("words.json")
   });
 
 // --------------------
-// GROUP WORDS BY FIRST LETTER + RENDER
+// RENDER GROUPED BY FIRST LETTER
 // --------------------
 function renderGrouped(list) {
   dict.innerHTML = "";
@@ -108,7 +111,7 @@ function renderGrouped(list) {
             if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
           });
         } else {
-          defsHTML = `<p>${w.definition}</p>`;
+          defsHTML = `<p>${w.definition || ""}</p>`;
           if (w.example) defsHTML += `<p><em>Shembull:</em> ${w.example}</p>`;
         }
 
@@ -147,12 +150,10 @@ function buildAlphabet() {
   letters.forEach(letter => {
     const btn = document.createElement("button");
     btn.textContent = letter;
-
     btn.onclick = () => {
       const target = letterSections[letter];
       if (target) target.scrollIntoView({ behavior: "smooth" });
     };
-
     alphabetNav.appendChild(btn);
   });
 }
@@ -164,10 +165,11 @@ function highlightCurrentLetter() {
   const scrollY = window.scrollY;
   let current = null;
   for (const [letter, section] of Object.entries(letterSections)) {
-    const offsetTop = section.offsetTop - 80; // header offset
+    const offsetTop = section.offsetTop - 100; // adjust for sticky header
     if (scrollY >= offsetTop) current = letter;
   }
 
+  if (!alphabetNav) return;
   alphabetNav.querySelectorAll("button").forEach(btn => {
     btn.style.fontWeight = btn.textContent === current ? "bold" : "normal";
     btn.style.color = btn.textContent === current ? "var(--text)" : "var(--accent)";
@@ -223,4 +225,5 @@ function openFromHash() {
 }
 
 window.addEventListener("hashchange", openFromHash);
+
 

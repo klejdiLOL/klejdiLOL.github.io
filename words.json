@@ -8,5 +8,9 @@
     "word": "Program",
     "definition": "Një grup udhëzimesh që kompjuteri i ekzekuton.",
     "example": "Ky program është shkruar në JavaScript."
+  },
+  {
+    "word": "Server",
+    "definition": "Një kompjuter që ofron shërbime për pajisje të tjera."
   }
 ]

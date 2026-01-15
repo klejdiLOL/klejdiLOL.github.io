@@ -76,6 +76,32 @@ body {
   font-weight: bold;
 }
 
+/* Home page buttons */
+#home-sections {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+  flex-wrap: wrap;
+}
+
+.home-btn {
+  padding: 2rem 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid var(--accent);
+  background: var(--card);
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.home-btn:hover {
+  transform: scale(1.05);
+  background: var(--accent);
+  color: white;
+}
+
 /* Container */
 #container {
   display: flex;
@@ -88,7 +114,7 @@ body {
 /* Alphabet sidebar */
 #alphabet {
   position: sticky;
-  top: 150px; /* below banner */
+  top: 150px;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
@@ -190,5 +216,3 @@ main#dictionary {
   cursor: pointer;
   font-weight: bold;
 }
-
-

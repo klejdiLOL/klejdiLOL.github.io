@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Array.isArray(w.definitions)) {
           w.definitions.forEach((def, idx) => {
             defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
-            if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
+            if (def.example) defsHTML += `<p><em>P.sh.::</em> ${def.example}</p>`;
           });
         }
 
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="content">
             ${defsHTML}
             <p><strong>K.M.</strong> ${w.klasa_morf || ""}</p>
-            <p><strong>Fjalëformimi:</strong> ${w.fjaleformimi || ""}</p>
+            <p><strong>F.f.:</strong> ${w.fjaleformimi || ""}</p>
           </div>
         `;
         section.appendChild(d);

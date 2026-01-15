@@ -8,23 +8,24 @@
 </head>
 <body>
 
-<header id="banner">
-  <img src="image.jpg" alt="Banner">
-  <div class="header-overlay">
-    <h1 id="dict-title">📘 Fjalor Shqip</h1>
-    <input id="search" type="text" placeholder="Kërko fjalë...">
+  <header class="banner">
+    <h1>📘 Fjalor Shqip</h1>
     <button id="themeToggle">🌙</button>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search" placeholder="Kërko fjalë...">
   </div>
-</header>
 
-<div id="container">
-  <nav id="alphabet"></nav>
-  <main id="dictionary"></main>
-</div>
+  <div id="container">
+    <div class="alphabet-sidebar" id="alphabet"></div>
+    <div id="dictionary"></div>
+  </div>
 
-<div id="breadcrumb" style="display:none"></div>
-<button id="backButton" style="display:none">← Kthehu te fjalori</button>
+  <div id="breadcrumb">
+    <button id="backButton">⮐ Kthehu</button>
+  </div>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -10,10 +10,8 @@
         "example": "më hyri një drithërimë"
       }
     ],
-    "tags": {
-      "klasa_morf": ["Emër (Abstrakt)"],
-      "fjaleformimi": ["(E Prejardhur) Kemi një zëvendësim fonetik të th- (të shurdhët) me dh- (të zëshme), duke ndryshuar temën e fjalës, duke krijuar një shqiptim tjetër."]
-    }
+    "klasa_morf": "Emër (Abstrakt)",
+    "fjaleformimi": "(E Prejardhur) Kemi një zëvendësim fonetik të th- (të shurdhët) me dh- (të zëshme), duke ndryshuar temën e fjalës."
   },
   {
     "baza": "qafëz",
@@ -22,13 +20,25 @@
     "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "Pjesë e jakës së palltos, lidh jakën me pjesën e palltos, i jep ngritje, është me material të forcuar, copë e ngrirë që forcon jakën, ngrirje.",
+        "meaning": "Pjesë e jakës së palltos, lidh jakën me pjesën e palltos, i jep ngritje, është me material të forcuar, copë e ngrirë që forcon jakën.",
         "example": "Ai ngriti qafëzën e palltos."
       }
     ],
-    "tags": {
-      "klasa_morf": ["Emër (Konkret)"],
-      "fjaleformimi": ["(E Prejadhur) qafë+zës => emër => i prejardhur me prapashtesën zvogëluese -zës."]
-    }
+    "klasa_morf": "Emër (Konkret)",
+    "fjaleformimi": "(E Prejardhur) qafë+zës => emër => i prejardhur me prapashtesën zvogëluese -zës."
+  },
+  {
+    "baza": "ngrehin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Një ndërtesë me një strukturë të lartë, pa i dhënë rëndësi (e shkretë)",
+        "example": "Ngrehina"
+      }
+    ],
+     "klasa_morf": "Emër (Konkret)",
+     "fjaleformimi": "(E Prejardhur) Temë fjalëformuese ka fjalën ngre + prapashtesën -hin(ë)"
   }
 ]

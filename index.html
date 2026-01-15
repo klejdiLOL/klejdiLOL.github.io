@@ -3,46 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fjalor Shqip - Home</title>
+  <title>Fjalor Shqip</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header id="banner">
-  <img src="image.jpg" alt="Banner">
-  <div class="header-overlay">
-    <h1>📘 Fjalor Shqip</h1>
-    <p>Zgjidh një botim për të hyrë</p>
-  </div>
+<!-- FIXED TOP BAR -->
+<header class="topbar">
+  <h1>📘 Fjalor Shqip</h1>
+  <button id="themeToggle">🌙</button>
 </header>
 
-<main id="home-sections">
-  <div class="home-card crimson" data-file="words-pallati-i-endrrave.json" style="background-image: url('image1.jpg');">
-    <div class="card-overlay"></div>
-    <div class="card-label"><h2>Pallati i Endrave</h2></div>
-  </div>
+<!-- PAGE CONTENT -->
+<main class="home-wrapper">
 
-  <div class="home-card bronze" data-file="words-kronike-ne-gur.json" style="background-image: url('image2.jpg');">
-    <div class="card-overlay"></div>
-    <div class="card-label"><h2>Kronikë në Gur</h2></div>
-  </div>
+  <p class="home-subtitle">
+    Zgjidh një botim për të hyrë në fjalor
+  </p>
 
-  <div class="home-card moss" data-file="words-poshterim-ne-ballkan.json" style="background-image: url('image3.jpg');">
-    <div class="card-overlay"></div>
-    <div class="card-label"><h2>Poshtërim në Ballkan</h2></div>
+  <div class="home-list">
+
+    <button class="home-card crimson" data-file="words-pallati-i-endrrave.json">
+      Pallati i Ëndrrave
+    </button>
+
+    <button class="home-card bronze" data-file="words-kronike-ne-gur.json">
+      Kronikë në Gur
+    </button>
+
+    <button class="home-card moss" data-file="words-poshterim-ne-ballkan.json">
+      Poshtërim në Ballkan
+    </button>
+
   </div>
 </main>
 
 <script>
-document.querySelectorAll(".home-card").forEach(card => {
-  card.addEventListener("click", () => {
-    const file = card.dataset.file;
-    window.location.href = `dictionary.html?file=${file}`;
+  // Dark mode (same logic as dictionary)
+  const themeBtn = document.getElementById("themeToggle");
+
+  function updateTheme() {
+    if (localStorage.theme === "dark") {
+      document.body.classList.add("dark");
+      themeBtn.textContent = "☀️";
+    } else {
+      document.body.classList.remove("dark");
+      themeBtn.textContent = "🌙";
+    }
+  }
+
+  if (!localStorage.theme) localStorage.theme = "light";
+  updateTheme();
+
+  themeBtn.onclick = () => {
+    localStorage.theme =
+      document.body.classList.contains("dark") ? "light" : "dark";
+    updateTheme();
+  };
+
+  // Navigation
+  document.querySelectorAll(".home-card").forEach(card => {
+    card.addEventListener("click", () => {
+      const file = card.dataset.file;
+      window.location.href = `dictionary.html?file=${file}`;
+    });
   });
-});
 </script>
 
 </body>
 </html>
-
-

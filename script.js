@@ -1,94 +1,65 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-  // --------------------
-  // ELEMENTS
-  // --------------------
   const dict = document.getElementById("dictionary");
   const searchInput = document.getElementById("search");
   const themeBtn = document.getElementById("themeToggle");
   const alphabetNav = document.getElementById("alphabet");
-  const container = document.getElementById("container");
+  const breadcrumbDiv = document.getElementById("breadcrumb");
+  const backButton = document.getElementById("backButton");
 
   let words = [];
-  let letterSections = {}; // for A-Z navigation
+  let letterSections = {};
 
-  // --------------------
-  // HELPERS
-  // --------------------
   function normalize(text) {
-    return text
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "");
+    return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
-  // --------------------
-  // DARK MODE
-  // --------------------
-  if (localStorage.theme === "dark") document.body.classList.add("dark");
-  if (themeBtn) {
-    themeBtn.onclick = () => {
-      document.body.classList.toggle("dark");
-      localStorage.theme = document.body.classList.contains("dark") ? "dark" : "light";
-    };
+  /* DARK MODE */
+  function updateDarkMode() {
+    if (localStorage.theme === "dark") {
+      document.body.classList.add("dark");
+      themeBtn.textContent = "☀️";
+    } else {
+      document.body.classList.remove("dark");
+      themeBtn.textContent = "🌙";
+    }
   }
 
-  // --------------------
-  // BREADCRUMB + BACK BUTTON
-  // --------------------
-  let breadcrumbDiv = document.getElementById("breadcrumb");
-  if (!breadcrumbDiv) {
-    breadcrumbDiv = document.createElement("div");
-    breadcrumbDiv.id = "breadcrumb";
+  if (!localStorage.theme) localStorage.theme = "light";
+  updateDarkMode();
+  themeBtn.onclick = () => {
+    localStorage.theme = document.body.classList.contains("dark") ? "light" : "dark";
+    updateDarkMode();
+  };
+
+  /* BACK BUTTON */
+  backButton.style.display = "none";
+  breadcrumbDiv.style.display = "none";
+  backButton.onclick = () => {
+    searchInput.value = "";
+    renderGrouped(words);
     breadcrumbDiv.style.display = "none";
-    container.parentNode.insertBefore(breadcrumbDiv, container);
-  }
-
-  let backButton = document.getElementById("backButton");
-  if (!backButton) {
-    backButton = document.createElement("button");
-    backButton.id = "backButton";
-    backButton.textContent = "← Kthehu te fjalori";
     backButton.style.display = "none";
-    backButton.onclick = () => {
-      searchInput.value = "";
-      renderGrouped(words);
-      breadcrumbDiv.style.display = "none";
-      backButton.style.display = "none";
-      location.hash = "";
-    };
-    container.parentNode.insertBefore(backButton, container);
-  }
+    location.hash = "";
+  };
 
-  // --------------------
-  // LOAD DATA
-  // --------------------
-  const urlParams = new URLSearchParams(window.location.search);
-  const file = urlParams.get("file") || "words.json";
-
+  /* FETCH JSON */
+  const file = new URLSearchParams(location.search).get("file") || "words-pallati-i-endrrave.json";
   fetch(file)
-    .then(r => {
-      if (!r.ok) throw new Error(`HTTP ${r.status}`);
-      return r.json();
-    })
+    .then(r => r.json())
     .then(data => {
-      if (!Array.isArray(data)) throw new Error("JSON is not an array");
-      words = data.sort((a, b) =>
-        a.baza.localeCompare(b.baza, "sq", { sensitivity: "base" })
-      );
+      if (!Array.isArray(data)) throw new Error("JSON must be an array");
+      words = data.sort((a,b)=>a.baza.localeCompare(b.baza,"sq",{sensitivity:"base"}));
       renderGrouped(words);
       buildAlphabet();
       openFromHash();
       window.addEventListener("scroll", highlightCurrentLetter);
     })
     .catch(err => {
-      dict.innerHTML = `<p>Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it: ${file}</p>`;
       console.error("Error loading words:", err);
+      dict.textContent = "Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it.";
     });
 
-  // --------------------
-  // RENDER GROUPED BY FIRST LETTER
-  // --------------------
+  /* RENDER */
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
@@ -103,86 +74,66 @@ document.addEventListener("DOMContentLoaded", () => {
       h.textContent = letter;
       section.appendChild(h);
 
-      list
-        .filter(w => w.baza[0].toUpperCase() === letter)
-        .forEach(w => {
-          const d = document.createElement("details");
-          d.className = "entry";
-          d.id = normalize(w.baza);
+      list.filter(w => w.baza[0].toUpperCase() === letter).forEach(w => {
+        const d = document.createElement("details");
+        d.className = "entry";
+        d.id = normalize(w.baza);
 
-          d.addEventListener("toggle", () => {
-            if (d.open) location.hash = `fjala/${d.id}`;
+        d.addEventListener("toggle", () => {
+          if (d.open) location.hash = `fjala/${d.id}`;
+        });
+
+        let defsHTML = "";
+        if (Array.isArray(w.definitions)) {
+          w.definitions.forEach((def, idx) => {
+            defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
+            if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
           });
+        }
 
-          // Word header with colors and no extra spaces
-          const header = `
+        // Colored summary
+        d.innerHTML = `
+          <summary class="summary">
             <span class="word-base">${w.baza}</span>
-            <span class="word-pashquar">(${w["mbaresa-pashquar"]})</span>
+            ${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}
             ~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
             ~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
-          `;
-
-          // Multiple definitions
-          let defsHTML = "";
-          if (Array.isArray(w.definitions)) {
-            w.definitions.forEach((def, idx) => {
-              defsHTML += `<p><strong>${idx + 1}.</strong> ${def.meaning}</p>`;
-              if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
-            });
-          }
-
-          d.innerHTML = `
-			<summary>
-			<span class="word-base">${w.baza}</span>
-			<span class="word-pashquar">(${w["mbaresa-pashquar"]})</span>
-			~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
-			~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
-			</summary>
-			<div class="content">
-			${defsHTML}
-			<p><strong>Klasa morf.:</strong> ${(w.tags.klasa_morf || []).join(", ")}</p>
-			<p><strong>Fjalëformimi:</strong> ${(w.tags.fjaleformimi || []).join(", ")}</p>
-		</div>
-		`;
-
-          section.appendChild(d);
-        });
+          </summary>
+          <div class="content">
+            ${defsHTML}
+            <p><strong>Klasa Morf.:</strong> ${w.klasa_morf || ""}</p>
+            <p><strong>Fjalëformimi:</strong> ${w.fjaleformimi || ""}</p>
+          </div>
+        `;
+        section.appendChild(d);
+      });
 
       dict.appendChild(section);
       letterSections[letter] = section;
     });
   }
 
-  // --------------------
-  // BUILD SIDE ALPHABET
-  // --------------------
+  /* ALPHABET SIDEBAR */
   function buildAlphabet() {
     if (!alphabetNav) return;
     alphabetNav.innerHTML = "";
-    const letters = Object.keys(letterSections).sort();
-
-    letters.forEach(letter => {
+    Object.keys(letterSections).sort().forEach(letter => {
       const btn = document.createElement("button");
       btn.textContent = letter;
       btn.onclick = () => {
         const target = letterSections[letter];
-        if (target) target.scrollIntoView({ behavior: "smooth" });
+        if (target) target.scrollIntoView({behavior: "smooth"});
       };
       alphabetNav.appendChild(btn);
     });
   }
 
-  // --------------------
-  // HIGHLIGHT CURRENT LETTER
-  // --------------------
   function highlightCurrentLetter() {
     const scrollY = window.scrollY;
     let current = null;
     for (const [letter, section] of Object.entries(letterSections)) {
-      const offsetTop = section.offsetTop - 100;
-      if (scrollY >= offsetTop) current = letter;
+      if (scrollY >= section.offsetTop - 100) current = letter;
     }
-
     if (!alphabetNav) return;
     alphabetNav.querySelectorAll("button").forEach(btn => {
       btn.style.fontWeight = btn.textContent === current ? "bold" : "normal";
@@ -190,53 +141,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // --------------------
-  // SEARCH FILTER (PREFIX ONLY)
-  // --------------------
+  /* SEARCH */
   function applySearch() {
     const q = normalize(searchInput.value.trim());
     if (!q) return renderGrouped(words);
-
     const filtered = words.filter(w => normalize(w.baza).startsWith(q));
     renderGrouped(filtered);
   }
   if (searchInput) searchInput.addEventListener("input", applySearch);
 
-  // --------------------
-  // HASH ROUTING
-  // --------------------
+  /* HASH */
   function openFromHash() {
-    const hash = location.hash.replace("#", "");
+    const hash = location.hash.replace("#","");
     if (!hash) return;
-
     if (hash.startsWith("fjala/")) {
-      const id = hash.replace("fjala/", "");
+      const id = hash.replace("fjala/","");
       const el = document.getElementById(id);
       if (el) {
         el.open = true;
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        el.scrollIntoView({behavior:"smooth", block:"start"});
         breadcrumbDiv.style.display = "block";
         backButton.style.display = "inline-block";
         breadcrumbDiv.innerHTML = `Fjalor / <strong>${el.querySelector("summary")?.textContent}</strong>`;
       }
     }
-
-    if (hash.startsWith("kategori/")) {
-      const [, type, value] = hash.split("/");
-      const filtered = words.filter(w => (w.tags[type] || []).includes(value));
-      renderGrouped(filtered);
-
-      breadcrumbDiv.style.display = "block";
-      backButton.style.display = "inline-block";
-      breadcrumbDiv.innerHTML = `Fjalor / ${type.replace("_", " ")} / <strong>${value}</strong>`;
-
-      document.querySelectorAll(".entry a").forEach(a => {
-        if (a.textContent === value) a.style.fontWeight = "bold";
-        else a.style.fontWeight = "normal";
-      });
-    }
   }
-
   window.addEventListener("hashchange", openFromHash);
 
 });

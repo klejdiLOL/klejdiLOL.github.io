@@ -1,16 +1,22 @@
 [
   {
-    "word": "Algoritëm",
-    "definition": "Një seri hapash logjikë për zgjidhjen e një problemi.",
-    "example": "Renditja e numrave përdor një algoritëm."
+    "word": "Libër",
+    "definition": "Vepër e shtypur ose digjitale me përmbajtje letrare ose shkencore.",
+    "example": "Ky libër është shumë i njohur.",
+    "tags": {
+      "klasa_morf": ["Emra"],
+      "fjaleformimi": ["E prejardhur"],
+      "neologjizem": []
+    }
   },
   {
-    "word": "Program",
-    "definition": "Një grup udhëzimesh që kompjuteri i ekzekuton.",
-    "example": "Ky program është shkruar në JavaScript."
-  },
-  {
-    "word": "Server",
-    "definition": "Një kompjuter që ofron shërbime për pajisje të tjera."
+    "word": "Klikoj",
+    "definition": "Veprim i shtypjes së butonit të mausit.",
+    "example": "Klikoj mbi ikonë.",
+    "tags": {
+      "klasa_morf": ["Folje"],
+      "fjaleformimi": ["E huazuar"],
+      "neologjizem": ["Folje"]
+    }
   }
 ]

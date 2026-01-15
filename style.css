@@ -22,7 +22,9 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Banner */
+/* ===================== */
+/* Banner / Header */
+/* ===================== */
 #banner {
   position: relative;
   width: 100%;
@@ -60,9 +62,9 @@ body {
   font-size: 1rem;
 }
 
-/* ---------------------- */
-/* Home page cards vertical & big */
-/* ---------------------- */
+/* ===================== */
+/* Home Page Cards */
+/* ===================== */
 #home-sections {
   display: flex;
   flex-direction: column;
@@ -76,17 +78,23 @@ body {
   position: relative;
   width: 90%;
   max-width: 1200px;
-  height: 350px; /* big height */
+  height: 350px;
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0 5px 25px rgba(0,0,0,0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: flex-end;
+  border: 8px solid transparent;
 }
+
+/* Colored frames */
+.home-card.crimson { border-color: crimson; }
+.home-card.bronze  { border-color: #cd7f32; } /* bronze hex */
+.home-card.moss    { border-color: #556b2f; } /* moss green hex */
 
 .home-card:hover {
   transform: scale(1.03);
@@ -100,7 +108,7 @@ body {
   left:0;
   width:100%;
   height:100%;
-  background: rgba(37,99,235,0.4);
+  background: rgba(0,0,0,0.4);
   backdrop-filter: blur(6px);
   transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
@@ -132,9 +140,9 @@ body {
   margin: 0;
 }
 
-/* ---------------------- */
-/* Dictionary styles remain same */
-/* ---------------------- */
+/* ===================== */
+/* Dictionary Page Layout */
+/* ===================== */
 #container {
   display: flex;
   max-width: 1000px;
@@ -143,6 +151,7 @@ body {
   gap: 1rem;
 }
 
+/* A-Z Sidebar */
 #alphabet {
   position: sticky;
   top: 150px;
@@ -167,10 +176,16 @@ body {
   color: var(--text);
 }
 
+#alphabet button.active {
+  color: var(--text);
+  text-decoration: underline;
+}
+
 main#dictionary {
   flex: 1;
 }
 
+/* Letter sections */
 .letter-section h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
@@ -178,6 +193,7 @@ main#dictionary {
   padding-bottom: 0.25rem;
 }
 
+/* Dictionary entries */
 .entry {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -227,6 +243,7 @@ main#dictionary {
   transform: translateY(0);
 }
 
+/* Breadcrumb / back button */
 #breadcrumb {
   max-width: 1000px;
   margin: 0.5rem auto;
@@ -245,5 +262,26 @@ main#dictionary {
   cursor: pointer;
   font-weight: bold;
 }
+
+/* Smooth animations for multiple definitions */
+.entry .content p {
+  margin: 0.3rem 0;
+}
+
+/* Dark mode button (optional, toggle via JS) */
+#darkModeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 100;
+}
+
 
 

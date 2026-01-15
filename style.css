@@ -52,7 +52,7 @@ body {
 }
 
 #banner h1 {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   margin: 0.5rem 0;
 }
 
@@ -61,26 +61,27 @@ body {
 }
 
 /* ---------------------- */
-/* Home cards section */
+/* Home page cards vertical & big */
 /* ---------------------- */
 #home-sections {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 .home-card {
   position: relative;
-  flex: 1 1 300px; /* responsive width */
-  max-width: 600px;
-  height: 200px;
-  border-radius: 16px;
+  width: 90%;
+  max-width: 1200px;
+  height: 350px; /* big height */
+  border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -88,22 +89,20 @@ body {
 }
 
 .home-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transform: scale(1.03);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
 }
 
+/* Overlay */
 .card-overlay {
   position: absolute;
   top:0;
   left:0;
   width:100%;
   height:100%;
-  background: rgba(37,99,235,0.5); /* overlay color */
-  backdrop-filter: blur(5px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background 0.3s ease, backdrop-filter 0.3s ease;
+  background: rgba(37,99,235,0.4);
+  backdrop-filter: blur(6px);
+  transition: background 0.4s ease, backdrop-filter 0.4s ease;
 }
 
 .home-card:hover .card-overlay {
@@ -111,18 +110,31 @@ body {
   backdrop-filter: blur(0);
 }
 
-.card-overlay h2 {
-  color: white;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-  font-size: 1.5rem;
+/* Label at bottom */
+.card-label {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width:100%;
+  background: rgba(0,0,0,0.6);
+  padding: 1rem;
   text-align: center;
-  padding: 0 1rem;
+  transition: background 0.4s ease;
+}
+
+.home-card:hover .card-label {
+  background: rgba(0,0,0,0.0);
+}
+
+.card-label h2 {
+  color: white;
+  font-size: 2rem;
+  margin: 0;
 }
 
 /* ---------------------- */
-/* Dictionary styles (same as before) */
+/* Dictionary styles remain same */
 /* ---------------------- */
-
 #container {
   display: flex;
   max-width: 1000px;
@@ -233,4 +245,5 @@ main#dictionary {
   cursor: pointer;
   font-weight: bold;
 }
+
 

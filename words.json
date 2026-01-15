@@ -1,22 +1,25 @@
 [
   {
-    "word": "Libër",
-    "definition": "Vepër e shtypur ose digjitale me përmbajtje letrare ose shkencore.",
-    "example": "Ky libër është shumë i njohur.",
+    "word": "Alfabeti",
+    "definitions": [
+      { "meaning": "Përkufizim i parë", "example": "Shembull 1" },
+      { "meaning": "Përkufizim i dytë", "example": "Shembull 2" }
+    ],
     "tags": {
-      "klasa_morf": ["Emra"],
-      "fjaleformimi": ["E prejardhur"],
+      "klasa_morf": ["Emer"],
+      "fjaleformimi": ["E Prejardhur"],
       "neologjizem": []
     }
   },
   {
-    "word": "Klikoj",
-    "definition": "Veprim i shtypjes së butonit të mausit.",
-    "example": "Klikoj mbi ikonë.",
+    "word": "Abetare",
+    "definition": "Një libër për mësimin e shkronjave",
+    "example": "Shembull i përdorimit",
     "tags": {
-      "klasa_morf": ["Folje"],
-      "fjaleformimi": ["E huazuar"],
-      "neologjizem": ["Folje"]
+      "klasa_morf": ["Emer"],
+      "fjaleformimi": [],
+      "neologjizem": []
     }
   }
 ]
+

@@ -132,20 +132,19 @@ document.addEventListener("DOMContentLoaded", () => {
           }
 
           d.innerHTML = `
-            <summary>${header}</summary>
-            <div class="content">
-              ${defsHTML}
-              <p><strong>Klasa morf.:</strong>
-                ${(w.tags.klasa_morf || []).map(t => `<a href="#kategori/klasa_morf/${t}">${t}</a>`).join(", ")}
-              </p>
-              <p><strong>Fjalëformimi:</strong>
-                ${(w.tags.fjaleformimi || []).map(t => `<a href="#kategori/fjaleformimi/${t}">${t}</a>`).join(", ")}
-              </p>
-              ${(w.tags.neologjizem?.length) ? `
-                <p><strong>Neologjizëm:</strong>
-                  ${w.tags.neologjizem.map(t => `<a href="#kategori/neologjizem/${t}">${t}</a>`).join(", ")}</p>` : ""}
-            </div>
-          `;
+			<summary>
+			<span class="word-base">${w.baza}</span>
+			<span class="word-pashquar">(${w["mbaresa-pashquar"]})</span>
+			~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
+			~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
+			</summary>
+			<div class="content">
+			${defsHTML}
+			<p><strong>Klasa morf.:</strong> ${(w.tags.klasa_morf || []).join(", ")}</p>
+			<p><strong>Fjalëformimi:</strong> ${(w.tags.fjaleformimi || []).join(", ")}</p>
+		</div>
+		`;
+
           section.appendChild(d);
         });
 

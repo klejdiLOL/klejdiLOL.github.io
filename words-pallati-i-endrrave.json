@@ -6,14 +6,29 @@
     "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "Një gjendje emocionale...",
+        "meaning": "Një gjendje emocionale, shkaku: emocion i brendshëm i cili shkakton të dridhura.",
         "example": "më hyri një drithërimë"
       }
     ],
     "tags": {
-      "klasa_morf": [],
-      "fjaleformimi": [],
-      "neologjizem": []
+      "klasa_morf": ["Emër (Abstrakt)"],
+      "fjaleformimi": ["(E Prejardhur) Kemi një zëvendësim fonetik të th- (të shurdhët) me dh- (të zëshme), duke ndryshuar temën e fjalës, duke krijuar një shqiptim tjetër."]
+    }
+  },
+  {
+    "baza": "qafëz",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Pjesë e jakës së palltos, lidh jakën me pjesën e palltos, i jep ngritje, është me material të forcuar, copë e ngrirë që forcon jakën, ngrirje.",
+        "example": "Ai ngriti qafëzën e palltos."
+      }
+    ],
+    "tags": {
+      "klasa_morf": ["Emër (Konkret)"],
+      "fjaleformimi": ["(E Prejadhur) qafë+zës => emër => i prejardhur me prapashtesën zvogëluese -zës."]
     }
   }
 ]

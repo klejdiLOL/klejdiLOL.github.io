@@ -3,30 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fjalor Shqip</title>
+  <title>Fjalor Shqip - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Banner -->
 <header id="banner">
-  <!-- img src="image.jpg" alt="Fjalor Banner"-->
+  <img src="image.jpg" alt="Banner">
   <div class="header-overlay">
     <h1>📘 Fjalor Shqip</h1>
-    <input id="search" type="text" placeholder="Kërko fjalë...">
-    <button id="themeToggle">🌙</button>
+    <p>Zgjidh një botim për të hyrë</p>
   </div>
 </header>
-  
-<div id="container">
-  <nav id="alphabet"></nav> <!-- Side A-Z -->
-  <main id="dictionary"></main>
-</div>
 
-<div id="breadcrumb" style="display:none"></div>
-<button id="backButton" style="display:none">← Kthehu te fjalori</button>
+<main id="home-sections">
+  <button class="home-btn" data-file="pallati_words.json">Pallati i Endrave</button>
+  <button class="home-btn" data-file="kronike_words.json">Kronikë në Gur</button>
+  <button class="home-btn" data-file="poshterim_words.json">Poshtërim në Ballkan</button>
+</main>
 
-<script src="script.js"></script>
+<script>
+document.querySelectorAll(".home-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const file = btn.dataset.file;
+    // Send to dictionary page with query param
+    window.location.href = `dictionary.html?file=${file}`;
+  });
+});
+</script>
 </body>
 </html>
+
 

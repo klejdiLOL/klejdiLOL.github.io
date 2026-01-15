@@ -10,29 +10,17 @@
 
 <header>
   <h1>📘 Fjalor Shqip</h1>
-
-  <input id="search" placeholder="Kërko fjalë..." />
-
-  <div id="filters">
-    <select id="filter-klasa">
-      <option value="">Klasa morf.</option>
-    </select>
-
-    <select id="filter-formim">
-      <option value="">Fjalëformimi</option>
-    </select>
-
-    <select id="filter-neo">
-      <option value="">Neologjizëm</option>
-    </select>
-
-    <button id="themeToggle">🌙</button>
-  </div>
+  <input id="search" type="text" placeholder="Kërko fjalë...">
+  <button id="themeToggle">🌙</button>
 </header>
 
-<nav id="alphabet"></nav>
+<div id="container">
+  <nav id="alphabet"></nav> <!-- Side A-Z -->
+  <main id="dictionary"></main>
+</div>
 
-<main id="dictionary"></main>
+<div id="breadcrumb" style="display:none"></div>
+<button id="backButton" style="display:none">← Kthehu te fjalori</button>
 
 <script src="script.js"></script>
 </body>

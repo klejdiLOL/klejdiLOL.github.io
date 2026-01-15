@@ -1,20 +1,178 @@
 /* ----------------------------
-   HOME PAGE CARDS - FULL COVER + HOVER TITLE
+   :root variables
 ---------------------------- */
+:root {
+  --bg: #f5f5f5;
+  --text: #111;
+  --accent: #555;
+  --header-bg: #1e88e5;
+  --search-bg: #fff;
+  --search-text: #111;
+  --entry-bg: #fff;
+  --entry-border: #ccc;
+  --highlight: #e91e63;
+
+  --color-base: #1a73e8;
+  --color-pashquar: #e91e63;
+  --color-shquar: #ff9800;
+  --color-shumes: #4caf50;
+
+  --font-body: "JetBrains Mono", system-ui, -apple-system, sans-serif;
+  --font-title: "JetBrains Mono", Georgia, serif;
+}
+
+/* Dark mode variables */
+body.dark {
+  --bg: #111;
+  --text: #f5f5f5;
+  --accent: #aaa;
+  --header-bg: #1565c0;
+  --search-bg: #222;
+  --search-text: #f5f5f5;
+  --entry-bg: #1a1a1a;
+  --entry-border: #444;
+  --highlight: #ff4081;
+
+  --color-base: #8ab4f8;
+  --color-pashquar: #f48fb1;
+  --color-shquar: #ffb74d;
+  --color-shumes: #81c784;
+}
+
+/* ----------------------------
+   GLOBAL
+---------------------------- */
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+a { color: var(--highlight); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ----------------------------
+   TOP BAR (homepage)
+---------------------------- */
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+  background: var(--header-bg);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  font-family: var(--font-title);
+  font-weight: 600;
+  min-width: 0;
+  gap: 0.5rem;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.topbar button {
+  background: transparent;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  margin-right: 30px;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.topbar button:hover {
+  background: rgba(255,255,255,0.2);
+  transform: scale(1.1);
+}
+
+body.dark .topbar button {
+  border: 2px solid rgba(255,255,255,0.8);
+}
+
+/* Responsive tweaks */
+@media (max-width: 400px) {
+  .topbar {
+    padding: 0 0.5rem;
+  }
+  .topbar h1 {
+    font-size: 1.3rem;
+  }
+  .topbar button {
+    font-size: 1.3rem;
+    padding: 3px 8px;
+  }
+}
+
+/* ----------------------------
+   HOME PAGE
+---------------------------- */
+header a {
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+}
+
+header a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.home-wrapper {
+  padding-top: 96px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: var(--accent);
+}
+
+body.dark .home-subtitle {
+  color: #ccc;
+}
+
+/* Home cards */
+.home-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .home-card {
-  position: relative;             /* overlay positioning */
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 25%;
-  height: 25%;					/* adjust height if needed */
+  height: 250px;
+  min-height: 180px;
   border-radius: 14px;
   border: none;
   cursor: pointer;
   overflow: hidden;
 
-  background-size: cover;         /* fill the button */
-  background-position: center;    /* center image */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -23,7 +181,7 @@
   font-weight: 600;
 }
 
-/* Book title overlay (hidden by default) */
+/* Book title overlay */
 .home-card .book-title {
   position: absolute;
   bottom: 0;
@@ -34,35 +192,208 @@
   font-size: 1.6rem;
   font-weight: 600;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+  background: rgba(0,0,0,0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Show title on hover */
 .home-card:hover .book-title {
   opacity: 1;
 }
 
-/* Hover effect for card */
+/* Hover scale & shadow */
 .home-card:hover {
   transform: scale(1.03);
   box-shadow: 0 12px 25px rgba(0,0,0,0.2);
 }
 
-/* Optional: tint overlay for colored cards */
-.home-card.crimson::before,
-.home-card.bronze::before,
-.home-card.moss::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0); /* default transparent */
-  transition: background 0.3s;
+/* Card colors (for fallback) */
+.home-card.crimson { background-color: #8e244d; }
+.home-card.bronze  { background-color: #8b5a2b; }
+.home-card.moss    { background-color: #3a5f3a; }
+
+body.dark .home-card span {
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
 
-.home-card.crimson:hover::before,
-.home-card.bronze:hover::before,
-.home-card.moss:hover::before {
-  background: rgba(0,0,0,0.15); /* slightly darken on hover for readability */
+/* ----------------------------
+   DICTIONARY
+---------------------------- */
+#container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem 2rem;
+  position: relative;
+}
+
+.alphabet-sidebar {
+  position: sticky;
+  top: 2rem;
+  flex: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.alphabet-sidebar button {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  font-weight: normal;
+  color: var(--accent);
+  transition: all 0.3s;
+}
+
+.alphabet-sidebar button:hover {
+  font-weight: bold;
+  color: var(--highlight);
+}
+
+#dictionary { flex: 1; min-width: 0; }
+
+.letter-section { margin-bottom: 2rem; }
+
+.letter-section h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.2rem;
+}
+
+.entry {
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  transition: transform 0.2s, background 0.3s;
+  width: 100%;
+}
+
+.entry summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.1rem;
+  outline: none;
+  display: block;
+}
+
+.entry .content {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.entry .content p { margin: 0.3rem 0; }
+
+.summary .word-base { color: var(--color-base); }
+.summary .word-pashquar { color: var(--color-pashquar); }
+.summary .word-shquar { color: var(--color-shquar); }
+.summary .word-shumes { color: var(--color-shumes); }
+
+/* Back button / breadcrumb */
+#breadcrumb { font-size: 0.9rem; margin: 0.5rem 0; }
+#backButton {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  background: var(--highlight);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+}
+#backButton:hover { transform: scale(1.05); }
+
+/* Animations */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* ----------------------------
+   RESPONSIVE
+---------------------------- */
+@media (max-width: 768px) {
+  #container { flex-direction: column; }
+  .alphabet-sidebar {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .alphabet-sidebar button { margin: 0 0.2rem; }
+  .home-list { gap: 0.8rem; }
+}
+
+/* ----------------------------
+   SEARCH BAR
+---------------------------- */
+.search-container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--entry-border);
+  background: var(--search-bg);
+  color: var(--search-text);
+  font-family: var(--font-body);
+  transition: border-color 0.3s, background 0.3s, color 0.3s;
+}
+
+#search:focus {
+  outline: none;
+  border-color: var(--highlight);
+}
+
+body.dark #search {
+  background: var(--search-bg);
+  color: var(--search-text);
+  border: 1px solid var(--entry-border);
+}
+
+/* Search + toggle container (for dictionary page) */
+.search-toggle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+#search { flex: 1 1 250px; }
+
+#themeToggle {
+  background: transparent;
+  border: 2px solid rgba(0,0,0,0.3);
+  border-radius: 8px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 4px 10px;
+  transition: all 0.3s ease;
+  color: var(--text);
+}
+
+#themeToggle:hover {
+  background: rgba(0,0,0,0.05);
+  transform: scale(1.1);
+}
+
+body.dark #themeToggle {
+  border: 2px solid rgba(255,255,255,0.6);
+  color: #fff;
+}
+
+@media (max-width: 500px) {
+  .search-toggle-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #themeToggle { width: 100%; }
 }

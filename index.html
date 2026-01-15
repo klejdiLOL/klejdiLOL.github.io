@@ -43,7 +43,6 @@
   </main>
 
   <script>
-    // Dark mode toggle
     const themeBtn = document.getElementById("themeToggle");
 
     function updateTheme() {
@@ -64,7 +63,6 @@
       updateTheme();
     };
 
-    // Navigate to dictionary pages
     document.querySelectorAll(".home-card").forEach(card => {
       card.addEventListener("click", () => {
         const file = card.dataset.file;

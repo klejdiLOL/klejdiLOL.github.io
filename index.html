@@ -17,21 +17,31 @@
 </header>
 
 <main id="home-sections">
-  <button class="home-btn" data-file="pallati_words.json">Pallati i Endrave</button>
-  <button class="home-btn" data-file="kronike_words.json">Kronikë në Gur</button>
-  <button class="home-btn" data-file="poshterim_words.json">Poshtërim në Ballkan</button>
+  <div class="home-card" data-file="words-pallati-i-endrrave.json" style="background-image: url('pallati-bg.jpg');">
+    <div class="card-overlay">
+      <h2>Pallati i Endrave</h2>
+    </div>
+  </div>
+  <div class="home-card" data-file="words-kronike-ne-gur.json" style="background-image: url('kronike-bg.jpg');">
+    <div class="card-overlay">
+      <h2>Kronikë në Gur</h2>
+    </div>
+  </div>
+  <div class="home-card" data-file="words-poshterim-ne-ballkan.json" style="background-image: url('poshterim-bg.jpg');">
+    <div class="card-overlay">
+      <h2>Poshtërim në Ballkan</h2>
+    </div>
+  </div>
 </main>
 
 <script>
-document.querySelectorAll(".home-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const file = btn.dataset.file;
-    // Send to dictionary page with query param
+document.querySelectorAll(".home-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const file = card.dataset.file;
     window.location.href = `dictionary.html?file=${file}`;
   });
 });
 </script>
+
 </body>
 </html>
-
-

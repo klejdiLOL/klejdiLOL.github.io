@@ -8,17 +8,32 @@
 </head>
 <body>
 
-  <header class="top">
-    <h1>📘 Fjalor Shqip</h1>
-    <input id="search" type="text" placeholder="Kërko fjalë...">
-  </header>
+<header>
+  <h1>📘 Fjalor Shqip</h1>
 
-  <main id="dictionary"></main>
+  <input id="search" placeholder="Kërko fjalë..." />
 
-  <footer>
-    <p>GitHub Pages</p>
-  </footer>
+  <div id="filters">
+    <select id="filter-klasa">
+      <option value="">Klasa morf.</option>
+    </select>
 
-  <script src="script.js"></script>
+    <select id="filter-formim">
+      <option value="">Fjalëformimi</option>
+    </select>
+
+    <select id="filter-neo">
+      <option value="">Neologjizëm</option>
+    </select>
+
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
+
+<nav id="alphabet"></nav>
+
+<main id="dictionary"></main>
+
+<script src="script.js"></script>
 </body>
 </html>

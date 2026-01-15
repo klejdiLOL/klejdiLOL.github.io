@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </summary>
           <div class="content">
             ${defsHTML}
-            <p><strong>Klasa Morf.:</strong> ${w.klasa_morf || ""}</p>
+            <p><strong>K.M.</strong> ${w.klasa_morf || ""}</p>
             <p><strong>Fjalëformimi:</strong> ${w.fjaleformimi || ""}</p>
           </div>
         `;

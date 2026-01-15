@@ -11,7 +11,7 @@
       }
     ],
     "klasa_morf": "Emër (Abstrakt)",
-    "fjaleformimi": "(E Prejardhur) Kemi një zëvendësim fonetik të th- (të shurdhët) me dh- (të zëshme), duke ndryshuar temën e fjalës."
+    "fjaleformimi": "(E Prejardhur) dri<th>ë-rim(ë)"
   },
   {
     "baza": "qafëz",
@@ -25,7 +25,7 @@
       }
     ],
     "klasa_morf": "Emër (Konkret)",
-    "fjaleformimi": "(E Prejardhur) qafë+zës => emër => i prejardhur me prapashtesën zvogëluese -zës."
+    "fjaleformimi": "(E Prejardhur) qafë+zë(s)"
   },
   {
     "baza": "ngrehin",
@@ -39,6 +39,6 @@
       }
     ],
      "klasa_morf": "Emër (Konkret)",
-     "fjaleformimi": "(E Prejardhur) Temë fjalëformuese ka fjalën ngre + prapashtesën -hin(ë)"
+     "fjaleformimi": "(E Prejardhur) ngre-hin(ë)"
   }
 ]

@@ -2,12 +2,10 @@
 const dict = document.getElementById("dictionary");
 const searchInput = document.getElementById("search");
 const themeBtn = document.getElementById("themeToggle");
-const fKlasa = document.getElementById("filter-klasa");
-const fFormim = document.getElementById("filter-formim");
-const fNeo = document.getElementById("filter-neo");
 const alphabetNav = document.getElementById("alphabet");
 
 let words = [];
+let letterSections = {}; // store references for smooth scroll + highlighting
 
 // --------------------
 // HELPERS
@@ -33,30 +31,30 @@ if (themeBtn) {
 }
 
 // --------------------
-// CREATE BACK BUTTON & BREADCRUMB
+// BACK BUTTON + BREADCRUMB
 // --------------------
-let breadcrumbDiv = document.createElement("div");
-breadcrumbDiv.id = "breadcrumb";
-breadcrumbDiv.style.margin = "0.5rem 0";
-breadcrumbDiv.style.fontSize = "0.9rem";
-breadcrumbDiv.style.display = "none"; // hidden by default
-document.body.insertBefore(breadcrumbDiv, dict);
-
-let backButton = document.createElement("button");
-backButton.textContent = "← Kthehu te fjalori";
-backButton.style.marginBottom = "0.5rem";
-backButton.style.display = "none";
-backButton.onclick = () => {
-  searchInput.value = "";
-  fKlasa.value = "";
-  fFormim.value = "";
-  fNeo.value = "";
-  render(words);
+let breadcrumbDiv = document.getElementById("breadcrumb");
+let backButton = document.getElementById("backButton");
+if (!breadcrumbDiv) {
+  breadcrumbDiv = document.createElement("div");
+  breadcrumbDiv.id = "breadcrumb";
   breadcrumbDiv.style.display = "none";
+  document.body.insertBefore(breadcrumbDiv, dict);
+}
+if (!backButton) {
+  backButton = document.createElement("button");
+  backButton.id = "backButton";
+  backButton.textContent = "← Kthehu te fjalori";
   backButton.style.display = "none";
-  location.hash = "";
-};
-document.body.insertBefore(backButton, dict);
+  backButton.onclick = () => {
+    searchInput.value = "";
+    renderGrouped(words);
+    breadcrumbDiv.style.display = "none";
+    backButton.style.display = "none";
+    location.hash = "";
+  };
+  document.body.insertBefore(backButton, dict);
+}
 
 // --------------------
 // LOAD DATA
@@ -67,95 +65,126 @@ fetch("words.json")
     words = data.sort((a, b) =>
       a.word.localeCompare(b.word, "sq", { sensitivity: "base" })
     );
-    buildFilters();
+
+    renderGrouped(words);
     buildAlphabet();
-    render(words);
     openFromHash();
+    window.addEventListener("scroll", highlightCurrentLetter);
   });
 
 // --------------------
-// BUILD FILTERS
+// GROUP WORDS BY FIRST LETTER + RENDER
 // --------------------
-function buildFilters() {
-  const sets = { klasa_morf: new Set(), fjaleformimi: new Set(), neologjizem: new Set() };
-  words.forEach(w => Object.keys(sets).forEach(k => (w.tags[k] || []).forEach(v => sets[k].add(v))));
-  sets.klasa_morf.forEach(v => fKlasa.innerHTML += `<option value="${v}">${v}</option>`);
-  sets.fjaleformimi.forEach(v => fFormim.innerHTML += `<option value="${v}">${v}</option>`);
-  sets.neologjizem.forEach(v => fNeo.innerHTML += `<option value="${v}">${v}</option>`);
+function renderGrouped(list) {
+  dict.innerHTML = "";
+  letterSections = {};
+  const letters = Array.from(new Set(list.map(w => w.word[0].toUpperCase()))).sort();
+
+  letters.forEach(letter => {
+    const section = document.createElement("div");
+    section.id = `letter-${letter}`;
+    section.className = "letter-section";
+
+    const h = document.createElement("h2");
+    h.textContent = letter;
+    section.appendChild(h);
+
+    list
+      .filter(w => w.word[0].toUpperCase() === letter)
+      .forEach(w => {
+        const d = document.createElement("details");
+        d.className = "entry";
+        d.id = normalize(w.word);
+
+        d.addEventListener("toggle", () => {
+          if (d.open) location.hash = `fjala/${d.id}`;
+        });
+
+        // Multiple definitions support
+        let defsHTML = "";
+        if (Array.isArray(w.definitions)) {
+          w.definitions.forEach((def, idx) => {
+            defsHTML += `<p><strong>${idx + 1}.</strong> ${def.meaning}</p>`;
+            if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
+          });
+        } else {
+          defsHTML = `<p>${w.definition}</p>`;
+          if (w.example) defsHTML += `<p><em>Shembull:</em> ${w.example}</p>`;
+        }
+
+        d.innerHTML = `
+          <summary>${w.word}</summary>
+          <div class="content">
+            ${defsHTML}
+            <p><strong>Klasa morf.:</strong>
+              ${(w.tags.klasa_morf || []).map(t => `<a href="#kategori/klasa_morf/${t}">${t}</a>`).join(", ")}
+            </p>
+            <p><strong>Fjalëformimi:</strong>
+              ${(w.tags.fjaleformimi || []).map(t => `<a href="#kategori/fjaleformimi/${t}">${t}</a>`).join(", ")}
+            </p>
+            ${(w.tags.neologjizem?.length) ? `
+              <p><strong>Neologjizëm:</strong>
+                ${w.tags.neologjizem.map(t => `<a href="#kategori/neologjizem/${t}">${t}</a>`).join(", ")}
+              </p>` : ""}
+          </div>
+        `;
+        section.appendChild(d);
+      });
+
+    dict.appendChild(section);
+    letterSections[letter] = section;
+  });
 }
 
 // --------------------
-// BUILD ALPHABET
+// BUILD SIDE ALPHABET
 // --------------------
 function buildAlphabet() {
   if (!alphabetNav) return;
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZÇË".split("").forEach(letter => {
+  alphabetNav.innerHTML = "";
+  const letters = Object.keys(letterSections).sort();
+
+  letters.forEach(letter => {
     const btn = document.createElement("button");
     btn.textContent = letter;
+
     btn.onclick = () => {
-      render(words.filter(w => normalize(w.word).startsWith(normalize(letter))));
-      breadcrumbDiv.style.display = "none";
-      backButton.style.display = "inline-block";
-      location.hash = "";
+      const target = letterSections[letter];
+      if (target) target.scrollIntoView({ behavior: "smooth" });
     };
+
     alphabetNav.appendChild(btn);
   });
 }
 
 // --------------------
-// RENDER WORDS
+// HIGHLIGHT CURRENT LETTER
 // --------------------
-function render(list) {
-  dict.innerHTML = "";
-  list.forEach(w => {
-    const d = document.createElement("details");
-    d.className = "entry";
-    d.id = normalize(w.word);
+function highlightCurrentLetter() {
+  const scrollY = window.scrollY;
+  let current = null;
+  for (const [letter, section] of Object.entries(letterSections)) {
+    const offsetTop = section.offsetTop - 80; // header offset
+    if (scrollY >= offsetTop) current = letter;
+  }
 
-    d.addEventListener("toggle", () => {
-      if (d.open) location.hash = `fjala/${d.id}`;
-    });
-
-    d.innerHTML = `
-      <summary>${w.word}</summary>
-      <div class="content">
-        <p><strong>Përkufizim:</strong> ${w.definition}</p>
-        ${w.example ? `<p><strong>Shembull:</strong> ${w.example}</p>` : ""}
-        <p><strong>Klasa morf.:</strong>
-          ${w.tags.klasa_morf.map(t => `<a href="#kategori/klasa_morf/${t}">${t}</a>`).join(", ")}
-        </p>
-        <p><strong>Fjalëformimi:</strong>
-          ${w.tags.fjaleformimi.map(t => `<a href="#kategori/fjaleformimi/${t}">${t}</a>`).join(", ")}
-        </p>
-        ${w.tags.neologjizem.length ? `
-          <p><strong>Neologjizëm:</strong>
-            ${w.tags.neologjizem.map(t => `<a href="#kategori/neologjizem/${t}">${t}</a>`).join(", ")}
-          </p>` : ""}
-      </div>
-    `;
-
-    dict.appendChild(d);
+  alphabetNav.querySelectorAll("button").forEach(btn => {
+    btn.style.fontWeight = btn.textContent === current ? "bold" : "normal";
+    btn.style.color = btn.textContent === current ? "var(--text)" : "var(--accent)";
   });
 }
 
 // --------------------
-// SEARCH + FILTERS
+// SEARCH FILTER
 // --------------------
-function applyFilters() {
+function applySearch() {
   const q = normalize(searchInput.value);
-  const filtered = words.filter(w => {
-    if (q && !normalize(w.word).includes(q)) return false;
-    if (fKlasa.value && !w.tags.klasa_morf.includes(fKlasa.value)) return false;
-    if (fFormim.value && !w.tags.fjaleformimi.includes(fFormim.value)) return false;
-    if (fNeo.value && !w.tags.neologjizem.includes(fNeo.value)) return false;
-    return true;
-  });
-  render(filtered);
-  breadcrumbDiv.style.display = "none";
-  backButton.style.display = "inline-block";
-  location.hash = "";
+  if (!q) return renderGrouped(words);
+
+  const filtered = words.filter(w => normalize(w.word).includes(q));
+  renderGrouped(filtered);
 }
-[searchInput, fKlasa, fFormim, fNeo].forEach(el => { if (el) el.addEventListener("input", applyFilters); });
+if (searchInput) searchInput.addEventListener("input", applySearch);
 
 // --------------------
 // HASH ROUTING
@@ -164,27 +193,26 @@ function openFromHash() {
   const hash = location.hash.replace("#", "");
   if (!hash) return;
 
-  // WORD VIEW
   if (hash.startsWith("fjala/")) {
     const id = hash.replace("fjala/", "");
-    render(words);
     const el = document.getElementById(id);
-    if (el) el.open = true;
-    el?.scrollIntoView({ block: "start" });
-    breadcrumbDiv.innerHTML = `Fjalor / <strong>${el?.querySelector("summary")?.textContent}</strong>`;
-    breadcrumbDiv.style.display = "block";
-    backButton.style.display = "inline-block";
+    if (el) {
+      el.open = true;
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      breadcrumbDiv.style.display = "block";
+      backButton.style.display = "inline-block";
+      breadcrumbDiv.innerHTML = `Fjalor / <strong>${el.querySelector("summary")?.textContent}</strong>`;
+    }
   }
 
-  // CATEGORY VIEW
   if (hash.startsWith("kategori/")) {
     const [, type, value] = hash.split("/");
     const filtered = words.filter(w => (w.tags[type] || []).includes(value));
-    render(filtered);
+    renderGrouped(filtered);
 
-    breadcrumbDiv.innerHTML = `Fjalor / ${type.replace("_", " ")} / <strong>${value}</strong>`;
     breadcrumbDiv.style.display = "block";
     backButton.style.display = "inline-block";
+    breadcrumbDiv.innerHTML = `Fjalor / ${type.replace("_", " ")} / <strong>${value}</strong>`;
 
     // Highlight active links inside word entries
     document.querySelectorAll(".entry a").forEach(a => {
@@ -195,3 +223,4 @@ function openFromHash() {
 }
 
 window.addEventListener("hashchange", openFromHash);
+

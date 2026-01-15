@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   function normalize(text) {
     return text
       .toLowerCase()
-      .normalize("NFD")                // split accents
-      .replace(/[\u0300-\u036f]/g, ""); // remove accents
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
   }
 
   // --------------------
@@ -29,9 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (themeBtn) {
     themeBtn.onclick = () => {
       document.body.classList.toggle("dark");
-      localStorage.theme = document.body.classList.contains("dark")
-        ? "dark"
-        : "light";
+      localStorage.theme = document.body.classList.contains("dark") ? "dark" : "light";
     };
   }
 
@@ -65,16 +63,27 @@ document.addEventListener("DOMContentLoaded", () => {
   // --------------------
   // LOAD DATA
   // --------------------
-  fetch("words.json")
-    .then(r => r.json())
+  const urlParams = new URLSearchParams(window.location.search);
+  const file = urlParams.get("file") || "words.json";
+
+  fetch(file)
+    .then(r => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
+    })
     .then(data => {
+      if (!Array.isArray(data)) throw new Error("JSON is not an array");
       words = data.sort((a, b) =>
-        a.word.localeCompare(b.word, "sq", { sensitivity: "base" })
+        a.baza.localeCompare(b.baza, "sq", { sensitivity: "base" })
       );
       renderGrouped(words);
       buildAlphabet();
       openFromHash();
       window.addEventListener("scroll", highlightCurrentLetter);
+    })
+    .catch(err => {
+      dict.innerHTML = `<p>Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it: ${file}</p>`;
+      console.error("Error loading words:", err);
     });
 
   // --------------------
@@ -83,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
-    const letters = Array.from(new Set(list.map(w => w.word[0].toUpperCase()))).sort();
+    const letters = Array.from(new Set(list.map(w => w.baza[0].toUpperCase()))).sort();
 
     letters.forEach(letter => {
       const section = document.createElement("div");
@@ -95,30 +104,35 @@ document.addEventListener("DOMContentLoaded", () => {
       section.appendChild(h);
 
       list
-        .filter(w => w.word[0].toUpperCase() === letter)
+        .filter(w => w.baza[0].toUpperCase() === letter)
         .forEach(w => {
           const d = document.createElement("details");
           d.className = "entry";
-          d.id = normalize(w.word);
+          d.id = normalize(w.baza);
 
           d.addEventListener("toggle", () => {
             if (d.open) location.hash = `fjala/${d.id}`;
           });
 
-          // Multiple definitions support
+          // Word header with colors and no extra spaces
+          const header = `
+            <span class="word-base">${w.baza}</span>
+            <span class="word-pashquar">(${w["mbaresa-pashquar"]})</span>
+            ~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
+            ~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
+          `;
+
+          // Multiple definitions
           let defsHTML = "";
           if (Array.isArray(w.definitions)) {
             w.definitions.forEach((def, idx) => {
               defsHTML += `<p><strong>${idx + 1}.</strong> ${def.meaning}</p>`;
               if (def.example) defsHTML += `<p><em>Shembull:</em> ${def.example}</p>`;
             });
-          } else {
-            defsHTML = `<p>${w.definition || ""}</p>`;
-            if (w.example) defsHTML += `<p><em>Shembull:</em> ${w.example}</p>`;
           }
 
           d.innerHTML = `
-            <summary>${w.word}</summary>
+            <summary>${header}</summary>
             <div class="content">
               ${defsHTML}
               <p><strong>Klasa morf.:</strong>
@@ -129,8 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </p>
               ${(w.tags.neologjizem?.length) ? `
                 <p><strong>Neologjizëm:</strong>
-                  ${w.tags.neologjizem.map(t => `<a href="#kategori/neologjizem/${t}">${t}</a>`).join(", ")}
-                </p>` : ""}
+                  ${w.tags.neologjizem.map(t => `<a href="#kategori/neologjizem/${t}">${t}</a>`).join(", ")}</p>` : ""}
             </div>
           `;
           section.appendChild(d);
@@ -167,7 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollY = window.scrollY;
     let current = null;
     for (const [letter, section] of Object.entries(letterSections)) {
-      const offsetTop = section.offsetTop - 100; // adjust for sticky header
+      const offsetTop = section.offsetTop - 100;
       if (scrollY >= offsetTop) current = letter;
     }
 
@@ -185,7 +198,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const q = normalize(searchInput.value.trim());
     if (!q) return renderGrouped(words);
 
-    const filtered = words.filter(w => normalize(w.word).startsWith(q));
+    const filtered = words.filter(w => normalize(w.baza).startsWith(q));
     renderGrouped(filtered);
   }
   if (searchInput) searchInput.addEventListener("input", applySearch);
@@ -218,7 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
       backButton.style.display = "inline-block";
       breadcrumbDiv.innerHTML = `Fjalor / ${type.replace("_", " ")} / <strong>${value}</strong>`;
 
-      // Highlight active links inside word entries
       document.querySelectorAll(".entry a").forEach(a => {
         if (a.textContent === value) a.style.fontWeight = "bold";
         else a.style.fontWeight = "normal";
@@ -229,6 +241,3 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("hashchange", openFromHash);
 
 });
-
-
-

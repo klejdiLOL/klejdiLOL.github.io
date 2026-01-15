@@ -1,32 +1,13 @@
 [
   {
-    "word": "",
+    "baza": "drithërim",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "",
-        "example": ""
-      },
-      {
-        "meaning": "",
-        "example": ""
-      }
-    ],
-    "tags": {
-      "klasa_morf": [],
-      "fjaleformimi": [],
-      "neologjizem": []
-    }
-  },
-  {
-    "word": "",
-    "definitions": [
-      {
-        "meaning": "",
-        "example": ""
-      },
-      {
-        "meaning": "",
-        "example": ""
+        "meaning": "Një gjendje emocionale...",
+        "example": "më hyri një drithërimë"
       }
     ],
     "tags": {

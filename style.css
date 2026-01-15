@@ -1,287 +1,266 @@
+/* ----------------------------
+   :root variables for light mode
+---------------------------- */
 :root {
-  --bg: #f9fafb;
+  --bg: #f5f5f5;
   --text: #111;
-  --card: #fff;
-  --border: #ddd;
-  --accent: #2563eb;
+  --accent: #555;
+  --header-bg: #1e88e5;
+  --search-bg: #fff;
+  --search-text: #111;
+  --entry-bg: #fff;
+  --entry-border: #ccc;
+  --highlight: #e91e63;
+  
+  --color-base: #1a73e8;      /* baza */
+  --color-pashquar: #e91e63;  /* mbaresa-pashquar */
+  --color-shquar: #ff9800;    /* mbaresa-shquar */
+  --color-shumes: #4caf50;    /* mbaresa-shumes */
 }
 
+/* ----------------------------
+   Dark mode overrides
+---------------------------- */
 body.dark {
-  --bg: #0f172a;
-  --text: #e5e7eb;
-  --card: #1e293b;
-  --border: #334155;
-  --accent: #3b82f6;
+  --bg: #111;
+  --text: #f5f5f5;
+  --accent: #aaa;
+  --header-bg: #1565c0;
+  --search-bg: #222;
+  --search-text: #f5f5f5;
+  --entry-bg: #1a1a1a;
+  --entry-border: #444;
+  --highlight: #ff4081;
+  
+  --color-base: #8ab4f8;
+  --color-pashquar: #f48fb1;
+  --color-shquar: #ffb74d;
+  --color-shumes: #81c784;
 }
 
+/* ----------------------------
+   GLOBAL
+---------------------------- */
 body {
   margin: 0;
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--bg);
   color: var(--text);
-  scroll-behavior: smooth;
+  transition: background 0.3s, color 0.3s;
 }
 
-/* ===================== */
-/* Banner / Header */
-/* ===================== */
-#banner {
-  position: relative;
-  width: 100%;
-  height: 220px;
-  overflow: hidden;
+a {
+  color: var(--highlight);
+  text-decoration: none;
 }
 
-#banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6);
-}
-
-#banner .header-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.7);
-}
-
-#banner h1 {
-  font-size: 2.5rem;
-  margin: 0.5rem 0;
-}
-
-#banner p {
-  font-size: 1rem;
-}
-
-/* ===================== */
-/* Home Page Cards */
-/* ===================== */
-#home-sections {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  margin: 2rem 0;
-  padding: 0 1rem;
-}
-
-.home-card {
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  height: 350px;
-  border-radius: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0 5px 25px rgba(0,0,0,0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: flex-end;
-  border: 8px solid transparent;
-}
-
-/* Colored frames */
-.home-card.crimson { border-color: crimson; }
-.home-card.bronze  { border-color: #cd7f32; } /* bronze hex */
-.home-card.moss    { border-color: #556b2f; } /* moss green hex */
-
-.home-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-}
-
-/* Overlay */
-.card-overlay {
-  position: absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background: rgba(0,0,0,0.4);
-  backdrop-filter: blur(6px);
-  transition: background 0.4s ease, backdrop-filter 0.4s ease;
-}
-
-.home-card:hover .card-overlay {
-  background: rgba(0,0,0,0);
-  backdrop-filter: blur(0);
-}
-
-/* Label at bottom */
-.card-label {
-  position: absolute;
-  bottom: 0;
-  left:0;
-  width:100%;
-  background: rgba(0,0,0,0.6);
-  padding: 1rem;
-  text-align: center;
-  transition: background 0.4s ease;
-}
-
-.home-card:hover .card-label {
-  background: rgba(0,0,0,0.0);
-}
-
-.card-label h2 {
-  color: white;
-  font-size: 2rem;
-  margin: 0;
-}
-
-/* ===================== */
-/* Dictionary Page Layout */
-/* ===================== */
-#container {
-  display: flex;
-  max-width: 1000px;
-  margin: 1rem auto;
-  padding: 0 1rem;
-  gap: 1rem;
-}
-
-/* A-Z Sidebar */
-#alphabet {
-  position: sticky;
-  top: 150px;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-#alphabet button {
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  color: var(--accent);
-  padding: 0.25rem;
-  transition: transform 0.2s, color 0.2s;
-}
-
-#alphabet button:hover {
-  transform: scale(1.1);
-  color: var(--text);
-}
-
-#alphabet button.active {
-  color: var(--text);
+a:hover {
   text-decoration: underline;
 }
 
-main#dictionary {
-  flex: 1;
+/* ----------------------------
+   BANNER
+---------------------------- */
+.banner {
+  position: relative;
+  background: var(--header-bg);
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Letter sections */
-.letter-section h2 {
-  margin-top: 2rem;
+.banner h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+#themeToggle {
+  background: transparent;
+  border: none;
   font-size: 1.5rem;
-  border-bottom: 2px solid var(--accent);
-  padding-bottom: 0.25rem;
+  cursor: pointer;
+  color: inherit;
+  transition: transform 0.3s;
 }
 
-/* Dictionary entries */
-.entry {
-  border: 1px solid var(--border);
+#themeToggle:hover {
+  transform: scale(1.2);
+}
+
+/* ----------------------------
+   SEARCH BAR
+---------------------------- */
+.search-container {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#search {
+  width: 100%;
+  max-width: 500px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
   border-radius: 8px;
-  margin-bottom: 0.5rem;
-  background: var(--card);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--entry-border);
+  background: var(--search-bg);
+  color: var(--search-text);
+  transition: background 0.3s, color 0.3s, border 0.3s;
 }
 
-.entry:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+#search:focus {
+  outline: none;
+  border-color: var(--highlight);
+}
+
+/* ----------------------------
+   CONTAINER
+---------------------------- */
+#container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 2rem 2rem;
+  position: relative;
+}
+
+/* ----------------------------
+   ALPHABET SIDEBAR
+---------------------------- */
+.alphabet-sidebar {
+  position: sticky;
+  top: 2rem;
+  flex: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.alphabet-sidebar button {
+  background: transparent;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem 0;
+  cursor: pointer;
+  font-weight: normal;
+  color: var(--accent);
+  transition: all 0.3s;
+}
+
+.alphabet-sidebar button:hover {
+  font-weight: bold;
+  color: var(--highlight);
+}
+
+/* ----------------------------
+   DICTIONARY
+---------------------------- */
+#dictionary {
+  flex: 1;
+  min-width: 0;
+}
+
+.letter-section {
+  margin-bottom: 2rem;
+}
+
+.letter-section h2 {
+  font-size: 1.4rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.2rem;
+}
+
+/* ----------------------------
+   WORD ENTRY DROPDOWN
+---------------------------- */
+.entry {
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 0.3rem 0.8rem;
+  transition: transform 0.2s, background 0.3s;
 }
 
 .entry summary {
-  padding: 0.75rem;
   cursor: pointer;
   font-weight: bold;
-  list-style: none;
+  font-size: 1.1rem;
+  outline: none;
 }
 
-.entry summary::-webkit-details-marker {
-  display: none;
+.entry[open] {
+  transform: scale(1.02);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
 }
 
-.entry summary::after {
-  content: "▾";
-  float: right;
-  transition: transform 0.2s ease;
-}
+/* ----------------------------
+   WORD HEADER COLORS
+---------------------------- */
+.word-base { color: var(--color-base); }
+.word-pashquar { color: var(--color-pashquar); }
+.word-shquar { color: var(--color-shquar); }
+.word-shumes { color: var(--color-shumes); }
 
-.entry[open] summary::after {
-  content: "▴";
-}
-
+/* ----------------------------
+   ENTRY CONTENT
+---------------------------- */
 .entry .content {
-  padding: 0.75rem 1rem;
-  border-top: 1px solid var(--border);
-  line-height: 1.5;
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  animation: fadeIn 0.3s ease;
 }
 
-.entry[open] .content {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Breadcrumb / back button */
-#breadcrumb {
-  max-width: 1000px;
-  margin: 0.5rem auto;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-}
-
-#backButton {
-  display: block;
-  margin: 0.5rem auto;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 8px;
-  background: var(--accent);
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Smooth animations for multiple definitions */
 .entry .content p {
   margin: 0.3rem 0;
 }
 
-/* Dark mode button (optional, toggle via JS) */
-#darkModeToggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
-  padding: 0.4rem 0.7rem;
-  border: none;
-  border-radius: 6px;
-  background: var(--accent);
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-  z-index: 100;
+/* ----------------------------
+   BREADCRUMB + BACK BUTTON
+---------------------------- */
+#breadcrumb {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
 }
 
+#backButton {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  border: none;
+  background: var(--highlight);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  transition: transform 0.2s;
+}
 
+#backButton:hover {
+  transform: scale(1.05);
+}
 
+/* ----------------------------
+   ANIMATIONS
+---------------------------- */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ----------------------------
+   RESPONSIVE
+---------------------------- */
+@media (max-width: 768px) {
+  #container {
+    flex-direction: column;
+  }
+  .alphabet-sidebar {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .alphabet-sidebar button {
+    margin: 0 0.2rem;
+  }
+}

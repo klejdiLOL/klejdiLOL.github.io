@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 25%;
   height: 250px;                  /* adjust height if needed */
   border-radius: 14px;
   border: none;

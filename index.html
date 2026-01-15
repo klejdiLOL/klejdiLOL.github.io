@@ -4,71 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fjalor Shqip</title>
+
+  <!-- Google Fonts: JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- FIXED TOP BAR -->
-<header class="topbar">
-  <h1>📘 Fjalor Shqip</h1>
+  <!-- FIXED TOP BAR -->
+  <header class="topbar">
+  <h1><a href="index.html">📘 Fjalor Shqip</a></h1>
   <button id="themeToggle">🌙</button>
-</header>
+  </header>
 
-<!-- PAGE CONTENT -->
-<main class="home-wrapper">
 
-  <p class="home-subtitle">
-    Zgjidh një botim për të hyrë në fjalor
-  </p>
+  <!-- PAGE CONTENT -->
+  <main class="home-wrapper">
+    <p class="home-subtitle">
+      Zgjidh një botim për të hyrë në fjalor
+    </p>
 
-  <div class="home-list">
+    <div class="home-list">
 
-    <button class="home-card crimson" data-file="words-pallati-i-endrrave.json">
-      Pallati i Ëndrrave
-    </button>
+      <button class="home-card crimson" data-file="words-pallati-i-endrrave.json">
+        <img src="images/pallati.jpg" alt="Pallati i Ëndrrave">
+        <span>Pallati i Ëndrrave</span>
+      </button>
 
-    <button class="home-card bronze" data-file="words-kronike-ne-gur.json">
-      Kronikë në Gur
-    </button>
+      <button class="home-card bronze" data-file="words-kronike-ne-gur.json">
+        <img src="images/kronike.jpg" alt="Kronikë në Gur">
+        <span>Kronikë në Gur</span>
+      </button>
 
-    <button class="home-card moss" data-file="words-poshterim-ne-ballkan.json">
-      Poshtërim në Ballkan
-    </button>
+      <button class="home-card moss" data-file="words-poshterim-ne-ballkan.json">
+        <img src="images/poshterim.jpg" alt="Poshtërim në Ballkan">
+        <span>Poshtërim në Ballkan</span>
+      </button>
 
-  </div>
-</main>
+    </div>
+  </main>
 
-<script>
-  // Dark mode (same logic as dictionary)
-  const themeBtn = document.getElementById("themeToggle");
+  <script>
+    // Dark mode toggle
+    const themeBtn = document.getElementById("themeToggle");
 
-  function updateTheme() {
-    if (localStorage.theme === "dark") {
-      document.body.classList.add("dark");
-      themeBtn.textContent = "☀️";
-    } else {
-      document.body.classList.remove("dark");
-      themeBtn.textContent = "🌙";
+    function updateTheme() {
+      if (localStorage.theme === "dark") {
+        document.body.classList.add("dark");
+        themeBtn.textContent = "☀️";
+      } else {
+        document.body.classList.remove("dark");
+        themeBtn.textContent = "🌙";
+      }
     }
-  }
 
-  if (!localStorage.theme) localStorage.theme = "light";
-  updateTheme();
-
-  themeBtn.onclick = () => {
-    localStorage.theme =
-      document.body.classList.contains("dark") ? "light" : "dark";
+    if (!localStorage.theme) localStorage.theme = "light";
     updateTheme();
-  };
 
-  // Navigation
-  document.querySelectorAll(".home-card").forEach(card => {
-    card.addEventListener("click", () => {
-      const file = card.dataset.file;
-      window.location.href = `dictionary.html?file=${file}`;
+    themeBtn.onclick = () => {
+      localStorage.theme = document.body.classList.contains("dark") ? "light" : "dark";
+      updateTheme();
+    };
+
+    // Navigate to dictionary pages
+    document.querySelectorAll(".home-card").forEach(card => {
+      card.addEventListener("click", () => {
+        const file = card.dataset.file;
+        window.location.href = `dictionary.html?file=${file}`;
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>

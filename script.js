@@ -23,6 +23,7 @@ themeBtn.onclick = () => {
 fetch("words.json")
   .then(r => r.json())
   .then(data => {
+    openFromHash();
     words = data.sort((a, b) =>
       a.word.localeCompare(b.word, "sq", { sensitivity: "base" })
     );

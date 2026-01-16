@@ -93,7 +93,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (w.klasa_morf) extraHTML += `<p><strong>K.M.</strong> ${w.klasa_morf}</p>`;
         if (w.fjaleformimi) extraHTML += `<p><strong>F.f.:</strong> ${w.fjaleformimi}</p>`;
 
-        d.innerHTML = `<summary class="summary"><span class="word-base">${w.baza}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
+        d.innerHTML = `<summary class="summary">${w.nyje ? `<span class="word-nyje">${w.nyje}</span> ` : ""}
+ <span class="word-base">${w.baza}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
 
         section.appendChild(d);
       });

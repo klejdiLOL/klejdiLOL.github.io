@@ -318,10 +318,11 @@
 	"fjaleformimi": "(E Parme)"
   },
   {
+    "nyje": "i/e/të",
     "baza": "gropsh",
-    "mbaresa-pashquar": "me",
-    "mbaresa-pashquar-shumes": "",
-    "mbaresa-shquar": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "me",
+    "mbaresa-shquar": "ëm",
     "mbaresa-shumes": "",
     "definitions": [
       {
@@ -434,6 +435,60 @@
       }
     ],
 	"klasa_morf": "Tingullimitim",
+	"fjaleformimi": "()"
+  },
+  {
+    "nyje": "i/e/të",
+    "baza": "dosidosh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "me",
+    "mbaresa-shquar": "ëm",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Përngjitur)"
+  },
+  {
+    "nyje": "",
+    "baza": "keq",
+    "mbaresa-pashquar": "oj",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Parme) keq(oj)"
+  },
+  {
+    "nyje": "",
+    "baza": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "",
 	"fjaleformimi": "()"
   }
 ]

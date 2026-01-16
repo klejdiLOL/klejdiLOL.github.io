@@ -155,3 +155,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   window.addEventListener("hashchange", openFromHash);
 });
+
+const toggle = document.getElementById("searchToggle");
+const search = document.getElementById("search");
+
+toggle.addEventListener("click", () => {
+  search.classList.toggle("active");
+  if (search.classList.contains("active")) {
+    search.focus();
+  }
+});

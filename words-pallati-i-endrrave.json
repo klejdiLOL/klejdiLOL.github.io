@@ -212,7 +212,7 @@
         "example2": ""
       }
     ],
-	"klasa_morf": "Tingullimitim.",
+	"klasa_morf": "Tingullimitim",
 	"fjaleformimi": ""
   },
   {
@@ -421,7 +421,7 @@
   },
   {
     "baza": "hëm",
-    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar": "",
     "mbaresa-pashquar-shumes": "",
     "mbaresa-shquar": "",
     "mbaresa-shumes": "",
@@ -433,7 +433,7 @@
         "example2": ""
       }
     ],
-	"klasa_morf": "",
+	"klasa_morf": "Tingullimitim",
 	"fjaleformimi": "()"
   }
 ]

@@ -130,6 +130,14 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function applySearch() {
+    const q = normalize(searchInput.value.trim());
+    if (!q) return renderGrouped(words);
+    const filtered = words.filter(w => normalize(w.baza).startsWith(q));
+    renderGrouped(filtered);
+  }
+  if (searchInput) searchInput.addEventListener("input", applySearch);
+
   function openFromHash() {
     const hash = location.hash.replace("#","");
     if (!hash) return;

@@ -205,12 +205,13 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 
 .alphabet-sidebar {
   position: sticky;
-  top: 2rem;
-  flex: 0 0 40px;
+  top: 1rem;
+  flex: 0 0 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 1rem;
+  height: max-content;
 }
 
 .alphabet-sidebar button {
@@ -228,14 +229,15 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 .alphabet-sidebar button:hover {
   font-weight: bold;
   color: var(--highlight);
+  transform: scale(3);
+  transition: all 0.5s ease;
 }
 
-/* ACTIVE / selected letter effect */
 .alphabet-sidebar button.active {
   font-weight: bold;
   color: var(--highlight);
-  transform: scale(3);      /* poppy enlargement */
-  transition: all 0.5s ease; /* smooth transition */
+  transform: scale(3);      
+  transition: all 0.5s ease;
 }
 
 #dictionary { flex: 1; min-width: 0; }

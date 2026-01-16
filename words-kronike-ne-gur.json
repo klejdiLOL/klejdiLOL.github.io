@@ -1,38 +1,19 @@
 [
   {
-    "word": "",
+    "baza": "Work in Progress (ENDE NE PUNIM)",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
     "definitions": [
       {
         "meaning": "",
-        "example": ""
-      },
-      {
-        "meaning": "",
-        "example": ""
+        "example": "",
+        "meaning2": "",
+        "example2": ""
       }
     ],
-    "tags": {
-      "klasa_morf": [],
-      "fjaleformimi": [],
-      "neologjizem": []
-    }
-  },
-  {
-    "word": "",
-    "definitions": [
-      {
-        "meaning": "",
-        "example": ""
-      },
-      {
-        "meaning": "",
-        "example": ""
-      }
-    ],
-    "tags": {
-      "klasa_morf": [],
-      "fjaleformimi": [],
-      "neologjizem": []
-    }
+	"klasa_morf": "",
+	"fjaleformimi": "()"
   }
 ]

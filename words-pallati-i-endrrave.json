@@ -214,5 +214,209 @@
     ],
 	"klasa_morf": "Tingullimitim.",
 	"fjaleformimi": ""
+  },
+  {
+    "baza": "shkurtan",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "Person i shkurtër.",
+        "example": "Xhaketa e vogël ishte e shkurtanit.",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) (i) shkurt(ër)+an(i)"
+  },
+  {
+    "baza": "prushan",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) prush+an(ë)"
+  },
+  {
+    "baza": "fytyrgjat",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "Person me fytyrë të gjatë.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(Kompozitë) fytyr(ë)+gjat(i)"
+  },
+  {
+    "baza": "zymt",
+    "mbaresa-pashquar": "i",
+    "mbaresa-pashquar-shumes": "i",
+    "mbaresa-shquar": "ia",
+    "mbaresa-shumes": "itë",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) (i) zymt(ë)+(i)"
+  },
+  {
+    "baza": "parazbulo",
+    "mbaresa-pashquar": "j",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Përngjitur) para+zbulo(j)"
+  },
+  {
+    "baza": "llahtare",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Parme)"
+  },
+  {
+    "baza": "gropsh",
+    "mbaresa-pashquar": "me",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) e grop(ë)+sh(me)"
+  },
+  {
+    "baza": "vidhisj",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Tokë e vidhisur; shembje.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) vidhis+j(e)"
+  },
+  {
+    "baza": "cern",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) cern(ë)"
+  },
+  {
+    "baza": "mosrekomandim",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Përngjitur) mos+rekomandim"
+  },
+  {
+    "baza": "porsaardhur",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(Kompozitë) porsa+ardhur"
+  },
+  {
+    "baza": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": "()"
   }
 ]

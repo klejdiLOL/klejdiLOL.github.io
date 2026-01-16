@@ -12,7 +12,7 @@
       }
     ],
     "klasa_morf": "Emër (Abstrakt)",
-    "fjaleformimi": "(E Prejardhur) drith(ë)-rim(ë)"
+    "fjaleformimi": "(E Prejardhur) drith(ë)+rim(ë)"
   },
   {
     "baza": "qafëz",
@@ -42,7 +42,7 @@
       }
     ],
      "klasa_morf": "Emër (Konkret)",
-     "fjaleformimi": "(E Prejardhur) ngre-hin(ë)"
+     "fjaleformimi": "(E Prejardhur) ngre+hin(ë)"
   },
   {
     "baza": "hutin",
@@ -167,18 +167,52 @@
 	"fjaleformimi": "(E Prejardhur) ojna+tar(e)"
   },
   {
-    "baza": "rrallëkujt",
+    "baza": "rrallëkush",
     "mbaresa-pashquar": "-",
     "mbaresa-pashquar-shumes": "-",
     "mbaresa-shquar": "-",
     "mbaresa-shumes": "-",
     "definitions": [
       {
-        "meaning": "",
-        "example": ""
+        "meaning": "Emërton një person që gjendet rrallë pa e përcaktuar identitetin e këtij personi.",
+        "example": "Rrallëkush kishte ndodhur të hynte në atë ndërtesë."
       }
     ],
 	"klasa_morf": "Përemër (i pacaktuar)",
 	"fjaleformimi": "(E Përngjitur) rrallë+kujt"
+  },
+  {
+    "baza": "port",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "le",
+    "mbaresa-shquar": "-",
+    "mbaresa-shumes": "alet",
+    "definitions": [
+      {
+        "meaning": "Shumës i emrit \"portë\"; përmbledh portat në përgjithësi.",
+        "example": "Koridori i portaleve ishte tepër i gjatë.",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) port(ë)+l(e)"
+  },
+  {
+    "baza": "shtrak-shtrak",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Tingullimitim.",
+	"fjaleformimi": ""
   }
 ]

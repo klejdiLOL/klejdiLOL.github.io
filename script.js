@@ -86,28 +86,21 @@ document.addEventListener("DOMContentLoaded", () => {
         let defsHTML = "";
         if (Array.isArray(w.definitions)) {
           w.definitions.forEach((def, idx) => {
-            defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
+            if (def.meaning) defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
             if (def.example) defsHTML += `<p><em>Sh.1:</em> ${def.example}</p>`;
             if (def.meaning2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.meaning2}</p>`;
             if (def.example2) defsHTML += `<p><em>Sh.2:</em> ${def.example2}</p>`;
           });
         }
 
-        // Colored summary
-        d.innerHTML = `
-          <summary class="summary">
-            <span class="word-base">${w.baza}</span>
-            ${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}
-            ~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>
-            ~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
-            ~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
-          </summary>
-          <div class="content">
-            ${defsHTML}
-            <p><strong>K.M.</strong> ${w.klasa_morf || ""}</p>
-            <p><strong>F.f.:</strong> ${w.fjaleformimi || ""}</p>
-          </div>
-        `;
+        // Only include K.M. or F.f. if content exists
+        let extraHTML = "";
+        if (w.klasa_morf) extraHTML += `<p><strong>K.M.</strong> ${w.klasa_morf}</p>`;
+        if (w.fjaleformimi) extraHTML += `<p><strong>F.f.:</strong> ${w.fjaleformimi}</p>`;
+
+        // Colored summary with conditional tildes, no extra spaces
+        d.innerHTML = `<summary class="summary"><span class="word-base">${w.baza}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
+
         section.appendChild(d);
       });
 
@@ -138,9 +131,13 @@ document.addEventListener("DOMContentLoaded", () => {
       if (scrollY >= section.offsetTop - 100) current = letter;
     }
     if (!alphabetNav) return;
+
     alphabetNav.querySelectorAll("button").forEach(btn => {
-      btn.style.fontWeight = btn.textContent === current ? "bold" : "normal";
-      btn.style.color = btn.textContent === current ? "var(--text)" : "var(--accent)";
+      if (btn.textContent === current) {
+        btn.classList.add("active");
+      } else {
+        btn.classList.remove("active");
+      }
     });
   }
 
@@ -170,5 +167,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
   window.addEventListener("hashchange", openFromHash);
-
 });

@@ -301,10 +301,10 @@
 	"fjaleformimi": "(E Përngjitur) para+zbulo(j)"
   },
   {
-    "baza": "llahtare",
+    "baza": "llahtar",
     "mbaresa-pashquar": "",
-    "mbaresa-pashquar-shumes": "",
-    "mbaresa-shquar": "",
+    "mbaresa-pashquar-shumes": "/",
+    "mbaresa-shquar": "e",
     "mbaresa-shumes": "",
     "definitions": [
       {

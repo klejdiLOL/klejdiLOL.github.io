@@ -2,6 +2,7 @@
   {
     "baza": "drithërim",
     "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
     "mbaresa-shquar": "a",
     "mbaresa-shumes": "at",
     "definitions": [
@@ -11,11 +12,12 @@
       }
     ],
     "klasa_morf": "Emër (Abstrakt)",
-    "fjaleformimi": "(E Prejardhur) drith-rim(ë)"
+    "fjaleformimi": "(E Prejardhur) drith(ë)-rim(ë)"
   },
   {
     "baza": "qafëz",
     "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
     "mbaresa-shquar": "a",
     "mbaresa-shumes": "at",
     "definitions": [
@@ -25,11 +27,12 @@
       }
     ],
     "klasa_morf": "Emër (Konkret)",
-    "fjaleformimi": "(E Prejardhur) qafë+zë(s)"
+    "fjaleformimi": "(E Prejardhur) qaf(ë)+zë(s)"
   },
   {
     "baza": "ngrehin",
     "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
     "mbaresa-shquar": "a",
     "mbaresa-shumes": "at",
     "definitions": [
@@ -40,5 +43,142 @@
     ],
      "klasa_morf": "Emër (Konkret)",
      "fjaleformimi": "(E Prejardhur) ngre-hin(ë)"
+  },
+  {
+    "baza": "hutin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Moment në të cilin mbetesh pa fjalë, i hutuar.",
+        "example": "Ai ndodhej në një hutinë.",
+        "meaning2": "Mjedis i panjohur ku mbizotëron një panjohje e plotë.",
+        "example2": "Ndjehesh i humbur mes hutinës."
+      }
+    ],
+    "klasa_morf": "Emër (Abstrakt)",
+    "fjaleformimi": "(E Prejardhur) hut(oj)+in(ë)"
+  },
+  {
+    "baza": "përsk",
+    "mbaresa-pashquar": "aj",
+    "mbaresa-pashquar-shumes": "aje",
+    "mbaresa-shquar": "aji",
+    "mbaresa-shumes": "ajet",
+    "definitions": [
+      {
+        "meaning": "Skaj më skaj; nga fillimi deri në fund.",
+        "example": "Një rresht dyersh ishin përskaj njëra-tjetrës."
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+      "fjaleformimi": "(E Përngjitur) për+skaj"
+  },
+  {
+    "baza": "kulmor",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Një kulm i lartë; kulmi i një ndërtese.",
+        "example": "Kulmorja e qiellgërvishtes dukej e mprehtë."
+      }
+    ],
+    "klasa_morf": "Emër (Konkret)",
+    "fjaleformimi": "(E Prejardhur) kulm+or(e)"
+  },
+  {
+    "baza": "xhyb",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "eja",
+    "mbaresa-shumes": "etë",
+    "definitions": [
+      {
+        "meaning": "Veshje e zezë e gjatë dhe e gjerë hedhur krahëve.",
+        "example": "Xhybeja rrinte e varur nga supet e tij."
+      }
+    ],
+      "klasa_morf": "Emër (Konkret)",
+      "fjaleformimi": "(E Parme) xhyb(e)"
+  },
+  {
+    "baza": "sqot",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Stuhi shiu e vogël; erë që vjen papritur.",
+        "example": "Rrugës më zuri një sqotë."
+      }
+	],
+      "klasa_morf": "Emër (Konkret)",
+      "fjaleformimi": "(E Parme) sqot(ë)"
+  },
+  {
+    "baza": "sipërfund",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Diçka që fillon nga lartësia deri në fund; sipërfaqe.",
+        "example": "Sipërfundi i dhomës e bënte atë të zymtë."
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Përngjitur) sipër+fund"
+  },
+  {
+    "baza": "qelqnaj",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "meaning": "Sipërfaqe e madhe me xhama ku përfshihen gjithçka që është prej qelqi dhe që pasqyron gjithçka.",
+        "example": "Hodhi sytë drejt qelqnajës së pafundme."
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) qelq+naj(ë)"
+  },
+  {
+    "baza": "ojnatar",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "e",
+    "mbaresa-shumes": "e",
+    "definitions": [
+      {
+        "meaning": "Vjen nga fjala \"ojna\" të cilat shoqërohen me mimika të foshnjave kur ata buzëqeshin dhe lëshojnë tingujt e parë.",
+        "example": "Duar ojnatare. (një dorë që mundohet të të përkëdheli për të arritur një qëllim)"
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) ojna+tar(e)"
+  },
+  {
+    "baza": "rrallëkujt",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "-",
+    "mbaresa-shumes": "-",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": ""
+      }
+    ],
+	"klasa_morf": "Përemër (i pacaktuar)",
+	"fjaleformimi": "(E Përngjitur) rrallë+kujt"
   }
 ]

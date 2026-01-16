@@ -87,7 +87,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (Array.isArray(w.definitions)) {
           w.definitions.forEach((def, idx) => {
             defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
-            if (def.example) defsHTML += `<p><em>P.sh.::</em> ${def.example}</p>`;
+            if (def.example) defsHTML += `<p><em>Sh.1:</em> ${def.example}</p>`;
+            if (def.meaning2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.meaning2}</p>`;
+            if (def.example2) defsHTML += `<p><em>Sh.2:</em> ${def.example2}</p>`;
           });
         }
 
@@ -96,6 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <summary class="summary">
             <span class="word-base">${w.baza}</span>
             ${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}
+            ~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>
             ~<span class="word-shquar">${w["mbaresa-shquar"]}</span>
             ~<span class="word-shumes">${w["mbaresa-shumes"]}</span>
           </summary>

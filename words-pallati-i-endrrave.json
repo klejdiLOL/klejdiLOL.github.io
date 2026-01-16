@@ -403,8 +403,25 @@
 	"fjaleformimi": "(Kompozitë) porsa+ardhur"
   },
   {
-    "baza": "",
-    "mbaresa-pashquar": "",
+    "baza": "rishtar",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) risht(az)+ar"
+  },
+  {
+    "baza": "hëm",
+    "mbaresa-pashquar": "-",
     "mbaresa-pashquar-shumes": "",
     "mbaresa-shquar": "",
     "mbaresa-shumes": "",

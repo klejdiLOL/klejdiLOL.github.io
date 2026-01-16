@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
-  /* DARK MODE */
   function updateDarkMode() {
     if (localStorage.theme === "dark") {
       document.body.classList.add("dark");
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDarkMode();
   };
 
-  /* BACK BUTTON */
   backButton.style.display = "none";
   breadcrumbDiv.style.display = "none";
   backButton.onclick = () => {
@@ -42,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     location.hash = "";
   };
 
-  /* FETCH JSON */
   const file = new URLSearchParams(location.search).get("file") || "words-pallati-i-endrrave.json";
   fetch(file)
     .then(r => r.json())
@@ -59,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
       dict.textContent = "Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it.";
     });
 
-  /* RENDER */
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
@@ -93,12 +89,10 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        // Only include K.M. or F.f. if content exists
         let extraHTML = "";
         if (w.klasa_morf) extraHTML += `<p><strong>K.M.</strong> ${w.klasa_morf}</p>`;
         if (w.fjaleformimi) extraHTML += `<p><strong>F.f.:</strong> ${w.fjaleformimi}</p>`;
 
-        // Colored summary with conditional tildes, no extra spaces
         d.innerHTML = `<summary class="summary"><span class="word-base">${w.baza}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
 
         section.appendChild(d);
@@ -109,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /* ALPHABET SIDEBAR */
   function buildAlphabet() {
     if (!alphabetNav) return;
     alphabetNav.innerHTML = "";
@@ -133,24 +126,10 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!alphabetNav) return;
 
     alphabetNav.querySelectorAll("button").forEach(btn => {
-      if (btn.textContent === current) {
-        btn.classList.add("active");
-      } else {
-        btn.classList.remove("active");
-      }
+      btn.classList.toggle("active", btn.textContent === current);
     });
   }
 
-  /* SEARCH */
-  function applySearch() {
-    const q = normalize(searchInput.value.trim());
-    if (!q) return renderGrouped(words);
-    const filtered = words.filter(w => normalize(w.baza).startsWith(q));
-    renderGrouped(filtered);
-  }
-  if (searchInput) searchInput.addEventListener("input", applySearch);
-
-  /* HASH */
   function openFromHash() {
     const hash = location.hash.replace("#","");
     if (!hash) return;

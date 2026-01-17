@@ -321,9 +321,49 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
     flex-direction: row;
     justify-content: flex-start;
     margin-bottom: 1rem;
+    width: 100%;
+    max-width: 100%;
+    /* keep the bar visible at all times */
+    position: sticky;
+    top: 2vh; /* keep the bar ~2% from top for a nearer-edge look on mobile */
+    z-index: 999;
+    margin-right: 0;
+    border-radius: 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.4rem 0.6rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    background: var(--sidebar-bg);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
-  .alphabet-sidebar button { margin: 0 0.2rem; }
+  .alphabet-sidebar button { margin: 0 0.2rem; display: inline-flex; align-items: center; justify-content: center; }
   .home-list { gap: 0.8rem; }
+}
+
+/* Mobile-specific tweaks for active/hover animations (smaller than desktop) */
+@media (max-width: 768px) {
+  .alphabet-sidebar button {
+    font-size: 1.1rem;
+    padding: 0.35rem 0.6rem;
+    opacity: 0.95;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+  }
+
+  .alphabet-sidebar button:hover { transform: scale(1.25); }
+
+  .alphabet-sidebar button.active {
+    font-weight: 700;
+    color: var(--highlight);
+    animation: popFade 420ms cubic-bezier(.2,.9,.4,1) both;
+  }
+}
+
+@keyframes popFade {
+  0% { transform: scale(1); opacity: 0.5; }
+  50% { transform: scale(1.9); opacity: 1; }
+  100% { transform: scale(1.35); opacity: 1; }
 }
 
 /* ----------------------------

@@ -125,10 +125,20 @@ document.addEventListener("DOMContentLoaded", () => {
       if (scrollY >= section.offsetTop - 100) current = letter;
     }
     if (!alphabetNav) return;
-
     alphabetNav.querySelectorAll("button").forEach(btn => {
       btn.classList.toggle("active", btn.textContent === current);
     });
+
+    // Auto-scroll alphabet nav on small screens so the active letter is centered.
+    // Use horizontal scroll on the nav itself to avoid any vertical/page jump.
+    const activeBtn = alphabetNav.querySelector("button.active");
+    if (activeBtn && window.innerWidth <= 768 && alphabetNav.scrollWidth > alphabetNav.clientWidth) {
+      const navRect = alphabetNav.getBoundingClientRect();
+      const btnRect = activeBtn.getBoundingClientRect();
+      const currentScroll = alphabetNav.scrollLeft;
+      const targetScroll = currentScroll + (btnRect.left - navRect.left) - (alphabetNav.clientWidth / 2) + (btnRect.width / 2);
+      alphabetNav.scrollTo({ left: Math.max(0, Math.round(targetScroll)), behavior: "smooth" });
+    }
   }
 
   function applySearch() {

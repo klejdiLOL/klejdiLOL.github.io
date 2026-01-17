@@ -472,5 +472,77 @@
     ],
 	"klasa_morf": "Folje",
 	"fjaleformimi": "(E Parme) keq(oj)"
+  },
+  {
+    "nyje": "",
+    "baza": "gojëhap",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Përngjitur) goj(ë)+hap"
+  },
+  {
+    "nyje": "",
+    "baza": "ndërmend",
+    "mbaresa-pashquar": "oj",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "Sjell në mendje",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Përngjitur) ndër+mend(oj)"
+  },
+  {
+    "nyje": "",
+    "baza": "Grahës",
+    "mbaresa-pashquar": "i",
+    "mbaresa-pashquar-shumes": "i",
+    "mbaresa-shquar": "ia",
+    "mbaresa-shumes": "itë",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) gra+hës+(i)"
+  },
+  {
+    "nyje": "",
+    "baza": "qystendil",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) qystendil"
   }
 ]

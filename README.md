@@ -4,7 +4,7 @@ This repository contains an educational project for a school project.
 
 ## License
 
-The **code** (HTML, CSS, JavaScript) is licensed under a custom [license][https://github.com/klejdiLOL/klejdilol.github.io/LICENSE.].
+The **code** (HTML, CSS, JavaScript) is licensed under the MIT [license][https://github.com/klejdiLOL/klejdilol.github.io/LICENSE.].
 
 **Important:** Images used in this project (book covers) are copyrighted by their respective owners.  
 They are included here **only for educational/demo purposes** and are **not licensed for reuse**.

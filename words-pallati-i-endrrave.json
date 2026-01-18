@@ -544,5 +544,149 @@
     ],
 	"klasa_morf": "Emër (Konkret)",
 	"fjaleformimi": "(E Parme) qystendil"
+  },
+  {
+    "nyje": "",
+    "baza": "gërgazm",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Zhurma të gurmazit; grykës.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) gwr+gazm(ë)"
+  },
+  {
+    "nyje": "",
+    "baza": "Alaxhehisar",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret) (Toponim)",
+	"fjaleformimi": "(E Parme) Alaxhehisar"
+  },
+  {
+    "nyje": "",
+    "baza": "Kërk-Kili",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret) (Toponim)",
+	"fjaleformimi": "(Kompozitë) Kërk+Kili"
+  },
+  {
+    "nyje": "",
+    "baza": "buis",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Parme) buis"
+  },
+  {
+    "nyje": "",
+    "baza": "rrufit",
+    "mbaresa-pashquar": "je",
+    "mbaresa-pashquar-shumes": "je",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "jet",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) rrufit+je"
+  },
+  {
+    "nyje": "",
+    "baza": "zë të paqëruar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër (Epitet Metaforik)",
+	"fjaleformimi": "(E Prejardhur) (të) pa+qëruar"
+  },
+  {
+    "nyje": "",
+    "baza": "biseda të grimcuara",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër (Epitet Metaforik)",
+	"fjaleformimi": "(të) grimcuar"
+  } ,
+  {
+    "nyje": "",
+    "baza": "kupëz",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) kupë+z(ë)"
   }
 ]

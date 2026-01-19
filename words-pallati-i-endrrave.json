@@ -482,14 +482,14 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
+        "meaning": "Mbetesh i habitur përpara një situate të papritur; habia është e një mase shumë të madhe.",
         "example": "",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Folje",
-	"fjaleformimi": "(E Përngjitur) goj(ë)+hap"
+	"fjaleformimi": "(Kompozitë) goj(ë)+hap"
   },
   {
     "nyje": "",
@@ -500,8 +500,8 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "Sjell në mendje",
-        "example": "",
+        "meaning": "Sjell në mendje.",
+        "example": "I ndërmendova të gjitha.",
         "meaning2": "",
         "example2": ""
       }
@@ -511,21 +511,21 @@
   },
   {
     "nyje": "",
-    "baza": "Grahës",
-    "mbaresa-pashquar": "i",
-    "mbaresa-pashquar-shumes": "i",
+    "baza": "Grahësi",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
     "mbaresa-shquar": "ia",
     "mbaresa-shumes": "itë",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Punë e lehtë që zakonisht e bëjnë gratë, e cila nuk kërkon shumë përkushtim; punë grarishte.",
+        "example": "Nuk është aspak punë e lehtë grahësish.",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Abstrakt)",
-	"fjaleformimi": "(E Prejardhur) gra+hës+(i)"
+	"fjaleformimi": "(E Prejardhur) gra+hësi"
   },
   {
     "nyje": "",
@@ -536,8 +536,8 @@
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Emërtimi i një fisi të cilët janë marrë me artizat që lidhet me temën e parë (qystë).",
+        "example": "Pashallëku i Qystendilit.",
         "meaning2": "",
         "example2": ""
       }
@@ -547,20 +547,20 @@
   },
   {
     "nyje": "",
-    "baza": "gërgazm",
+    "baza": "gërgam",
     "mbaresa-pashquar": "ë",
     "mbaresa-pashquar-shumes": "a",
     "mbaresa-shquar": "a",
     "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "Zhurma të gurmazit; grykës.",
-        "example": "",
+        "meaning": "Zhurma që nxjerrin krujatjet e lehta ritmike të gurmazit gjatë kollitjeve të lehta.",
+        "example": "Gërgama të lehta të fytit.",
         "meaning2": "",
         "example2": ""
       }
     ],
-	"klasa_morf": "Emër (Konkret)",
+	"klasa_morf": "Emër (Konkret) (Tingullimitim)",
 	"fjaleformimi": "(E Prejardhur) gwr+gazm(ë)"
   },
   {
@@ -587,7 +587,7 @@
     "mbaresa-pashquar": "-",
     "mbaresa-pashquar-shumes": "-",
     "mbaresa-shquar": "a",
-    "mbaresa-shumes": "të",
+    "mbaresa-shumes": "",
     "definitions": [
       {
         "meaning": "",
@@ -608,8 +608,8 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Vijnë njerëz nga të gjitha anët drejt të njëtit drejtim.",
+        "example": "Nga galeritë anësore buisnin njerëz.",
         "meaning2": "",
         "example2": ""
       }
@@ -619,15 +619,15 @@
   },
   {
     "nyje": "",
-    "baza": "rrufit",
-    "mbaresa-pashquar": "je",
-    "mbaresa-pashquar-shumes": "je",
-    "mbaresa-shquar": "ja",
-    "mbaresa-shumes": "jet",
+    "baza": "rrufitje",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "et",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Tërësia e zhurmave që lëshojnë një shumësi njerëzish në pijetore kur janë duke rrufitur salep dhe kafe.",
+        "example": "Zhurma e rrufitjes së salepit mbushte të gjithë ambientin.",
         "meaning2": "",
         "example2": ""
       }
@@ -655,24 +655,6 @@
   },
   {
     "nyje": "",
-    "baza": "biseda të grimcuara",
-    "mbaresa-pashquar": "",
-    "mbaresa-pashquar-shumes": "",
-    "mbaresa-shquar": "",
-    "mbaresa-shumes": "",
-    "definitions": [
-      {
-        "meaning": "",
-        "example": "",
-        "meaning2": "",
-        "example2": ""
-      }
-    ],
-	"klasa_morf": "Mbiemër (Epitet Metaforik)",
-	"fjaleformimi": "(të) grimcuar"
-  } ,
-  {
-    "nyje": "",
     "baza": "kupëz",
     "mbaresa-pashquar": "ë",
     "mbaresa-pashquar-shumes": "a",
@@ -688,5 +670,23 @@
     ],
 	"klasa_morf": "Emër (Konkret)",
 	"fjaleformimi": "(E Prejardhur) kupë+z(ë)"
+  },
+  {
+    "nyje": "",
+    "baza": "zallahi",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
+    "definitions": [
+      {
+        "meaning": "Tërësia e të gjitha zhurmave ",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": "()"
   }
 ]

@@ -716,6 +716,168 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
+        "meaning": "Të llahtarshme",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i) për+bind+sh(ëm)"
+  },
+  {
+    "nyje": "",
+    "baza": "ëndërrparës",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(Kompozitë) ëndërr+parës"
+  },
+  {
+    "nyje": "",
+    "baza": "largin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Një vend i largët, vetëm të imagjinuar.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) larg+in(ë)"
+  },
+  {
+    "nyje": "",
+    "baza": "sheshl",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Shapka me bazë prej druri.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) shesh+l(a)"
+  },
+  {
+    "nyje": "i/e/të",
+    "baza": "mënjanuar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i) mën+jan+uar"
+  },
+  {
+    "nyje": "",
+    "baza": "mizëria e ëndrrave",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "Tërësia e shumë ëndrrave.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "Togfjalësh"
+  },
+  {
+    "nyje": "",
+    "baza": "shterpësi",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
+    "definitions": [
+      {
+        "meaning": "Tokë e thatë.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) shterp(ë)+si"
+  },
+  {
+    "nyje": "",
+    "baza": "dashamirës",
+    "mbares.a-pashquar": "-",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "it",
+    "definitions": [
+      {
+        "meaning": "Njeri i dashur.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)", 
+	"fjaleformimi": "(Kompozitë) dash(a)+mirës"
+  },
+  {
+    "nyje": "",
+    "baza": "gjerb",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "Thith.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Parme) gjerb"
+  },
+  {
+    "nyje": "",
+    "baza": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
         "meaning": "",
         "example": "",
         "meaning2": "",

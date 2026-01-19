@@ -686,7 +686,43 @@
         "example2": ""
       }
     ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) zalla+hi" 
+  },
+  {
+    "nyje": "",
+    "baza": "mejhan",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Pijetore.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) mej+han(e)"
+  },
+  {
+    "nyje": "i/e/të",
+    "baza": "përbindsh",
+    "mbaresa-pashquar": "ëm",
+    "mbaresa-pashquar-shumes": "me",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
 	"klasa_morf": "",
-	"fjaleformimi": "()"
+	"fjaleformimi": ""
   }
 ]

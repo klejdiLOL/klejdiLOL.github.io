@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(r => r.json())
     .then(data => {
       if (!Array.isArray(data)) throw new Error("JSON must be an array");
-      words = data.sort((a,b)=>a.baza.localeCompare(b.baza,"sq",{sensitivity:"base"}));
+      words = data.sort((a,b)=>a.tema.localeCompare(b.tema,"sq",{sensitivity:"base"}));
       renderGrouped(words);
       buildAlphabet();
       openFromHash();
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
-    const letters = Array.from(new Set(list.map(w => w.baza[0].toUpperCase()))).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"}));
+    const letters = Array.from(new Set(list.map(w => w.tema[0].toUpperCase()))).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"}));
 
     letters.forEach(letter => {
       const section = document.createElement("div");
@@ -70,10 +70,10 @@ document.addEventListener("DOMContentLoaded", () => {
       h.textContent = letter;
       section.appendChild(h);
 
-      list.filter(w => w.baza[0].toUpperCase() === letter).forEach(w => {
+      list.filter(w => w.tema[0].toUpperCase() === letter).forEach(w => {
         const d = document.createElement("details");
         d.className = "entry";
-        d.id = normalize(w.baza);
+        d.id = normalize(w.tema);
 
         d.addEventListener("toggle", () => {
           if (d.open) location.hash = `fjala/${d.id}`;
@@ -82,10 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
         let defsHTML = "";
         if (Array.isArray(w.definitions)) {
           w.definitions.forEach((def, idx) => {
-            if (def.meaning) defsHTML += `<p><strong>${idx+1}.</strong> ${def.meaning}</p>`;
-            if (def.example) defsHTML += `<p><em>Sh.1:</em> ${def.example}</p>`;
-            if (def.meaning2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.meaning2}</p>`;
-            if (def.example2) defsHTML += `<p><em>Sh.2:</em> ${def.example2}</p>`;
+            if (def.kuptim) defsHTML += `<p><strong>${idx+1}.</strong> ${def.kuptim}</p>`;
+            if (def.shembull) defsHTML += `<p><em>Sh.1:</em> ${def.shembull}</p>`;
+            if (def.kuptim2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.kuptim2}</p>`;
+            if (def.shembull2) defsHTML += `<p><em>Sh.2:</em> ${def.shembull2}</p>`;
           });
         }
 
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (w.fjaleformimi) extraHTML += `<p><strong>F.f.:</strong> ${w.fjaleformimi}</p>`;
 
         d.innerHTML = `<summary class="summary">${w.nyje ? `<span class="word-nyje">${w.nyje}</span> ` : ""}
- <span class="word-base">${w.baza}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
+ <span class="word-base">${w.tema}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
 
         section.appendChild(d);
       });
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function applySearch() {
     const q = normalize(searchInput.value.trim());
     if (!q) return renderGrouped(words);
-    const filtered = words.filter(w => normalize(w.baza).startsWith(q));
+    const filtered = words.filter(w => normalize(w.tema).startsWith(q));
     renderGrouped(filtered);
   }
   if (searchInput) searchInput.addEventListener("input", applySearch);

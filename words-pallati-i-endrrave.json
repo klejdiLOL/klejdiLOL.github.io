@@ -207,7 +207,7 @@
     "definitions": [
       {
         "meaning": "Zhurmë dyshe që shoqëron diçka që hapet.",
-        "example": "",
+        "example": "Dëgjova shtrak-shtrakun e derës.",
         "meaning2": "",
         "example2": ""
       }
@@ -224,7 +224,7 @@
     "definitions": [
       {
         "meaning": "Njeri me gjatësi të shkurtër, me trup të mbushur, që identifikohet për gjatësinë e tij.",
-        "example": "Shkurtani rrinte ",
+        "example": "Shkurtani qëndroi përpara meje.",
         "meaning2": "",
         "example2": ""
       }
@@ -240,8 +240,8 @@
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Është objekt metalik i cili ka një sipërfaqe të thellë ku vendoset prushi i ndezur për të ngrohur; prushmbajtës; zëvendëson fjalën turke \"mangallë\".",
+        "example": "Hiri i fletës së djegur mbi prushan dukej si mjekra e një plaku të vjetër.",
         "meaning2": "",
         "example2": ""
       }
@@ -250,15 +250,15 @@
 	"fjaleformimi": "(E Prejardhur) prush+an(ë)"
   },
   {
-    "baza": "fytyrgjat",
+    "baza": "fytyrëgjat",
     "mbaresa-pashquar": "ë",
     "mbaresa-pashquar-shumes": "ë",
     "mbaresa-shquar": "i",
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "Person me fytyrë të gjatë.",
-        "example": "",
+        "meaning": "Person që pjesën e fytyrës e ka në formë vezore të zgjatur, të hequr dhe të hollë; identifikohet në bazë të formës së fytyrës.",
+        "example": "Fytyrëgjati më tërhoqi vëmendjen.",
         "meaning2": "",
         "example2": ""
       }
@@ -274,14 +274,14 @@
     "mbaresa-shumes": "itë",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një mjedis ku mbizotëron errësira, nuk pipëtin asgjë, gjtihçka është e veshur nga një ngjyrë gri e cila nuk të lejon as të shohësh njerëzit që lëvizin; godina të jep ndjesinë e frikës.",
+        "example": "Çava mes mesoreve ku zymtia mbizotëronte.",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Abstrakt)",
-	"fjaleformimi": "(E Parme) (i) zymt(ë)+(i)"
+	"fjaleformimi": "(E Prejardhur) (i) zymt(ë)+(i)"
   },
   {
     "baza": "parazbulo",
@@ -291,8 +291,8 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Zbulimi i thelbit të një çështjeje pa mbaruar së ndodhuri ose së shpjeguari.",
+        "example": "E parazbulova para se ai të përfundonte fjalën.",
         "meaning2": "",
         "example2": ""
       }
@@ -301,21 +301,21 @@
 	"fjaleformimi": "(E Përngjitur) para+zbulo(j)"
   },
   {
-    "baza": "llahtar",
-    "mbaresa-pashquar": "",
-    "mbaresa-pashquar-shumes": "/",
-    "mbaresa-shquar": "e",
-    "mbaresa-shumes": "",
+    "baza": "llahtari",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një e keqe e madhe e cila shoqërohet me vrasje dhe me shumë tmerr e gjak.",
+        "example": "Llahtaria qëndronte atje në dhomën e vezirit.",
         "meaning2": "",
         "example2": ""
       }
     ],
-	"klasa_morf": "Mbiemër",
-	"fjaleformimi": "(E Parme)"
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) llahtari"
   },
   {
     "nyje": "i/e/të",
@@ -326,8 +326,8 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një çarje e madhe toke e cila formon një gropë që mbjell frikë dhe ndjen që toka poshtë këmbëve do të fundoset. ",
+        "example": "Ishte një lloj llahtare e gropshme.",
         "meaning2": "",
         "example2": ""
       }
@@ -344,30 +344,30 @@
     "definitions": [
       {
         "meaning": "Tokë e vidhisur; shembje.",
-        "example": "",
-        "meaning2": "",
-        "example2": ""
+        "example": "Vidhisja e tokës shkaktoi shumë dëme.",
+        "meaning2": "Moment i rënduar emocional ku të duket sikur të shembet gjithë bota sipër teje.",
+        "example2": "Tek shikoja fletën mbi prushnajë, ndjeva se vidhisja ishte afër."
       }
     ],
 	"klasa_morf": "Emër (Abstrakt)",
 	"fjaleformimi": "(E Prejardhur) vidhis+j(e)"
   },
   {
-    "baza": "cern",
+    "baza": "cerm",
     "mbaresa-pashquar": "ë",
     "mbaresa-pashquar-shumes": "a",
     "mbaresa-shquar": "a",
     "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një lloj mpirje muskulare ku muskujt forcohen dhe nuk lëvizin dot; shkaktohet nga një ftohtë i madh, cerma.",
+        "example": "Më zuri cerma.",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Abstrakt)",
-	"fjaleformimi": "(E Parme) cern(ë)"
+	"fjaleformimi": "(E Parme) cerm(ë)"
   },
   {
     "baza": "mosrekomandim",
@@ -377,16 +377,17 @@
     "mbaresa-shumes": "et",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Të paraqitesh diku për t´u regjistruar diku pa patur një dokument i cili të ndihmon për t´u punësuar.",
+        "example": "Mosrekomandimi do të ishte shpëtimi im. (Mark-Alemi)",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Abstrakt)",
-	"fjaleformimi": "(E Përngjitur) mos+rekomandim"
+	"fjaleformimi": "(E Prejardhur) mos+rekomandim"
   },
   {
+    "nyje": "i",
     "baza": "porsaardhur",
     "mbaresa-pashquar": "-",
     "mbaresa-pashquar-shumes": "ë",
@@ -394,14 +395,14 @@
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një i panjohur për mjedisin ku ai vjen.",
+        "example": "I porsaardhuri më përshëndeti me kokë.",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Konkret)",
-	"fjaleformimi": "(Kompozitë) porsa+ardhur"
+	"fjaleformimi": "(E Prejardhur) i porsaardhur+i"
   },
   {
     "baza": "rishtar",
@@ -411,8 +412,8 @@
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Një i ri që rreshtohet në rradhën e një institucioni, ndërmarrjeje, ushtrie, si i sapoardhur.",
+        "example": "Një rishtar si unë nuk i njihte akoma të fhsehtat e Tabirit.",
         "meaning2": "",
         "example2": ""
       }
@@ -566,13 +567,13 @@
   {
     "nyje": "",
     "baza": "Alaxhehisar",
-    "mbaresa-pashquar": "-",
-    "mbaresa-pashquar-shumes": "ë",
-    "mbaresa-shquar": "i",
-    "mbaresa-shumes": "ët",
+    "mbaresa-pashquar": "i",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
+        "meaning": "Emërtimi i një krahine ku autori ka përdorur fjalën me bazë arabe.",
         "example": "",
         "meaning2": "",
         "example2": ""
@@ -885,6 +886,24 @@
       }
     ],
 	"klasa_morf": "",
+	"fjaleformimi": ""
+  },
+  {
+    "nyje": "",
+    "baza": "Julldur-Saraj",
+    "mbaresa-pashquar": "i",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "meaning": "Emërtimi i një kompleksi që merrej me shpjegimin e yjeve.",
+        "example": "",
+        "meaning2": "",
+        "example2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret) (Toponim)",
 	"fjaleformimi": ""
   }
 ]

@@ -206,7 +206,7 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "",
+        "meaning": "Zhurmë dyshe që shoqëron diçka që hapet.",
         "example": "",
         "meaning2": "",
         "example2": ""
@@ -223,8 +223,8 @@
     "mbaresa-shumes": "ët",
     "definitions": [
       {
-        "meaning": "Person i shkurtër.",
-        "example": "Xhaketa e vogël ishte e shkurtanit.",
+        "meaning": "Njeri me gjatësi të shkurtër, me trup të mbushur, që identifikohet për gjatësinë e tij.",
+        "example": "Shkurtani rrinte ",
         "meaning2": "",
         "example2": ""
       }
@@ -662,8 +662,8 @@
     "mbaresa-shumes": "at",
     "definitions": [
       {
-        "meaning": "",
-        "example": "",
+        "meaning": "Kupë e vogël për të pirë kafe, salep.",
+        "example": "Mori kupëzën në dorë dhe filloi të pinte.",
         "meaning2": "",
         "example2": ""
       }
@@ -680,8 +680,8 @@
     "mbaresa-shumes": "të",
     "definitions": [
       {
-        "meaning": "Tërësia e të gjitha zhurmave ",
-        "example": "",
+        "meaning": "Një moment ku nuk kuptohet asgjë. ku të bërtiturat dhe mosmarrja vesh midis njerëzve ka përfshirë të gjithë turmën.",
+        "example": "U dëgjua një zallahi e madhe.",
         "meaning2": "",
         "example2": ""
       }
@@ -698,14 +698,14 @@
     "mbaresa-shumes": "et",
     "definitions": [
       {
-        "meaning": "Pijetore.",
-        "example": "",
+        "meaning": "Vendi ku shkohet për të pirë dhe për të bërë biseda me njëri-tjetrin.",
+        "example": "Kalova në mejhanen aty pranë.",
         "meaning2": "",
         "example2": ""
       }
     ],
 	"klasa_morf": "Emër (Konkret)",
-	"fjaleformimi": "(E Prejardhur) mej+han(e)"
+	"fjaleformimi": "(E Parme) mejhan(e)"
   },
   {
     "nyje": "i/e/të",
@@ -716,7 +716,7 @@
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "meaning": "Të llahtarshme",
+        "meaning": "Një sistem që gllabëron gjithçka; për të ruajtur pushtetin ai mund të gëlltisë gjiçka, deri në vetëshkatërrim, individi s´është asgjë veç një numër.",
         "example": "",
         "meaning2": "",
         "example2": ""

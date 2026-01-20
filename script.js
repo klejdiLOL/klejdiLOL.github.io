@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
-    const letters = Array.from(new Set(list.map(w => w.baza[0].toUpperCase()))).sort();
+    const letters = Array.from(new Set(list.map(w => w.baza[0].toUpperCase()))).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"}));
 
     letters.forEach(letter => {
       const section = document.createElement("div");
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function buildAlphabet() {
     if (!alphabetNav) return;
     alphabetNav.innerHTML = "";
-    Object.keys(letterSections).sort().forEach(letter => {
+    Object.keys(letterSections).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"})).forEach(letter => {
       const btn = document.createElement("button");
       btn.textContent = letter;
       btn.onclick = () => {

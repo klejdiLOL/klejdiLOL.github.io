@@ -1661,5 +1661,113 @@
     ],
 	"klasa_morf": "Emër (Abstrakt)",
 	"fjaleformimi": "(E Prejardhur) mjegull+in(ë)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "platitur",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": ""
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "kryehersh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "me",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "Në fillimet e tij",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(Kompozitë) i/e/të krye+hersh(ëm)"
+  },
+  {
+    "nyje": "",
+    "tema": "shtamp",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "Aksione të gastshme.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) shtam+p(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "rikumbo",
+    "mbaresa-pashquar": "j",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Prejardhur) ri+kumbo(j)"
+  },
+  {
+    "nyje": "",
+    "tema": "fërngjin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "Dritare të vogla, të ngushta në kulla.",
+        "shembull": "Ec deri te frëngjina e madhe.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) fërngjin(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "shurdhër",
+    "mbaresa-pashquar": "i",
+    "mbaresa-pashquar-shumes": "i",
+    "mbaresa-shquar": "ia",
+    "mbaresa-shumes": "itë",
+    "definitions": [
+      {
+        "kuptim": "Tërësia e një ambienti ku ka heshtje totale, ku nuk dallohet të ketë jetë.",
+        "shembull": "Shurdhëria e korridoreve e bëri të trembej.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) shurdhër+r(i)"
   }
 ]

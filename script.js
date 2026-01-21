@@ -59,7 +59,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function renderGrouped(list) {
     dict.innerHTML = "";
     letterSections = {};
-    const letters = Array.from(new Set(list.map(w => w.tema[0].toUpperCase()))).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"}));
+    // derive a safe display title for each entry (fallback to `baza` or `nyje` when `tema` is missing)
+    const titles = list.map(w => {
+      const t = (w.tema || w.baza || w.nyje || "").toString();
+      const n = normalize(t);
+      return n ? n[0].toUpperCase() : "";
+    }).filter(Boolean);
+    const letters = Array.from(new Set(titles)).sort((a,b) => a.localeCompare(b, "sq", {sensitivity: "base"}));
 
     letters.forEach(letter => {
       const section = document.createElement("div");
@@ -70,10 +76,15 @@ document.addEventListener("DOMContentLoaded", () => {
       h.textContent = letter;
       section.appendChild(h);
 
-      list.filter(w => w.tema[0].toUpperCase() === letter).forEach(w => {
+      list.filter(w => {
+        const title = (w.tema || w.baza || w.nyje || "").toString();
+        const first = normalize(title)[0];
+        return first && first.toUpperCase() === letter;
+      }).forEach(w => {
         const d = document.createElement("details");
         d.className = "entry";
-        d.id = normalize(w.tema);
+        const displayTitle = (w.tema || w.baza || w.nyje || "").toString();
+        d.id = normalize(displayTitle);
 
         d.addEventListener("toggle", () => {
           if (d.open) location.hash = `fjala/${d.id}`;
@@ -93,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
         if (w.klasa_morf) extraHTML += `<p><strong>K.M.</strong> ${w.klasa_morf}</p>`;
         if (w.fjaleformimi) extraHTML += `<p><strong>F.f.:</strong> ${w.fjaleformimi}</p>`;
 
-        d.innerHTML = `<summary class="summary">${w.nyje ? `<span class="word-nyje">${w.nyje}</span> ` : ""}
- <span class="word-base">${w.tema}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
+         d.innerHTML = `<summary class="summary">${w.nyje ? `<span class="word-nyje">${w.nyje}</span> ` : ""}
+       <span class="word-base">${displayTitle}</span>${w["mbaresa-pashquar"] ? `(<span class="word-pashquar">${w["mbaresa-pashquar"]}</span>)` : ""}${w["mbaresa-pashquar-shumes"] ? `~<span class="word-pashquar-shumes">${w["mbaresa-pashquar-shumes"]}</span>` : ""}${w["mbaresa-shquar"] ? `~<span class="word-shquar">${w["mbaresa-shquar"]}</span>` : ""}${w["mbaresa-shumes"] ? `~<span class="word-shumes">${w["mbaresa-shumes"]}</span>` : ""}</summary><div class="content">${defsHTML}${extraHTML}</div>`;
 
         section.appendChild(d);
       });

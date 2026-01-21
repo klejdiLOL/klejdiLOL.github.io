@@ -1157,5 +1157,527 @@
     ],
 	"klasa_morf": "Emër (Konkret)",
 	"fjaleformimi": "(E Parme) Vezir(i)"
+  },
+  {
+    "nyje": "",
+    "tema": "gërxho",
+    "mbaresa-pashquar": "s",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Folje",
+	"fjaleformimi": "(E Prejardhur) gërxh+o(s)"
+  },
+  {
+    "nyje": "",
+    "tema": "lemeri",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) lemer+i"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "jashtëarsyesh",
+    "mbaresa-pashquar": "mi",
+    "mbaresa-pashquar-shumes": "mja",
+    "mbaresa-shquar": "mët",
+    "mbaresa-shumes": "met",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) i jashtëarsyeshm(i)"
+  },
+  {
+    "nyje": "",
+    "tema": "copëza-copëza",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Ndajfolje",
+	"fjaleformimi": "(Kompozitë) copëza+copëza"
+  },
+  {
+    "nyje": "",
+    "tema": "dromc",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) drom+c(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "mirëdashj",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(Kompozitë) mirë+dashj(e)"
+  },
+  {
+    "nyje": "",
+    "tema": "venom",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) venom"
+  },
+  {
+    "nyje": "",
+    "tema": "tjetërmends",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "itë",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(Kompozitë) tjetër+mend+s"
+  },
+  {
+    "nyje": "",
+    "tema": "tradhëtisht",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Ndajfolje",
+	"fjaleformimi": "(E Prejardhur) tradhët(oj)+isht"
+  },
+  {
+    "nyje": "",
+    "tema": "thurin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) thur+in(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "sinor",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "itë",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) sinor"
+  },
+  {
+    "nyje": "",
+    "tema": "stërshtet",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "Shtet i stërmadh.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) stër+shtet"
+  },
+  {
+    "nyje": "",
+    "tema": "darkëtar",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) darkë+tar"
+  },
+  {
+    "nyje": "",
+    "tema": "kthin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) kthin(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "trondj",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) trond(it)+j(e)"
+  },
+  {
+    "nyje": "",
+    "tema": "ardhj",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) ardhj(e)"
+  },
+  {
+    "nyje": "",
+    "tema": "lajmës",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "it",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) lajm+ës"
+  },
+  {
+    "nyje": "",
+    "tema": "guc",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "Copa thëngjilli, dru i djegur.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) guc(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "kërkëllim",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt) (Tingullimitim)",
+	"fjaleformimi": "(E Prejardhur) kërk+ëllim(ë)"
+  },
+  {
+    "nyje": "",
+    "tema": "gjysmëluksoz",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "e",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(Kompozitë) gjysmë+luksoz"
+  },
+  {
+    "nyje": "",
+    "tema": "thurim",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "Rrethime të krijuara me hekura dhe tela.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) thur+im(ë)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "topitur",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "ë",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "Një gjendje fizike emocionale në të cilën tkurresh, humbet masë, sillesh si më i vogël, humbet vitalitetin.",
+        "shembull": "Ai u tkurr i topitur në krrigen e tij.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) i/e/të topit+ur"
+  },
+  {
+    "nyje": "",
+    "tema": "tjetërfarësh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "mbiemër",
+	"fjaleformimi": "(Kompozitë) tjetër+farë+sh"
+  },
+  {
+    "nyje": "",
+    "tema": "hareshme-fatale",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Togfjalësh",
+	"fjaleformimi": "(Kompozitë) hareshme+fatale"
+  },
+  {
+    "nyje": "",
+    "tema": "Koprilli",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) Koprilli"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "lazdruar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "ë",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) i/e/të lazdr(oj)+uar"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "trunguar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "ë",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) i/e/të trung+uar"
+  },
+  {
+    "nyje": "",
+    "tema": "askurrkah",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Ndajfolje",
+	"fjaleformimi": "(E Përngjitur) askurr(ë)+kah"
+  },
+  {
+    "nyje": "",
+    "tema": "a",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": "()"
   }
 ]

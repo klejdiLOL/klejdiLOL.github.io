@@ -1551,7 +1551,7 @@
         "shembull2": ""
       }
     ],
-	"klasa_morf": "mbiemër",
+	"klasa_morf": "Mbiemër",
 	"fjaleformimi": "(Kompozitë) tjetër+farë+sh"
   },
   {
@@ -1769,5 +1769,401 @@
     ],
 	"klasa_morf": "Emër (Abstrakt)",
 	"fjaleformimi": "(E Prejardhur) (i/e/të) shurdhër+r(i)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "humbët",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "Dritë e pakët, e ulët që vjen nga shumëë larg, ",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) humb+ët"
+  },
+  {
+    "nyje": "",
+    "tema": "rrotullam",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "Korridor i rrumbullakët.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) rrotull+am(ë)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "skëterrsh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "me",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "Periudhë e vështirë.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) skëterr(ë)+sh(ëm)"
+  },
+  {
+    "nyje": "",
+    "tema": "zvetënim",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "Zbulimi i botës shpirtërore të njerëzve të thjeshtë, i jetës së tyre të përditshme, endje mes ëndrrave të këtyre njerëzve që pasqyron gjërat e tyre. ",
+        "shembull": "Jeta e përditshme, zvetënimi.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) z+vetë+nim"
+  },
+  {
+    "nyje": "",
+    "tema": "përbetim",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "Kundërvenie ndaj pushtetit, ndaj shtetit.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) për+betim"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "shkoqitsh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "me",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) shkoqit+sh(ëm)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "mjegulluar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "ë",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) mjegull+uar"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "zezuar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "a",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) zez(ë)+uar"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "rroksh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "ëm",
+    "mbaresa-shumes": "me",
+    "definitions": [
+      {
+        "kuptim": "E kuptueshme",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) rrok+sh(ëm)"
+  },
+  {
+    "nyje": "",
+    "tema": "tutës",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Parme) tutës"
+  },
+  {
+    "nyje": "",
+    "tema": "pikalor",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) pika+lor"
+  },
+  {
+    "nyje": "",
+    "tema": "shqepët",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": "(E Prejardhur) sh+qepët"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "pashkoqitsh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "me",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) pa+(e) shkoqitsh(me)"
+  },
+  {
+    "nyje": "",
+    "tema": "mbikqyrës",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "it",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) mbik+qyrës(i)"
+  },
+  {
+    "nyje": "",
+    "tema": "Azov",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret) (Toponim)",
+	"fjaleformimi": "(E Parme) Azov(i)"
+  },
+  {
+    "nyje": "",
+    "tema": "lule qyqe",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": "()"
+  },
+  {
+    "nyje": "",
+    "tema": "njerith",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) njeri+th"
+  },
+  {
+    "nyje": "",
+    "tema": "lutësor",
+    "mbaresa-pashquar": "e",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Prejardhur) lut+sor"
+  },
+  {
+    "nyje": "",
+    "tema": "breshk",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "u",
+    "mbaresa-shumes": "ët",
+    "definitions": [
+      {
+        "kuptim": "Emërtim i breshkave për gjininë mashkullore.",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) breshk"
+  },
+  {
+    "nyje": "",
+    "tema": "hylli",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "të",
+    "definitions": [
+      {
+        "kuptim": "Kanale në tokë.",
+        "shembull": "Kapërcyen një hylli.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Parme) hylli"
+  },
+  {
+    "nyje": "",
+    "tema": "përbetim",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "e",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "kuptim": "Betim për hakmarrje, keqdashës.",
+        "shembull": "Përbetimi i tyre u morr si krim.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Prejardhur) për+betim"
+  },
+  {
+    "nyje": "",
+    "tema": "bashëndërr",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "a",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "kuptim": "Ëndrra që del nga i gjithë proçesi i përpunimit të ëndrrave në Tabir Saraj, e cila merret si këshillë për sulltanin dhe çfarë veprimesh duhet të bëjë ai.",
+        "shembull": "Flitej se shumë bashëndrra kishin dalë nga dosje të thjeshta.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(Kompozitë) bash+ëndërri"
   }
 ]

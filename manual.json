@@ -1,0 +1,18 @@
+{
+  "title": "Manuali i Fjalorit",
+  "subtitle": "Udhëzime dhe dokumentacion",
+  "sections": [
+    {
+      "title": "Hyrje",
+      "content": "Ky manual përmban udhëzime për përdorimin e fjalorit. Mund të përdorni **bold**, *italic*, dhe __underline__ për formatim."
+    },
+    {
+      "title": "Struktura",
+      "content": "Pjesët e manualit janë të organizuara në seksione. Ju mund të përdorni lidhje si [Faqja Kryesore](index.html).\n- Pika e parë\n- Pika e dytë"
+    },
+    {
+      "title": "Stilimi i tekstit",
+      "content": "Ju mund të vendosni ngjyra për paragrafë me HTML brenda JSON: <span style=\"color:crimson\">Tekst i kuq</span>"
+    }
+  ]
+}

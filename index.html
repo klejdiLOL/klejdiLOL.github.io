@@ -32,14 +32,21 @@
 </head>
 <body>
 
-  <!-- Top banner (match dictionary.html) -->
-  <header class="banner">
-    <h1><a href="index.html">📘 Fjalor Shqip</a></h1>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="top-left stacked-left">
+      <a class="site-title" href="index.html">📘 Fjalor Shqip</a>
+      <a class="manual-link manual-sub" href="manual.html">Manual</a>
+    </div>
+    <div class="top-center"></div>
+    <div class="top-right">
+      <button id="themeToggle" class="theme-toggle large-toggle">🌙</button>
+      <button id="themeToggleMobile" class="theme-toggle theme-mobile large-toggle">🌙</button>
+    </div>
   </header>
 
   <!-- PAGE CONTENT -->
   <main class="home-wrapper">
-    <button id="themeToggle">🌙</button>
     <p class="home-subtitle">
       Zgjidh një botim për të hyrë në fjalor
     </p>
@@ -60,26 +67,6 @@
   </main>
 
   <script>
-    const themeBtn = document.getElementById("themeToggle");
-
-    function updateTheme() {
-      if (localStorage.theme === "dark") {
-        document.body.classList.add("dark");
-        themeBtn.textContent = "☀️";
-      } else {
-        document.body.classList.remove("dark");
-        themeBtn.textContent = "🌙";
-      }
-    }
-
-    if (!localStorage.theme) localStorage.theme = "light";
-    updateTheme();
-
-    themeBtn.onclick = () => {
-      localStorage.theme = document.body.classList.contains("dark") ? "light" : "dark";
-      updateTheme();
-    };
-
     document.querySelectorAll(".home-card").forEach(card => {
       card.addEventListener("click", () => {
         const file = card.dataset.file;
@@ -87,6 +74,7 @@
       });
     });
   </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

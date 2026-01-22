@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dict = document.getElementById("dictionary");
   const searchInput = document.getElementById("search");
-  const themeBtn = document.getElementById("themeToggle");
+  const themeBtns = Array.from(document.querySelectorAll('.theme-toggle'));
   const alphabetNav = document.getElementById("alphabet");
   const breadcrumbDiv = document.getElementById("breadcrumb");
   const backButton = document.getElementById("backButton");
@@ -16,19 +16,19 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateDarkMode() {
     if (localStorage.theme === "dark") {
       document.body.classList.add("dark");
-      themeBtn.textContent = "☀️";
+      themeBtns.forEach(b => b.textContent = "☀️");
     } else {
       document.body.classList.remove("dark");
-      themeBtn.textContent = "🌙";
+      themeBtns.forEach(b => b.textContent = "🌙");
     }
   }
 
   if (!localStorage.theme) localStorage.theme = "light";
   updateDarkMode();
-  themeBtn.onclick = () => {
+  themeBtns.forEach(b => b.addEventListener('click', () => {
     localStorage.theme = document.body.classList.contains("dark") ? "light" : "dark";
     updateDarkMode();
-  };
+  }));
 
   backButton.style.display = "none";
   breadcrumbDiv.style.display = "none";
@@ -37,7 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
     renderGrouped(words);
     breadcrumbDiv.style.display = "none";
     backButton.style.display = "none";
-    location.hash = "";
+    try {
+      history.replaceState(null, "", location.pathname + location.search);
+    } catch (err) {
+      location.hash = "";
+    }
+    // Ensure any open entries are closed
+    document.querySelectorAll('.entry[open]').forEach(other => other.open = false);
   };
 
   const file = new URLSearchParams(location.search).get("file") || "words-pallati-i-endrrave.json";
@@ -87,7 +93,26 @@ document.addEventListener("DOMContentLoaded", () => {
         d.id = normalize(displayTitle);
 
         d.addEventListener("toggle", () => {
-          if (d.open) location.hash = `fjala/${d.id}`;
+          if (d.open) {
+            // Close other open entries with a fade-out, then close them
+            document.querySelectorAll('.entry').forEach(other => {
+              if (other !== d && other.open) {
+                const content = other.querySelector('.content');
+                if (content) {
+                  content.classList.add('fade-out');
+                  const onAnim = function() {
+                    content.classList.remove('fade-out');
+                    other.open = false;
+                    content.removeEventListener('animationend', onAnim);
+                  };
+                  content.addEventListener('animationend', onAnim);
+                } else {
+                  other.open = false;
+                }
+              }
+            });
+            location.hash = `fjala/${d.id}`;
+          }
         });
 
         let defsHTML = "";
@@ -168,7 +193,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const el = document.getElementById(id);
       if (el) {
         el.open = true;
-        el.scrollIntoView({behavior:"smooth", block:"start"});
         breadcrumbDiv.style.display = "block";
         backButton.style.display = "inline-block";
         breadcrumbDiv.innerHTML = `Fjalor / <strong>${el.querySelector("summary")?.textContent}</strong>`;
@@ -190,16 +214,145 @@ document.addEventListener("DOMContentLoaded", () => {
   backToTop?.addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({ top: 0, behavior: "smooth" });
+    // Collapse all open entries with fade-out animation
+    document.querySelectorAll('.entry[open]').forEach(other => {
+      const content = other.querySelector('.content');
+      if (content) {
+        content.classList.add('fade-out');
+        const handler = function() {
+          content.classList.remove('fade-out');
+          other.open = false;
+          content.removeEventListener('animationend', handler);
+        };
+        content.addEventListener('animationend', handler);
+      } else {
+        other.open = false;
+      }
+    });
+    if (location.hash && location.hash.startsWith("#fjala/")) {
+      try {
+        history.replaceState(null, "", location.pathname + location.search);
+      } catch (err) {
+        location.hash = "";
+      }
+      if (breadcrumbDiv) breadcrumbDiv.style.display = "none";
+      if (backButton) backButton.style.display = "none";
+    }
   });
   updateBackToTop();
+
+  // Manual page loader: look for #manual-content and load manual.json or manual.md
+  const manualRoot = document.getElementById('manual-content');
+  function mdToHtml(md) {
+    if (!md) return '';
+    // basic block replacements
+    let html = md
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    // headings
+    html = html.replace(/^###### (.*$)/gim, '<h6>$1</h6>');
+    html = html.replace(/^##### (.*$)/gim, '<h5>$1</h5>');
+    html = html.replace(/^#### (.*$)/gim, '<h4>$1</h4>');
+    html = html.replace(/^### (.*$)/gim, '<h3>$1</h3>');
+    html = html.replace(/^## (.*$)/gim, '<h2>$1</h2>');
+    html = html.replace(/^# (.*$)/gim, '<h1>$1</h1>');
+    // lists
+    html = html.replace(/(^|\n)- (.*)/gim, '$1<li>$2</li>');
+    html = html.replace(/(<li>.*<\/li>)/gim, '<ul>$1</ul>');
+    // bold/italic/underline
+    html = html.replace(/\*\*(.*?)\*\*/gim, '<strong>$1</strong>');
+    html = html.replace(/\*(.*?)\*/gim, '<em>$1</em>');
+    html = html.replace(/__(.*?)__/gim, '<u>$1</u>');
+    // links [text](url)
+    html = html.replace(/\[(.*?)\]\((.*?)\)/gim, '<a href="$2">$1</a>');
+    // paragraphs
+    html = html.replace(/(^|\n)([^<\n][^\n]*)(\n|$)/gim, function(_, a, b){
+      if (b.match(/^<h|^<ul|^<li|^<blockquote|^<pre/)) return _;
+      return '\n<p>' + b.trim() + '</p>\n';
+    });
+    // unescape allowed tags inside (including span with attributes)
+    return html.replace(/&lt;(\/)?(strong|em|u|h[1-6]|a|p|ul|li|span)([^&]*)&gt;/gi, '<$1$2$3>');
+  }
+
+  async function loadManual() {
+    if (!manualRoot) return;
+    manualRoot.innerHTML = '<p>Loading manual...</p>';
+    const info = document.createElement('div');
+    info.style.fontSize = '0.9rem';
+    info.style.color = 'var(--accent)';
+    info.style.marginTop = '0.5rem';
+    manualRoot.appendChild(info);
+    console.log('loadManual: starting');
+    const attempts = [];
+    async function tryFetch(url) {
+      attempts.push({ url });
+      info.textContent = `Trying ${url} ...`;
+      try {
+        const r = await fetch(url, { cache: 'no-store' });
+        attempts[attempts.length-1].status = r.status;
+        info.textContent = attempts.map(a => `${a.url} → ${a.status || 'n/a'}`).join(' | ');
+        return r;
+      } catch (e) {
+        attempts[attempts.length-1].error = e.message || String(e);
+        info.textContent = attempts.map(a => `${a.url} → ${a.status || a.error || 'err'}`).join(' | ');
+        return { ok: false };
+      }
+    }
+    try {
+      let res = await tryFetch('./manual.json');
+      if (!res.ok) res = await tryFetch('manual.json');
+      if (!res.ok) throw new Error('no json');
+      const data = await res.json();
+      const mt = document.getElementById('manual-title');
+      const ms = document.getElementById('manual-subtitle');
+      if (mt) mt.textContent = data.title || '';
+      if (ms) ms.textContent = data.subtitle || '';
+      // render sections (plain text by default)
+      manualRoot.innerHTML = '';
+      (data.sections || []).forEach(s => {
+        if (s.title) {
+          const h = document.createElement('h2');
+          h.textContent = s.title;
+          manualRoot.appendChild(h);
+        }
+        const fmt = (s.format || '').toLowerCase();
+        const content = s.content || '';
+        const wrapper = document.createElement('div');
+        wrapper.className = 'manual-plain';
+        if (fmt === 'md') {
+          wrapper.innerHTML = mdToHtml(content);
+        } else if (s.contentHtml) {
+          // allow explicit HTML from JSON
+          wrapper.innerHTML = s.contentHtml;
+        } else {
+          // plain text: preserve line breaks
+          wrapper.innerHTML = content.replace(/&/g, '&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g, '<br>');
+        }
+        manualRoot.appendChild(wrapper);
+      });
+    } catch (err) {
+      console.error('Failed loading manual.json:', err);
+      // fallback to markdown
+      try {
+        let r2 = await tryFetch('./manual.md');
+        if (!r2.ok) r2 = await tryFetch('manual.md');
+        if (!r2.ok) throw err;
+        const md = await r2.text();
+        manualRoot.innerHTML = mdToHtml(md);
+      } catch (e) {
+        manualRoot.innerHTML = `<p style="color:crimson">Manual not found. (${err && err.message ? err.message : 'error'})</p>`;
+      }
+    }
+  }
+  loadManual();
 });
 
 const toggle = document.getElementById("searchToggle");
 const search = document.getElementById("search");
-
-toggle.addEventListener("click", () => {
-  search.classList.toggle("active");
-  if (search.classList.contains("active")) {
-    search.focus();
-  }
-});
+if (toggle && search) {
+  toggle.addEventListener("click", () => {
+    search.classList.toggle("active");
+    if (search.classList.contains("active")) {
+      search.focus();
+    }
+  });
+}

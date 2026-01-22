@@ -1,18 +1,36 @@
 {
-  "title": "Manuali i Fjalorit",
-  "subtitle": "Udhëzime dhe dokumentacion",
+  "title": "Manuali i Fjalorit — Shembull i Plotë",
+  "subtitle": "Demonstrim i të gjitha mënyrave të përmbajtjes që faqja mbështet",
   "sections": [
     {
-      "title": "Hyrje",
-      "content": "Ky manual përmban udhëzime për përdorimin e fjalorit. Mund të përdorni **bold**, *italic*, dhe __underline__ për formatim."
+      "title": "Introduction",
+      "content": "Kjo faqe tregon mënyrat se si mund të shprehni përmbajtje në manual.\nKëtu shfaqet tekst i thjeshtë pa stilizime.\nPërdorni këtë vend për tekste të gjata që duhet të shfaqen si janë."
     },
     {
-      "title": "Struktura",
-      "content": "Pjesët e manualit janë të organizuara në seksione. Ju mund të përdorni lidhje si [Faqja Kryesore](index.html).\n- Pika e parë\n- Pika e dytë"
+      "title": "Plain Text Example",
+      "content": "Ky është një shembull teksti të thjeshtë.\nRreshta të reja ruhejn formatin.\n- Ky simbol '-' nuk do të bëjë listë kur \"format\" nuk është 'md'.\nPërdorni këtë për të ruajtur\npreservim të thjeshtë të tekstit."
     },
     {
-      "title": "Stilimi i tekstit",
-      "content": "Ju mund të vendosni ngjyra për paragrafë me HTML brenda JSON: <span style=\"color:crimson\">Tekst i kuq</span>"
+      "title": "Markdown Examples",
+      "format": "md",
+      "content": "# Titulli i Seksionit\nKy paragraf tregon **bold**, *italic*, dhe __underlined__.\n\n## Listë shembull\n- Artikulli i parë\n- Artikulli i dytë\n\n### Link dhe Headers\nShikoni [Fjalor](index.html) për navigim.\n\nPër kodo të vogël, përdorni indent me 4 hapësira:\n    console.log('hello');\n"
+    },
+    {
+      "title": "HTML Example (contentHtml)",
+      "contentHtml": "<p>Këtu përdorim <strong>HTML</strong> të pastërt për t'u dhënë kontroll të plotë: <span style=\"color:crimson\">tekst i kuq</span>, <em>italic</em>, <u>underline</u>.<br>Ju mund të përfshini <a href=\"https://example.com\" target=\"_blank\">lidhje</a> dhe elementë të tjerë HTML.</p>"
+    },
+    {
+      "title": "Subcontents / Sections via Markdown",
+      "format": "md",
+      "content": "## Nënseksioni 1\nPërmbajtja e nënseksionit 1.\n\n## Nënseksioni 2\nPërmbajtja e nënseksionit 2 me **bold** dhe listë:\n- nën artikulli A\n- nën artikulli B\n"
+    },
+    {
+      "title": "Styling Tips",
+      "content": "- Përdorni 'contentHtml' vetëm për përmbajtje të besueshme.\n- Përdorni 'format: \"md\"' për përmbajtje të shkruar në Markdown.\n- Paragrafët e thjeshtë ruajnë thjeshtësinë dhe janë më të sigurta."
+    },
+    {
+      "title": "End Notes",
+      "content": "Ky është fundi i shembullit. Përshtateni strukturën sipas nevojave tuaja.\n\nFaleminderit që testoni manualin!"
     }
   ]
 }

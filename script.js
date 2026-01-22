@@ -30,13 +30,13 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDarkMode();
   }));
 
-  backButton.style.display = "none";
-  breadcrumbDiv.style.display = "none";
-  backButton.onclick = () => {
-    searchInput.value = "";
-    renderGrouped(words);
-    breadcrumbDiv.style.display = "none";
-    backButton.style.display = "none";
+  if (backButton) backButton.style.display = "none";
+  if (breadcrumbDiv) breadcrumbDiv.style.display = "none";
+  if (backButton) backButton.onclick = () => {
+    if (searchInput) searchInput.value = "";
+    if (typeof renderGrouped === 'function') renderGrouped(words);
+    if (breadcrumbDiv) breadcrumbDiv.style.display = "none";
+    if (backButton) backButton.style.display = "none";
     try {
       history.replaceState(null, "", location.pathname + location.search);
     } catch (err) {
@@ -47,20 +47,22 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const file = new URLSearchParams(location.search).get("file") || "words-pallati-i-endrrave.json";
-  fetch(file)
-    .then(r => r.json())
-    .then(data => {
-      if (!Array.isArray(data)) throw new Error("JSON must be an array");
-      words = data.sort((a,b)=>a.tema.localeCompare(b.tema,"sq",{sensitivity:"base"}));
-      renderGrouped(words);
-      buildAlphabet();
-      openFromHash();
-      window.addEventListener("scroll", highlightCurrentLetter);
-    })
-    .catch(err => {
-      console.error("Error loading words:", err);
-      dict.textContent = "Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it.";
-    });
+  if (dict) {
+    fetch(file)
+      .then(r => r.json())
+      .then(data => {
+        if (!Array.isArray(data)) throw new Error("JSON must be an array");
+        words = data.sort((a,b)=>a.tema.localeCompare(b.tema,"sq",{sensitivity:"base"}));
+        renderGrouped(words);
+        buildAlphabet();
+        openFromHash();
+        window.addEventListener("scroll", highlightCurrentLetter);
+      })
+      .catch(err => {
+        console.error("Error loading words:", err);
+        if (dict) dict.textContent = "Fjalët nuk u ngarkuan. Kontrolloni rrugën e JSON-it.";
+      });
+  }
 
   function renderGrouped(list) {
     dict.innerHTML = "";
@@ -275,40 +277,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   async function loadManual() {
     if (!manualRoot) return;
+    // simple loader: try manual.json, then manual.md
     manualRoot.innerHTML = '<p>Loading manual...</p>';
-    const info = document.createElement('div');
-    info.style.fontSize = '0.9rem';
-    info.style.color = 'var(--accent)';
-    info.style.marginTop = '0.5rem';
-    manualRoot.appendChild(info);
-    console.log('loadManual: starting');
-    const attempts = [];
-    async function tryFetch(url) {
-      attempts.push({ url });
-      info.textContent = `Trying ${url} ...`;
-      try {
-        const r = await fetch(url, { cache: 'no-store' });
-        attempts[attempts.length-1].status = r.status;
-        info.textContent = attempts.map(a => `${a.url} → ${a.status || 'n/a'}`).join(' | ');
-        return r;
-      } catch (e) {
-        attempts[attempts.length-1].error = e.message || String(e);
-        info.textContent = attempts.map(a => `${a.url} → ${a.status || a.error || 'err'}`).join(' | ');
-        return { ok: false };
-      }
-    }
     try {
-      let res = await tryFetch('./manual.json');
-      if (!res.ok) res = await tryFetch('manual.json');
+      let res = await fetch('./manual.json');
+      if (!res.ok) res = await fetch('manual.json');
       if (!res.ok) throw new Error('no json');
       const data = await res.json();
       const mt = document.getElementById('manual-title');
       const ms = document.getElementById('manual-subtitle');
       if (mt) mt.textContent = data.title || '';
       if (ms) ms.textContent = data.subtitle || '';
-      // render sections (plain text by default)
       manualRoot.innerHTML = '';
-      (data.sections || []).forEach(s => {
+      const sections = Array.isArray(data.sections) ? data.sections : [];
+      sections.forEach((s) => {
         if (s.title) {
           const h = document.createElement('h2');
           h.textContent = s.title;
@@ -321,25 +303,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (fmt === 'md') {
           wrapper.innerHTML = mdToHtml(content);
         } else if (s.contentHtml) {
-          // allow explicit HTML from JSON
           wrapper.innerHTML = s.contentHtml;
         } else {
-          // plain text: preserve line breaks
           wrapper.innerHTML = content.replace(/&/g, '&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g, '<br>');
         }
         manualRoot.appendChild(wrapper);
       });
     } catch (err) {
-      console.error('Failed loading manual.json:', err);
-      // fallback to markdown
       try {
-        let r2 = await tryFetch('./manual.md');
-        if (!r2.ok) r2 = await tryFetch('manual.md');
+        let r2 = await fetch('./manual.md');
+        if (!r2.ok) r2 = await fetch('manual.md');
         if (!r2.ok) throw err;
         const md = await r2.text();
         manualRoot.innerHTML = mdToHtml(md);
       } catch (e) {
-        manualRoot.innerHTML = `<p style="color:crimson">Manual not found. (${err && err.message ? err.message : 'error'})</p>`;
+        manualRoot.innerHTML = `<p style="color:crimson">Manual not found.</p>`;
       }
     }
   }

@@ -118,8 +118,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         let defsHTML = "";
-        if (Array.isArray(w.definitions)) {
-          w.definitions.forEach((def, idx) => {
+        if (Array.isArray(w.përcaktime)) {
+          w.përcaktime.forEach((def, idx) => {
             if (def.kuptim) defsHTML += `<p><strong>${idx+1}.</strong> ${def.kuptim}</p>`;
             if (def.shembull) defsHTML += `<p><em>Sh.1:</em> ${def.shembull}</p>`;
             if (def.kuptim2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.kuptim2}</p>`;
@@ -250,6 +250,19 @@ document.addEventListener("DOMContentLoaded", () => {
     // basic block replacements
     let html = md
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+    // fenced code blocks: ```lang\ncode\n```
+    html = html.replace(/```(\w+)?\n([\s\S]*?)```/g, function(_, lang, code) {
+      const esc = code.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const cls = lang ? ` class="language-${lang}"` : '';
+      return `<pre><code${cls}>${esc}</code></pre>`;
+    });
+
+    // inline code `code`
+    html = html.replace(/`([^`]+)`/g, function(_, c) {
+      const esc = c.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      return `<code>${esc}</code>`;
+    });
     // headings
     html = html.replace(/^###### (.*$)/gim, '<h6>$1</h6>');
     html = html.replace(/^##### (.*$)/gim, '<h5>$1</h5>');

@@ -425,6 +425,20 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 .manual-section-content a { color: var(--color-base); text-decoration: underline; }
 .manual-plain { white-space: pre-wrap; line-height: 1.6; color: var(--text); }
 .manual-plain a { color: var(--color-base); }
+
+/* Code block styling for manual page */
+.manual-plain pre {
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  padding: 0.8rem;
+  border-radius: 8px;
+  overflow: auto;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  margin: 0.6rem 0;
+}
+.manual-plain pre code { display: block; white-space: pre; }
+.manual-plain code { background: rgba(0,0,0,0.04); padding: 0.12rem 0.35rem; border-radius: 4px; font-family: var(--font-body); }
 @keyframes popFade {
   0% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.9); opacity: 1; }

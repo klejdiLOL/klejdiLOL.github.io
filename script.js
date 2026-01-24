@@ -118,13 +118,8 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         let defsHTML = "";
-<<<<<<< HEAD
-        if (Array.isArray(w.përkufizime)) {
-          w.përkufizime.forEach((def, idx) => {
-=======
         if (Array.isArray(w.përcaktime)) {
           w.përcaktime.forEach((def, idx) => {
->>>>>>> f12c21bde892eefab8bd8357dee44ee816bcb060
             if (def.kuptim) defsHTML += `<p><strong>${idx+1}.</strong> ${def.kuptim}</p>`;
             if (def.shembull) defsHTML += `<p><em>Sh.1:</em> ${def.shembull}</p>`;
             if (def.kuptim2) defsHTML += `<p><strong>${idx+2}.</strong> ${def.kuptim2}</p>`;

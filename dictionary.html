@@ -6,6 +6,7 @@
   <title>Fjalor Shqip</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <!-- Top bar -->
@@ -14,29 +15,33 @@
       <a class="site-title" href="index.html">📘 Fjalor Shqip</a>
       <a class="manual-link manual-sub" href="manual.html">Manual</a>
     </div>
+
     <div class="top-center"></div>
+
     <div class="top-right">
       <button id="themeToggle" class="theme-toggle large-toggle">🌙</button>
       <button id="themeToggleMobile" class="theme-toggle theme-mobile large-toggle">🌙</button>
     </div>
   </header>
 
-  <!-- Search + toggle container -->
+  <!-- Search -->
   <div class="search-toggle-container">
     <button id="searchToggle" aria-label="Search">🔍</button>
     <input type="text" id="search" placeholder="Kërko fjalë...">
   </div>
 
+  <!-- Main content -->
   <div id="container">
     <div class="alphabet-sidebar" id="alphabet"></div>
     <div id="dictionary"></div>
   </div>
 
+  <!-- Breadcrumb / Back -->
   <div id="breadcrumb">
     <button id="backButton">⮐ Kthehu</button>
   </div>
 
-  <!-- Back to Top button -->
+  <!-- Back to Top -->
   <button id="backToTop" class="back-to-top" aria-label="Back to Top">⬆️</button>
 
   <script src="script.js"></script>

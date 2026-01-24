@@ -8,15 +8,23 @@
 </head>
 <body>
 
-  <!-- Top banner -->
-  <header class="banner">
-  <h1><a href="index.html">📘 Fjalor Shqip</a></h1>
+  <!-- Top bar -->
+  <header class="topbar">
+    <div class="top-left stacked-left">
+      <a class="site-title" href="index.html">📘 Fjalor Shqip</a>
+      <a class="manual-link manual-sub" href="manual.html">Manual</a>
+    </div>
+    <div class="top-center"></div>
+    <div class="top-right">
+      <button id="themeToggle" class="theme-toggle large-toggle">🌙</button>
+      <button id="themeToggleMobile" class="theme-toggle theme-mobile large-toggle">🌙</button>
+    </div>
   </header>
 
   <!-- Search + toggle container -->
   <div class="search-toggle-container">
+    <button id="searchToggle" aria-label="Search">🔍</button>
     <input type="text" id="search" placeholder="Kërko fjalë...">
-    <button id="themeToggle">🌙</button>
   </div>
 
   <div id="container">
@@ -27,6 +35,9 @@
   <div id="breadcrumb">
     <button id="backButton">⮐ Kthehu</button>
   </div>
+
+  <!-- Back to Top button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">⬆️</button>
 
   <script src="script.js"></script>
 </body>

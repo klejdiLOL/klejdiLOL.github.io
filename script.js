@@ -30,6 +30,41 @@ document.addEventListener("DOMContentLoaded", () => {
     updateDarkMode();
   }));
 
+  // Only move the mobile theme toggle under the Manual link when the viewport is very narrow (<=300px).
+  // For widths above 300px (and up to 768px where the mobile toggle is visible), keep it positioned at the right edge
+  // and overlap the links instead of expanding page width.
+  function moveThemeMobile() {
+    const mobileBtn = document.getElementById('themeToggleMobile');
+    const topLeft = document.querySelector('.top-left');
+    const topRight = document.querySelector('.top-right');
+    if (!mobileBtn || !topLeft || !topRight) return;
+    if (window.innerWidth <= 300) {
+      if (!topLeft.contains(mobileBtn)) {
+        topLeft.appendChild(mobileBtn);
+        mobileBtn.style.marginTop = '6px';
+        mobileBtn.style.marginLeft = '0';
+        mobileBtn.style.position = '';
+        mobileBtn.style.right = '';
+        mobileBtn.style.transform = '';
+      }
+    } else {
+      if (!topRight.contains(mobileBtn)) {
+        topRight.appendChild(mobileBtn);
+        mobileBtn.style.marginTop = '';
+        mobileBtn.style.marginLeft = '';
+        mobileBtn.style.position = '';
+        mobileBtn.style.right = '';
+        mobileBtn.style.transform = '';
+      }
+    }
+  }
+  moveThemeMobile();
+  let _mvResize;
+  window.addEventListener('resize', () => {
+    clearTimeout(_mvResize);
+    _mvResize = setTimeout(moveThemeMobile, 120);
+  });
+
   if (backButton) backButton.style.display = "none";
   if (breadcrumbDiv) breadcrumbDiv.style.display = "none";
   if (backButton) backButton.onclick = () => {
@@ -291,7 +326,7 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadManual() {
     if (!manualRoot) return;
     // simple loader: try manual.json, then manual.md
-    manualRoot.innerHTML = '<p>Loading manual...</p>';
+    manualRoot.innerHTML = '<p>Duke ngarkuar manualin...</p>';
     try {
       let res = await fetch('./manual.json');
       if (!res.ok) res = await fetch('manual.json');

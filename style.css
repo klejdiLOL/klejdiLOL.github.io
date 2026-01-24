@@ -221,7 +221,9 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 
 .alphabet-sidebar {
   position: sticky;
-  top: 2rem;
+  /* keep the sidebar visible below the fixed topbar */
+  top: 76px;
+  z-index: 900;
   align-self: flex-start;
 
   display: flex;
@@ -235,6 +237,23 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
   
   background: var(--sidebar-bg);
   border-radius: 14px;
+}
+
+/* On larger screens keep the alphabet sidebar always visible by fixing it to the viewport.
+   This prevents it from scrolling out when the page content is long. */
+@media (min-width: 769px) {
+  .alphabet-sidebar {
+    position: fixed;
+    top: 76px;
+    left: 2rem; /* match container horizontal padding */
+    width: 60px;
+    z-index: 900;
+  }
+
+  /* make room for the fixed sidebar so dictionary content doesn't sit underneath it */
+  #dictionary {
+    margin-left: calc(60px + 1rem);
+  }
 }
 
 .alphabet-sidebar button {
@@ -348,7 +367,7 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
 .theme-toggle.large-toggle { padding: 0.5rem 0.7rem; font-size: 1.15rem; }
 .theme-toggle:focus { outline: 2px solid rgba(0,0,0,0.15); }
 .theme-mobile { display:none; }
-.top-right { margin-right: 1rem; }
+.top-right { margin-right: 1rem; position: relative; }
 .desktop-only { display: inline-flex; }
 .mobile-only { display: none; }
 .manual-sub { font-size: 0.95rem; opacity: 0.95; padding-left: 0.2rem; }
@@ -381,8 +400,9 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
     max-width: 100%;
     /* keep the bar visible at all times */
     position: sticky;
-    top: 2vh; /* keep the bar ~2% from top for a nearer-edge look on mobile */
-    z-index: 999;
+    /* ensure mobile sidebar sits below the topbar as well */
+    top: 72px;
+    z-index: 900;
     margin-right: 0;
     border-radius: 12px;
     overflow-x: auto;
@@ -397,7 +417,20 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
   .alphabet-sidebar button { margin: 0 0.2rem; display: inline-flex; align-items: center; justify-content: center; }
   .home-list { gap: 0.8rem; }
 }
-
+/* For small-but-not-tiny widths (301px–768px) keep the mobile toggle visually at the right edge
+   and overlap links instead of widening the page. */
+@media (min-width: 301px) and (max-width: 768px) {
+  .top-right { position: relative; }
+  .theme-mobile {
+    position: absolute;
+    right: 0.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 0;
+    /* ensure it doesn't contribute to layout width */
+    will-change: transform;
+  }
+}
 /* Mobile-specific tweaks for active/hover animations (smaller than desktop) */
 @media (max-width: 768px) {
   .alphabet-sidebar button {
@@ -443,6 +476,12 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
   0% { transform: scale(1); opacity: 0.5; }
   50% { transform: scale(1.9); opacity: 1; }
   100% { transform: scale(1.35); opacity: 1; }
+}
+
+/* Prevent horizontal scrolling on small viewports and ensure the mobile toggle overlaps links. */
+@media (max-width: 768px) {
+  html, body { overflow-x: hidden; }
+  .theme-mobile { z-index: 1100; pointer-events: auto; }
 }
 
 /* ----------------------------

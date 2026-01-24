@@ -11,7 +11,7 @@
       }
     ],
     "klasa_morf": "Emër (Abstrakt)",
-    "fjaleformimi": "(E Prejardhur) drith-rim(ë)"
+    "fjaleformimi": "(E Prejardhur) drith(ë)-rim(ë)"
   },
   {
     "baza": "qafëz",
@@ -25,7 +25,7 @@
       }
     ],
     "klasa_morf": "Emër (Konkret)",
-    "fjaleformimi": "(E Prejardhur) qafë+zë(s)"
+    "fjaleformimi": "(E Prejardhur) qaf(ë)+zë(s)"
   },
   {
     "baza": "ngrehin",
@@ -40,5 +40,89 @@
     ],
      "klasa_morf": "Emër (Konkret)",
      "fjaleformimi": "(E Prejardhur) ngre-hin(ë)"
+  },
+  {
+    "baza": "hutin",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "I hutuar; hutues.",
+        "example": "Hutia e bëri të ndalojë."
+      }
+    ],
+    "klasa_morf": "Emër (Abstrakt)",
+    "fjaleformimi": "(E Prejardhur) hut(oj)-in(ë)"
+  },
+  {
+    "baza": "përsk",
+    "mbaresa-pashquar": "aj",
+    "mbaresa-shquar": "aji",
+    "mbaresa-shumes": "ajet",
+    "definitions": [
+      {
+        "meaning": "Skaj më skaj; nga fillimi deri në fund.",
+        "example": "Një rresht dyersh ishin përskaj njëra-tjetrës."
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+      "fjaleformimi": "(E Përbërë) për-skaj"
+  },
+  {
+    "baza": "kulmor",
+    "mbaresa-pashquar": "e",
+    "mbaresa-shquar": "ja",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Një kulm i lartë; kulmi i një ndërtese.",
+        "example": "Kulmorja e qiellgërvishtes dukej e mprehtë."
+      }
+    ],
+    "klasa_morf": "Emër (Konkret)",
+    "fjaleformimi": "(E Prejardhur) kulm-or(e)"
+  },
+  {
+    "baza": "xhyb",
+    "mbaresa-pashquar": "e",
+    "mbaresa-shquar": "eja",
+    "mbaresa-shumes": "etë",
+    "definitions": [
+      {
+        "meaning": "Veshje e zezë e gjatë e hedhur krahëve.",
+        "example": "Xhybeja rrinte e varur nga supet e tij."
+      }
+    ],
+      "klasa_morf": "Emër (Konkret)",
+      "fjaleformimi": "(E Parme) xhyb(e)"
+  },
+  {
+    "baza": "sqot",
+    "mbaresa-pashquar": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "at",
+    "definitions": [
+      {
+        "meaning": "Stuhi shiu e vogël; erë që vjen papritur.",
+        "example": "Rrugës më zuri një sqotë."
+      }
+	],
+      "klasa_morf": "Emër (Konkret)",
+      "fjaleformimi": "(E Parme) sqot(ë)"
+  },
+  {
+    "baza": "sipërfund",
+    "mbaresa-pashquar": "-",
+    "mbaresa-shquar": "i",
+    "mbaresa-shumes": "et",
+    "definitions": [
+      {
+        "meaning": "Diçka që fillon nga lartësia deri në fund; sipërfaqe.",
+        "example": "Sipërfundi i dhomës e bënte atë të zymtë."
+      }
+    ],
+	"klasa_morf": "Emër (Konkret)",
+	"fjaleformimi": "(E Përngjitur) sipër-fund"
   }
 ]

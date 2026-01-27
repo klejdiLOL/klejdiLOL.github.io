@@ -2885,5 +2885,347 @@
       "shembull2": ""
     } 
   ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "herëpashersh",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "me",
+ "mbaresa-shquar": "ëm",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(Kompozitë) (i/e/të) herë+pas+hersh(ëm)",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka e vazhdueshme, që përsëritet me ndërprerje.",
+      "shembull": "Që nga karroca vinte një hingëllimë e herëpashershme e kuajve.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "përshtjellim",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Abstrakt)",
+  "fjaleformimi": "(E Përngjitur) për+shtjel(oj)+im",
+  "përkufizime": [
+    {
+      "kuptim": "Emërtim i proçesit që përshtjellon një shumësi gjërash., që u zgjerohet kuptimi përgjatë këtij proçesi.",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "përhënur",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "a",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) për+hënuar",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "nënkres",
+  "mbaresa-pashquar": "ë",
+  "mbaresa-pashquar-shumes": "a",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "at",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) nën+kres(ë)",
+  "përkufizime": [
+    {
+      "kuptim": "Pjesë e krevatit, nën krye; jastëk.",
+      "shembull": "Drita nga dritarja arrinte gjer te nënkresa e tij.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "herak",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) her+ak",
+  "përkufizime": [
+    {
+      "kuptim": "Person që ngrihet shpejtë, që i kryhen veprimet para kohës së nisjes.",
+      "shembull": "Ai s'kishte qenë asnjëherë herak.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "flokës",
+  "mbaresa-pashquar": "e",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "ja",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) flokë+s(e)",
+  "përkufizime": [
+    {
+      "kuptim": "Mbulesë krevati pre leshi, e trashë dhe e rëndë, në pjesën e sipërme është e mbuluar me fije të dala si flokë.",
+      "shembull": "Hodhi flokësen mënjanë dhe u ngrit nga shtrati.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "falltar",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "ët",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "ët",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) fall+tar",
+  "përkufizime": [
+    {
+      "kuptim": "Personat që parashikojnë të ardhmen; hedhin fall.",
+      "shembull": "Nuk ishin zgjuar ende falltarët.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "fenerndezës",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "-",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "it",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(Kompozitë) fener+ndezës",
+  "përkufizime": [
+    {
+      "kuptim": "Personat e caktuar për ndezjen e fenerëve, punëtorë të Perandorisë.",
+      "shembull": "Fenerndezësit sapo ishin shpërndarë në qytet.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "zymto",
+  "mbaresa-pashquar": "j",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Folje",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) zymt(ë)+o(j)",
+  "përkufizime": [
+    {
+      "kuptim": "Të zemërohesh keq rreth diçkaje, të kalosh në një gjendje të zymtë, të mërzitur.",
+      "shembull": "Mark-Alemi ishte zymtuar e egërsuar si rrallëherë.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "zbërdhulët",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "()",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "akullsi",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "-",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "të",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) akull+si",
+  "përkufizime": [
+    {
+      "kuptim": "Emërtim përmbledhës për një gjendje të ftohtë, boshe, të zbrazur të diçkaje.",
+      "shembull": "Mark-Alemi ndjente një akullsirë në gjoks.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "Sheshi i Islamit",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Emër (Konkret) (Toponim)",
+  "fjaleformimi": "(Kompozitë) Sheshi+i+Islamit",
+  "përkufizime": [
+    {
+      "kuptim": "Sheshi i xhamisë, ",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "ndezulli",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "-",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "të",
+  "klasa_morf": "Emër (Abstrakt)",
+  "fjaleformimi": "(E Prejardhur) ndez+ulli",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka e ndezur që ka brenda flakë jete, që shpërthen.",
+      "shembull": "Në dosjet e tij ishte ndryshe, aq e bukur dhe plot ndezulli.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "tymtar",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "ë",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "ët",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) tym+tar",
+  "përkufizime": [
+    {
+      "kuptim": "Përcjellës i tymit nga burimi, që e largon atë nëpërmjet një hapësire boshe që përshkruan gjithë ndërtesën; oxhak.",
+      "shembull": "Ngjyrat e tymtarëve ishin më të gjalla.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "kërthneztë",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(Kompozitë) (i/e/të) kërth(oj)+neztë",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka shpërthyese, që lind nga qendra dhe përhapet mes për mes, duke përfshirë gjithë mjedisin.",
+      "shembull": "Çdo gjë ishte më e kërthneztë dhe më e gjallë.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "harmonioz",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) harmoni+oz",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka me ritëm, mbi harmoni, e balancuar.",
+      "shembull": "Lëvizjet e njerëzve dhe sendeve ishin më harmonioze.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "bjerrë",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Parme) (i/e/të) bjerrë",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka e tretur, e larguar, e grryer, e mbetur si skelet, pa mbushje.",
+      "shembull": "Gjithçka ishte e bjerrë dhe e pikëlluar.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "zvirdh",
+  "mbaresa-pashquar": "em",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Folje",
+  "fjaleformimi": "(E Prejardhur) z+v(erdhë)+irdh(em)",
+  "përkufizime": [
+    {
+      "kuptim": "  ",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "Haxhilelekët",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Em",
+  "fjaleformimi": "",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
 }
 ]

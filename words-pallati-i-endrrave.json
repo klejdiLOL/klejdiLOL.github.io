@@ -3227,5 +3227,59 @@
       "shembull2": ""
     } 
   ]
+},
+{
+  "nyje": "",
+  "tema": "çajhan",
+  "mbaresa-pashquar": "e",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "ja",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(Kompozitë) çaj+han(e)",
+  "përkufizime": [
+    {
+      "kuptim": "Mjedis ku pihet çaj dhe bisedohet; pijetore, por për çaj.",
+      "shembull": "Nimet me postiqe të çajhaneve ishin zëvendësuar",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "nim",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Parme) nim",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "Nimet me postiqe të çajhanes qenë zëvendësuar.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "",
+  "fjaleformimi": "",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
 }
 ]

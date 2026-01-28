@@ -1,3 +1,29 @@
+/* Local bundled fonts */
+@font-face {
+  font-family: 'JetBrains Mono Local';
+  src: url('fonts/JetBrainsMono-400.woff2') format('woff2'),
+       url('fonts/JetBrainsMono-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono Local';
+  src: url('fonts/JetBrainsMono-500.woff2') format('woff2'),
+       url('fonts/JetBrainsMono-500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono Local';
+  src: url('fonts/JetBrainsMono-700.woff2') format('woff2'),
+       url('fonts/JetBrainsMono-700.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ----------------------------
    :root variables
 ---------------------------- */
@@ -18,8 +44,8 @@
   --color-shumes: #4caf50;
   --sidebar-bg: rgba(255, 255, 255, 1);
 
-  --font-body: "JetBrains Mono", system-ui, -apple-system, sans-serif;
-  --font-title: "JetBrains Mono", Georgia, serif;
+  --font-body: 'JetBrains Mono Local', 'JetBrains Mono', system-ui, -apple-system, sans-serif;
+  --font-title: 'JetBrains Mono Local', Georgia, serif;
 }
 
 /* Dark mode variables */
@@ -398,11 +424,13 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
     margin-bottom: 1rem;
     width: 100%;
     max-width: 100%;
-    /* keep the bar visible at all times */
-    position: sticky;
-    /* ensure mobile sidebar sits below the topbar as well */
-    top: 72px;
-    z-index: 900;
+    /* keep the bar visible at all times by fixing it to the viewport on mobile */
+    position: fixed;
+    /* place it below the fixed topbar and give a little breathing room */
+    top: 76px;
+    left: 1rem;
+    right: 1rem;
+    z-index: 1100;
     margin-right: 0;
     border-radius: 12px;
     overflow-x: auto;
@@ -412,7 +440,7 @@ body.dark .home-card span { text-shadow: 0 2px 4px rgba(0,0,0,0.8); }
     white-space: nowrap;
     background: var(--sidebar-bg);
     backdrop-filter: blur(6px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
   }
   .alphabet-sidebar button { margin: 0 0.2rem; display: inline-flex; align-items: center; justify-content: center; }
   .home-list { gap: 0.8rem; }

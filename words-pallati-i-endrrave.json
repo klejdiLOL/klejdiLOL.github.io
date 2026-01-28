@@ -1996,7 +1996,7 @@
     "përkufizime": [
       {
         "kuptim": "Lule e cila mbin e vetme në një sipërfaqe të shkretë; ka marrë emrin e zogut që rri vetëm, qyqes.",
-        "shembull": "",
+        "shembull": "Lule qyqja mbin e vetmuar.",
         "kuptim2": "Simbolikë në ëndrra që sjell fatkeqësi.",
         "shembull2": "Ëndërrparësi kishte parë një lule qyqe në mes të fushës."
       }
@@ -2014,7 +2014,7 @@
     "përkufizime": [
       {
         "kuptim": "Person i vogël, i zvogëluar jo vetëm fizikisht, por dhe nga vlerat njerëzore.",
-        "shembull": "",
+        "shembull": "Ai mu duk si njerith.",
         "kuptim2": "",
         "shembull2": ""
       }
@@ -2031,8 +2031,8 @@
     "mbaresa-shumes": "et",
     "përkufizime": [
       {
-        "kuptim": "",
-        "shembull": "",
+        "kuptim": "Një objekt i shenjtë i cili shërben për të kryer një ritual lutjeje.",
+        "shembull": "Kishte parë një njerith me lutësore në dorë.",
         "kuptim2": "",
         "shembull2": ""
       }
@@ -2049,8 +2049,8 @@
     "mbaresa-shumes": "ët",
     "përkufizime": [
       {
-        "kuptim": "Emërtim i breshkave për gjininë mashkullore.",
-        "shembull": "",
+        "kuptim": "Breshkë; gjallesë e gjinisë mashkullore te breshkat.",
+        "shembull": "Breshku dhe breshka...",
         "kuptim2": "",
         "shembull2": ""
       }
@@ -2104,7 +2104,7 @@
     "përkufizime": [
       {
         "kuptim": "Një thirrje e fundit për të kërkuar drejtësi, për të dëshmuar.",
-        "shembull": "",
+        "shembull": "Një gërgamë e largët u ndje në korridoret e zbrazëta.",
         "kuptim2": "",
         "shembull2": ""
       }
@@ -2699,7 +2699,7 @@
   "fjaleformimi": "(E Prejardhur) Jenish(er)+hir",
   "përkufizime": [
     {
-      "kuptim": "Emërtim për një qytetëz turk-aqabe.",
+      "kuptim": "Emërtim për një qytetëz turk-arabe.",
       "shembull": "I kishte lënë ëndrrat në të dalë të Jenishehirit.",
       "kuptim2": "",
       "shembull2": ""
@@ -3266,16 +3266,268 @@
 },
 {
   "nyje": "",
-  "tema": "",
-  "mbaresa-pashquar": "",
-  "mbaresa-pashquar-shumes": "",
+  "tema": "kafetar",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "ë",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "ët",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) kafe+tar",
+  "përkufizime": [
+    {
+      "kuptim": "Personi që shërben kafe; kamarier.",
+      "shembull": "Kafetari u afrua e buzëqeshi.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "Qorrferman",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "i",
  "mbaresa-shquar": "",
   "mbaresa-shumes": "",
-  "klasa_morf": "",
+  "klasa_morf": "Emër (Konkret) (Neologjizëm)",
+  "fjaleformimi": "(Kompozitë) Qorr+ferman",
+  "përkufizime": [
+    {
+      "kuptim": "Urdhër i Perandorisë për të verbuar dhjetëra mijëra njerëz me arsyen e \"syrit të keq\", diçka që sipas bashëndrrës rrezikonte shtetin.",
+      "shembull": "Mark-Alemit i kujtohej dekreti i famshëm i \"Qorrfermanit\".",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "pafriksh",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "ëm",
+ "mbaresa-shquar": "me",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) pa+frik(ë)+sh(ëm)",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka që nuk është ose duket e frikshme.",
+      "shembull": "Ndryshe nga më parë, tani po i dukeshin fare të pafrikshëm.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "përfushë",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "t",
+ "mbaresa-shquar": "ta",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) për+fushë+t",
+  "përkufizime": [
+    {
+      "kuptim": "Hapësira fushe të gjelbëruara.",
+      "shembull": "Mendja i shkoi prapë tek trojet e përfushëta.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "bajamisht",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "ë",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) bajam(e)+isht(ë)",
+  "përkufizime": [
+    {
+      "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "qyqnaj",
+  "mbaresa-pashquar": "ë",
+  "mbaresa-pashquar-shumes": "a",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "at",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) qyq(e)+naj(ë)",
+  "përkufizime": [
+    {
+      "kuptim": "Hapësira toke të thata, pa asnjë bimësi.",
+      "shembull": "Mendja i shkoi tek qyqnajat.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "sykeq",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "inj",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "injtë",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(Kompozitë) sy+keq",
+  "përkufizime": [
+    {
+      "kuptim": "Person që sipas bashëndrrës ka një fuqi që vjen pikërisht nga syri, e cila do të shkaktonte fatkeqësi.",
+      "shembull": "Ata qenë sykëqinjtë e përfolur.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "atjesh",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "ëm",
+ "mbaresa-shquar": "me",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
   "fjaleformimi": "",
   "përkufizime": [
     {
       "kuptim": "",
+      "shembull": "",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "Banka e Vakëfeve",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Emër (Konkret) (Toponim)",
+  "fjaleformimi": "",
+  "përkufizime": [
+    {
+      "kuptim": "Vakëf quhet një vend ku lihen monedha për nder të perëndisë.",
+      "shembull": "Mark-Alemi njohu nëpunësit e \"Banka e Vakëfeve\"",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "prushitës",
+  "mbaresa-pashquar": "e",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "ja",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) prush+itës(e)",
+  "përkufizime": [
+    {
+      "kuptim": "Mashë që trazon zjarrin.",
+      "shembull": "Duke iu dridhur dora, trazoi zjarrin me prushitësen.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "dinjitar",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "ë",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "ët",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) dinjit(et)+ar",
+  "përkufizime": [
+    {
+      "kuptim": "Shtresa shoqërore e intelektualëve të gjithë atyre që kanë poste të larta shoqërore.",
+      "shembull": "Mark-Alemi s'e kishte dëgjuar më parë diçka të tillë nga një dinjitar kaq i lartë.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "foshnjarak",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "ë",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) foshnj(e)+arak",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka e sinqertë, e pastër, e padjallëzuar.",
+      "shembull": "Në mënyrën më foshnjarake i kishte besuar ato.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "boshësi",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "-",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "të",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) bosh+ësi",
+  "përkufizime": [
+    {
+      "kuptim": "Hapësirë boshe, pa lëvizje, pa kuptim.",
+      "shembull": "Fjalët e Vezirit u bën prapë të mjegullta, plot boshësi midis.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "parandjell",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "",
+ "mbaresa-shquar": "",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Folje",
+  "fjaleformimi": "(E Prejardhur) para+ndjell",
+  "përkufizime": [
+    {
+      "kuptim": "Të parashikosh, ndjesh se do të ndodhë diçka para se të vihet re.",
+      "shembull": "Një bashëndërr është e aftë të parandjellë ndryshime të rëndësishme në jetën  e shtetit.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "ploj",
+  "mbaresa-pashquar": "ë",
+  "mbaresa-pashquar-shumes": "a",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "at",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Parme) ploj(ë)",
+  "përkufizime": [
+    {
+      "kuptim": "Veprimi i marrjes përpara, i ",
       "shembull": "",
       "kuptim2": "",
       "shembull2": ""

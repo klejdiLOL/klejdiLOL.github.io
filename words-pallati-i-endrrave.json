@@ -2457,20 +2457,20 @@
   {
     "nyje": "",
     "tema": "Timurlëng",
-    "mbaresa-pashquar": "",
+    "mbaresa-pashquar": "-",
     "mbaresa-pashquar-shumes": "",
-    "mbaresa-shquar": "",
+    "mbaresa-shquar": "u",
     "mbaresa-shumes": "",
     "definitions": [
       {
-        "kuptim": "",
-        "shembull": "",
+        "kuptim": "Vendi i largët pa peshë, lëng, shtet pa forcë brenda Perandorisë, dhe të lënë si lëngu pa kokra të braktisur.",
+        "shembull": "Atje në atë Timurlëngun e largët ëndrrat donin muaj e vite të silleshin.",
         "kuptim2": "",
         "shembull2": ""
       }
     ],
 	"klasa_morf": "Emër (Konkret) (Toponim)",
-	"fjaleformimi": ""
+	"fjaleformimi": "(Kompozitë) Timur+lëng"
   },
   {
     "nyje": "",
@@ -2717,10 +2717,10 @@
   "fjaleformimi": "(E Parme) ngah",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
-      "kuptim2": "",
-      "shembull2": ""
+      "kuptim": "E shtyj drejt një veprimi që kam qëllim ta vendos tjetrin për ta ma mbaruar.",
+      "shembull": "E ngava të më tregonte ende rreth situatës.",
+      "kuptim2": "I kalëroj kuajt duke i qëlluar me kamzhik që të ecnin, i drejtoj për të tërhequr karrocën.",
+      "shembull2": "Ngava kuajt, i qëllova me kamzhik po ata nuk lëvizën nga vendi ."
     } 
   ]
 },
@@ -2915,8 +2915,8 @@
   "fjaleformimi": "(E Përngjitur) për+shtjel(oj)+im",
   "përkufizime": [
     {
-      "kuptim": "Emërtim i proçesit që përshtjellon një shumësi gjërash., që u zgjerohet kuptimi përgjatë këtij proçesi.",
-      "shembull": "",
+      "kuptim": "Emërtim i proçesit që përshtjellon një shumësi gjërash, që u zgjerohet kuptimi përgjatë këtij proçesi.",
+      "shembull": "Fillova ta nisja shkoqitjen nga fillimi sipas një përshtjëllimi të ri.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -2924,7 +2924,7 @@
 },
 {
   "nyje": "i/e/të",
-  "tema": "përhënur",
+  "tema": "përhënuar",
   "mbaresa-pashquar": "",
   "mbaresa-pashquar-shumes": "a",
  "mbaresa-shquar": "",
@@ -2933,8 +2933,8 @@
   "fjaleformimi": "(E Prejardhur) (i/e/të) për+hënuar",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
+      "kuptim": "E ndriçuar, me një hije drite zbukuruese që ka brenda nëe rivjetje një reflektim që jep shenja të ripërtëritjes të thelbit.",
+      "shembull": "Ndriçim i një forme të re me një ripërtëritje ashtu si drita fosforishente e hënës, një ripërtëritje një gjallërim i atyre mjediseve të labirinta.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3049,24 +3049,6 @@
   ]
 },
 {
-  "nyje": "i/e/të",
-  "tema": "zbërdhulët",
-  "mbaresa-pashquar": "",
-  "mbaresa-pashquar-shumes": "",
- "mbaresa-shquar": "",
-  "mbaresa-shumes": "",
-  "klasa_morf": "Mbiemër",
-  "fjaleformimi": "()",
-  "përkufizime": [
-    {
-      "kuptim": "",
-      "shembull": "",
-      "kuptim2": "",
-      "shembull2": ""
-    } 
-  ]
-},
-{
   "nyje": "",
   "tema": "akullsi",
   "mbaresa-pashquar": "-",
@@ -3095,7 +3077,7 @@
   "fjaleformimi": "(Kompozitë) Sheshi+i+Islamit",
   "përkufizime": [
     {
-      "kuptim": "Sheshi i xhamisë, ",
+      "kuptim": "Sheshi para godinës së Shehut, pashait të madh.",
       "shembull": "",
       "kuptim2": "",
       "shembull2": ""
@@ -3203,8 +3185,8 @@
   "fjaleformimi": "(E Prejardhur) z+v(erdhë)+irdh(em)",
   "përkufizime": [
     {
-      "kuptim": "  ",
-      "shembull": "",
+      "kuptim": "Largohem fshehurazi pa më parë njeri, duke u munduar që lëvizjet e mia të mos dëgjohen, duke iu vjedhur syve të njerëzve; me hapa të ngadaltë dhe të lehtë për të mos hequr vëmendjen e askujt.",
+      "shembull": "Tek zvidhesha sytë i mbaja ulur të mos ndeshja me askënd.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3337,18 +3319,18 @@
   ]
 },
 {
-  "nyje": "i/e/të",
+  "nyje": "",
   "tema": "bajamisht",
-  "mbaresa-pashquar": "",
-  "mbaresa-pashquar-shumes": "ë",
- "mbaresa-shquar": "a",
-  "mbaresa-shumes": "",
-  "klasa_morf": "Mbiemër",
-  "fjaleformimi": "(E Prejardhur) (i/e/të) bajam(e)+isht(ë)",
+  "mbaresa-pashquar": "e",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "ja",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër",
+  "fjaleformimi": "(E Prejardhur) bajam(e)+isht(e)",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
+      "kuptim": "Një sipërfaqe e madhe toke, një pjesë e Perandorisë ku rritet dhe ka plantacione me bajame, për pjesë të pasura.",
+      "shembull": "Dhe pas atyre vjen bajamishtja.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3398,11 +3380,11 @@
  "mbaresa-shquar": "me",
   "mbaresa-shumes": "",
   "klasa_morf": "Mbiemër",
-  "fjaleformimi": "",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) atje+sh(ëm)",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
+      "kuptim": "Cilësi unike dhe të veçanta, që vijnë nga ata njerëz që jetojnë atje.",
+      "shembull": "Ngjarjet thojnë për njerëzit e atjeshëm.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3527,8 +3509,8 @@
   "fjaleformimi": "(E Parme) ploj(ë)",
   "përkufizime": [
     {
-      "kuptim": "Veprimi i marrjes përpara, i ",
-      "shembull": "",
+      "kuptim": "Plug, mjet mekanik prej çeliku që shërben për të çarë dhe pluguar tokën, e thërrmon atë.",
+      "shembull": "Ploja do hynte thellë, në kohët e errëta, derisa të nxirrte ujë të zi",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3581,8 +3563,8 @@
   "fjaleformimi": "(E Prejardhur) kreshpë+rim",
   "përkufizime": [
     {
-      "kuptim": "Pjesë e procesit të lulëzimit te disa bimë, ",
-      "shembull": "",
+      "kuptim": "Ringjallja, mbushja me tharmë jete, rritja e jetës, gjallerimi në një formë ripërtëritjeje.",
+      "shembull": "Kishte filluar koha e kreshpërimit të Tabirit.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3671,8 +3653,8 @@
   "fjaleformimi": "(E Prejardhur) Oresti+ada",
   "përkufizime": [
     {
-      "kuptim": "Referencë nga tragjedia greke.",
-      "shembull": "",
+      "kuptim": "Referencë nga tragjedia greke; fundi tragjik i paracaktuar për të bërë fli, njerëzit e  fiseve të mëdha për të ruajtur pozicionin e tyre.",
+      "shembull": "Po kjo qenka fiks Orestiada!- tha austriaku.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3761,8 +3743,8 @@
   "fjaleformimi": "(E Prejardhur) rrapë+llim(ë)",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
+      "kuptim": "zhurme e forte me nje perhapje goditeseqe jep kur heqim zvarre nje objekt metalik prej aluminiose hekur, mbi një sipërfaqe të gurtë.",
+      "shembull": "U dëgjua një rrapëllimë shurdhuese.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3833,8 +3815,8 @@
   "fjaleformimi": "(E Prejardhur) ",
   "përkufizime": [
     {
-      "kuptim": "",
-      "shembull": "",
+      "kuptim": "Kafshë me përmasa të vogla trupore, të cilat janë dhe më pranë atyre të njerëzve.",
+      "shembull": "Ajo kafshëy turrej me tërbim.",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3978,7 +3960,7 @@
   "përkufizime": [
     {
       "kuptim": "Person i cili nuk merr përgjegjësi, nuk i mban ato, duke qëndruar i tërhequr.",
-      "shembull": "",
+      "shembull": "U mpiva nuk po dëgjoja asgjë, nuk më zgjoi as mendimi që ai do më mendonte \"squlls\"",
       "kuptim2": "",
       "shembull2": ""
     } 
@@ -3996,9 +3978,9 @@
   "përkufizime": [
     {
       "kuptim": "Personat që janë të specializuar për të shkruar tekstet në mënyrë manuale, me dorë (përdoreshin në kohën e mesjetës).",
-      "shembull": "",
+      "shembull": "Shkruesit mblidheshin në manastire.",
       "kuptim2": "Zyrtarë të Perandorisë të dërguar në zona të largëta për të mbledhur ëndrra dhe për t'i shkruar ato.",
-      "shembull2": ""
+      "shembull2": "Shkruesi ulur atje në cepin me të largët të Perandorisë, dëgjonte endërrparësin dhe shkruante."
     } 
   ]
 },
@@ -4033,6 +4015,150 @@
     {
       "kuptim": "Dy ose më shumë palë që kanë të njëtën peshë në një situatë, që kanë të njëjtën vlerë, të njëjtin efekt në të; kanë të njëtën sasi drejtimi mbi situatën.",
       "shembull": "Kishte ndodhur kjo përplasje e lemerishme midis dy grupesh kundërshtare apo forcash drejtpeshuese.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+  {
+    "nyje": "",
+    "tema": "shqetësuesh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "me",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Zemra nuk do t'i rrihte më shqetësueshëm, po t'i afrohej një humnere.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Ndajfolje",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) shqetës(oj)+uesh(ëm)"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "e papërfytyruesh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "me",
+    "përkufizime": [
+      {
+        "kuptim": "Nuk arrin ta perceptosh, krijosh përfytyrimin.",
+        "shembull": "Ajo që po ndodhte ishte vërtet e papërfytyrueshme.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) pa+përfytyrueshme"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "pangjar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Diçka që nuk ka ndodhur më parë.",
+        "shembull": "Gjë e pangjarë në këtë sallë, nënpunësit u afrohe shin dritareve.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Përngjitur) (i/e/të) pa+ngjar(ë)"
+  },
+  {
+    "nyje": "-",
+    "tema": "somnambul",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "-",
+    "mbaresa-shumes": "-",
+    "përkufizime": [
+      {
+        "kuptim": "Gjendje fiziologjike. Në gjumë bën veprime si të jesh zgjuar",
+        "shembull": "Ajo dalje e tij e furishme nga dhoma, ngjitja si somnambul shkallëve, s'kishin qenë kot.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) somnabull"
+  },
+{
+  "nyje": "",
+  "tema": "gomarëri",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "-",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "të",
+  "klasa_morf": "Emër (Abstrakt)",
+  "fjaleformimi": "(E Prejardhur) gomar+ëri",
+  "përkufizime": [
+    {
+      "kuptim": "Emërtim për një përgjithësi budallalëqesh, gjërash që do të dukeshin të pamenduara, të shpejtuara dhe të pavenda.",
+      "shembull": "Iu desh të mendohej vetëm një grimë që kjo t'i dukej gomarëri.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "i/e/të",
+  "tema": "stërthell",
+  "mbaresa-pashquar": "",
+  "mbaresa-pashquar-shumes": "ë",
+ "mbaresa-shquar": "a",
+  "mbaresa-shumes": "",
+  "klasa_morf": "Mbiemër",
+  "fjaleformimi": "(E Prejardhur) (i/e/të) stër+thell(ë)",
+  "përkufizime": [
+    {
+      "kuptim": "Diçka shumë e thellë.",
+      "shembull": "Puse të thella e të stërthella.",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "kuqëlim",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Abstrakt)",
+  "fjaleformimi": "(E Prejardhur)",
+  "përkufizime": [
+    {
+      "kuptim": "Një shkëlqim i ndezur, i kuq nga ngjyra, si e flakët.",
+      "shembull": "Pastaj dalloi një kuqëllim të zbehtë në largësi, dhe për një grimë mendoi: Mos po digjet Pallati i Ëndrrave?",
+      "kuptim2": "",
+      "shembull2": ""
+    } 
+  ]
+},
+{
+  "nyje": "",
+  "tema": "rifuqizim",
+  "mbaresa-pashquar": "-",
+  "mbaresa-pashquar-shumes": "e",
+ "mbaresa-shquar": "i",
+  "mbaresa-shumes": "et",
+  "klasa_morf": "Emër (Konkret)",
+  "fjaleformimi": "(E Prejardhur) ri+fuqi+zim",
+  "përkufizime": [
+    {
+      "kuptim": "Rifitimi i një fuqie që e ke humbur për një periudhë kohe dhe pas një farë kohe këtë pushtet absolut e merr; epoka ku pushteti godet.",
+      "shembull": "Ky rifuqizim tashmë dukej në fytyrat e bashëndërrorëve.",
       "kuptim2": "",
       "shembull2": ""
     } 

@@ -35,7 +35,9 @@
 	"klasa_morf": "Mbiemër",
 	"fjaleformimi": "(E Përngjitur) (i/e/të) pa+ngjar(ë)"
   }
-,
+
+
+  ,
   {
     "nyje": "i/e/të",
     "tema": "e papërfytyruesh",
@@ -54,6 +56,8 @@
 	"klasa_morf": "Mbiemër",
 	"fjaleformimi": "(E Prejardhur) (i/e/të) pa+përfytyrueshme"
   }
+  
+  
   ,
   {
     "nyje": "",
@@ -72,23 +76,4 @@
     ],
 	"klasa_morf": "Ndajfolje",
 	"fjaleformimi": "(E Prejardhur) (i/e/të) shqetës(oj)+uesh(ëm)"
-  }
-  ,
-  {
-    "nyje": "",77777777777777777777777777777777777777777777777777777777777777777777777777777777777
-    "tema": "pezull",
-    "mbaresa-pashquar": "",
-    "mbaresa-pashquar-shumes": "",
-    "mbaresa-shquar": "",
-    "mbaresa-shumes": "",
-    "përkufizime": [
-      {
-        "kuptim": "",
-        "shembull": "",
-        "kuptim2": "",
-        "shembull2": ""
-      }
-    ],
-	"klasa_morf": "",
-	"fjaleformimi": ""
   }

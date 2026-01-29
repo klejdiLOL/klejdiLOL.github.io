@@ -1,0 +1,94 @@
+[
+  {
+    "nyje": "-",
+    "tema": "somnambul",
+    "mbaresa-pashquar": "-",
+    "mbaresa-pashquar-shumes": "-",
+    "mbaresa-shquar": "-",
+    "mbaresa-shumes": "-",
+    "përkufizime": [
+      {
+        "kuptim": "Gjendje fiziologjike. Në gjumë bën veprime si të jesh zgjuar",
+        "shembull": "Ajo dalje e tij e furishme nga dhoma, ngjitja si somnambul shkallëve, s'kishin qenë kot.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Emër (Abstrakt)",
+	"fjaleformimi": "(E Parme) somnabull"
+  },
+  {
+    "nyje": "i/e/të",
+    "tema": "pangjar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ë",
+    "mbaresa-shquar": "a",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Diçka që nuk ka ndodhur më parë.",
+        "shembull": "Gjë e pangjarë në këtë sallë, nënpunësit u afrohe shin dritareve.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Përngjitur) (i/e/të) pa+ngjar(ë)"
+  }
+,
+  {
+    "nyje": "i/e/të",
+    "tema": "e papërfytyruesh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "me",
+    "përkufizime": [
+      {
+        "kuptim": "Nuk arrin ta perceptosh, krijosh përfytyrimin.",
+        "shembull": "Ajo që po ndodhte ishte vërtet e papërfytyrueshme.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Mbiemër",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) pa+përfytyrueshme"
+  }
+  ,
+  {
+    "nyje": "",
+    "tema": "shqetësuesh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "ëm",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "me",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Zemra nuk do t'i rrihte më shqetësueshëm, po t'i afrohej një humnere.",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "Ndajfolje",
+	"fjaleformimi": "(E Prejardhur) (i/e/të) shqetës(oj)+uesh(ëm)"
+  }
+  ,
+  {
+    "nyje": "",77777777777777777777777777777777777777777777777777777777777777777777777777777777777
+    "tema": "pezull",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "",
+        "kuptim2": "",
+        "shembull2": ""
+      }
+    ],
+	"klasa_morf": "",
+	"fjaleformimi": ""
+  }

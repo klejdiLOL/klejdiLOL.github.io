@@ -1,19 +1,2507 @@
 [
   {
-    "baza": "Work in Progress (ENDE NE PUNIM)",
+    "tema": "Koracèn",
     "mbaresa-pashquar": "",
     "mbaresa-pashquar-shumes": "",
     "mbaresa-shquar": "",
     "mbaresa-shumes": "",
-    "definitions": [
+    "përkufizime": [
       {
-        "meaning": "",
-        "example": "",
-        "meaning2": "",
-        "example2": ""
+        "kuptim": "Mbeshtjellje , veshje  e siperme efortè   mbrojtese me fibra te pemet dhe kockore te kafshet  ,te kafßhet quhet zhguall  si te breshka.",
+        "shembull": "P.sh  Qyteti flinte nen koarcen e tij .(figurativ ,mbeshtjelljen"
       }
     ],
-	"klasa_morf": "",
-	"fjaleformimi": "()"
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Lugu",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Ulluk ,kanal per mbledhjen e ujrave te shirave ne catite e shèpive  i cili i derdh ne nje pjeset e kulmit anesor .",
+        "shembull": "P.sh lugu e derdhte ujin nè sternè"
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Sternè",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "depo",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ".Sterna uturinte nga uji i cili ishte sulur drejt grykes"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Pasqyrèz",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Pasqyre e vogel e cila perdorej nga femijet per te bere lojen e perthyerjes se drites se diellit dhe kthimin e rrezeve te nje drejtim per te luajtur .",
+        "shembull": "P.sh  Mora pasqyrezen dge e drejtova nga dritarja e Ilirit"
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "veder",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "-",
+        "shembull": "Vedrat mbusheshin ne sterne dhe zbrazeshin jashte me shpejtèsi ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mbulese",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Ishte mbuluar me velenxè ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kubeja",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "dhone",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ".Papritur sterna me ate ferngji te vogel u be dhoma me e rendèsishme e shtèpise"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "bishtuk",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P.sh   Gjyshja ndezi bishtukun per te ndricuar gryken e sternes ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mazgàllet",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mberthesa",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ".Mazgallat kerkellitnin nga zhurma e eres ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mbipetk",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "veshje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Babaji hodhi ne koke njè mbipetk .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ze",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Auuuuuuu! -   m’u kthye e zvagur",
+        "shembull": ".Auuuuuuu!  -therrite te gryka"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mesore",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "koridor",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P.sh U ngjita ne mesoren e katit te dyte ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "tymtaret",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Y-oxhak ,terheqesis i tymit dhe blozes (mbetjeve te zeza gjate djegies se drureve ),tynte e madhe e larte qe nis nga vatra ku ndizet zjarri dhe del larte mbi ndertese qe quhet gryke ,ndertuar me mjete ndertimi ,tulla dhe llac",
+        "shembull": "p.sh  -Tymtaret leshonin re te zeza tymi ."
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "trubull",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kujtimet",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Mendimet me vinin trubull -trubull"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shpinore",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kuptimi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Gjithe naten lumi do jete perpjekur te flake tej urèn ashtu si kali ,shpinoren ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "automobilistike",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rruge",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "gllaberoj",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "!gelltis ,e fus ne barkun tim pa e coptuar ,lumi e permbyti e  beri pjese te tij ,tashme mbreteronte uji",
+        "shembull": ".....rruges automobilistike dhe e kishte gllaberuar ."
+      }
+    ],
+    "klasa_morf": "Folje",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "marrok",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "e",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Lume marrok"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "lukthi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "pjesa",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "2 metomini levizje kuptimore ne baze te ngjashmerise pjesa qendrore e lumit ,mezi ,lukthi ,atje ku eshte vija e rrymes",
+        "shembull": ".......mundohej ta treste ne lukthin e tij (rrugen )"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ogurzeza",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kohe",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Haxhekoja kishte nje fyture qe premtonte lajme ogurzeza"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "cijaseshin",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Bllokohem ,nuk marr do fryme ,marr fryme me zor ,duke leshuar dish ofshama te mbytura",
+        "shembull": "P.sh   Lumenjte ciateshin .."
+      }
+    ],
+    "klasa_morf": "Folje",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nim",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "krevat",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Gjyshja u ul ne nime une u mbeshtolla pas saj"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "gjerbnin",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Folje",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "pij",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Gjyshja ,Haxhekoja dhe Kako Pino gjerbnin kafe .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rizen",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Shall koke i holle i i zi qe mbajne grate ne moshe duke e hedhur siper ,pa e lidhur si shamia e kokes ,here e zbukuruar me theke .",
+        "shembull": "Xhexhoja rregulloi rizen dhe doli ."
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i/e",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P.sh  Kako Pino perseriti -Kiamet !i -me ze te nemitur"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "xhehenemit",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ferri",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Bota m”u be rrathe -rrathe si rrathet e xhehenemit ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "komb",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kokerr",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "M’u",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "qoftelargu",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "djall,i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ".Ajo vinte rrotull dhe thoshte qoftelargu ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rrokollime",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "bote",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Vura qelqin dhe papritur bota u kthye ne nje rrokullime ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "hukatje/ja",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "moment",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Endesha ne kete hukatjeje ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mishtoret",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kasapi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "tregetizmat",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shkembime",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Rumanine",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "gremca",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "çengela",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "P sh .Mishrat vareshin ne gremca .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rrahesit",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "njerez te dhunshem qe pèrreshen fizikisht me njeri tjetrin duke ushtruar dhune fizike  ,duke shkaktur dhe page njeri -tjetrit ;ketu njerez qe e kane bere si profesion te rrahurit",
+        "shembull": "Rrahesit leviznin lirisht ne rruget e qytetit ."
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "fortashtrojen",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Asfaĺti ,pjesa rruges e shtruar me material te forte per ti dhene qendrueshmeri dhe fortesi rruges ,e pershtatshme per te levizur mjete trasporti ,duke formuar nje shtrat te forte",
+        "shembull": "P.sh Ecnim mespermes fortashtrojes ."
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rizen",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "pjese",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P.s Llukan Burgamadhi ne krah kishte batanijen dhe ne dore rizen e bukes ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shtroje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "qilima",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Shtrojet i jepnin ngrohtesine dhomes se madhe ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shkallina",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "teresia",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Pjese te ngjeshura mire per tu ngjitur ne pjerrtesine e qyteti te pjerret",
+        "shembull": ".Teresia e atyre shkallinave tokesore ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rruzaret",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "tespije",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Babazoti rrrinte ne shezllog dhe ne dore kishte rruzaren.."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "borsaline",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kapele",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Borsalinat e tyre u rrinin te rrasura ne krye ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "bllaca",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "njolla",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Sheshi i thertores u mbush plot me bllaca gjaku .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "cilinder",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kapele",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Njeriu me cinder ecte ne menyre te cuditshme ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "xukth",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shelgje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Shporten prej xukthi e kishte ne dore .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Babazoti",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "babai",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Babazoti me drodhi nje cigare te holle dhe po pinim te dy .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "bulizmash",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shperthime",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "2 shperthime belbezitjesh rrokjesh dhe fjalesh te shqiptuara me ze te ulet .",
+        "shembull": "Leshova nje sere bulizmash ,te pakontrolluara ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "emta",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "tezja",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Emta e vogel lexonte dhe qeshte ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nenemadhja",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nena",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P .sh  Nenemadhja me priti ne oborrr."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "xixat",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": ")",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "shkendije",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Xixat qe dilnin nga guret dukeshin si yje ne ajrin e rruges ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "blerimin",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "perimet",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Blerimin e lane qytetit per tu ushqyer ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rrokopuje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rremuje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Magjine e mbante ne dore duke shkaktuar nje rrokopuje te madhe .",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "xhandarmeri",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "Insitucion shteteror ne kohen e’ Mbreterise se Ahmet Zogut “Zyrat derjtuese te policise ( xhandar ,polic ,mbrojtes rendi )",
+        "shembull": "P.sh Xhandarmeria nuk e hapi deren ."
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "callma",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "mbulese",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Njeriu me calle po ecte prane nesh ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "menxyre",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ngjarje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "Kjo menxyre po vjen o Sefixhe !"
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "tingellimi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "zhurma",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kerkimtar",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "zbulues",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "zezone",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "2-nje sfod i erret i mbuluar me nje mbeshtjellje te zeze qe nuk te le te kesh hapsire te lire te merthen ,shkaktaret jane te ndryshem ,ky tis i erret te pengon shikimin drejt nje zone te re",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Kjo",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "te",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "e",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kendell",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "u",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "magjiberesve",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "beresit",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "i",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "dyfek",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "pushke",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": "P.sh - Tek ecnin rruges ne krah u vareshin dyfeket ."
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "bokerrimave",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "maja",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "luarthi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "nje",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Ecnim",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "hambullishta",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "fushe",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "hijekeq",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "hijerralle",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ardhesi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "te",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "2 ne kontekstin rrefimtar ky ardhes i cuditsshem ka ardhur per te zene ,hapsiren qiellore te qytetit ,krahet e tij metalik vertiten ne ajer",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "kiameti",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "stuhia",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "vargoresh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "orendi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rrangllash",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "orendite",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "Disa",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "pullaz",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ndertesa",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "odajashte",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "dhoma",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rreshqanor",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Mbiemër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "rreshqitshme",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "psh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "fluturlejlek",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "vajze",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "ardhesi",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "Emër",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "njeri",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "2 avion i ardhur nga vise te tjera per te qene zot ne nje qiell dhe þoke te ardhur",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
+  },
+  {
+    "tema": "p.sh",
+    "mbaresa-pashquar": "",
+    "mbaresa-pashquar-shumes": "",
+    "mbaresa-shquar": "",
+    "mbaresa-shumes": "",
+    "përkufizime": [
+      {
+        "kuptim": "x",
+        "shembull": ""
+      }
+    ],
+    "klasa_morf": "",
+    "fjaleformimi": ""
   }
 ]

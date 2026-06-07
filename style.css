@@ -428,3 +428,15 @@ mark.search-hit { background: var(--color-shquar); color: #000; border-radius: 3
 }
 .copy-btn:hover { border-color: var(--highlight); color: var(--highlight); }
 .copy-btn.copied { background: var(--color-shumes); border-color: var(--color-shumes); color: #000; }
+
+/* Filter bar: single horizontal-scroll row (mobile-friendly) */
+.filter-bar {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding: 0 1rem 0.5rem;
+}
+.filter-bar::-webkit-scrollbar { display: none; }
+.filter-chip { flex: 0 0 auto; white-space: nowrap; }

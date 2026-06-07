@@ -4,10 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fjalor Shqip</title>
-  <!-- Google Fonts: JetBrains Mono -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,9 +26,15 @@
 
   <!-- Search -->
   <div class="search-toggle-container">
-    <button id="searchToggle" aria-label="Search">🔍</button>
-    <input type="text" id="search" placeholder="Kërko fjalë...">
+    <button id="searchToggle" aria-label="Kërko">🔍</button>
+    <input type="text" id="search" placeholder="Kërko fjalë..." aria-label="Kërko fjalë">
   </div>
+
+  <!-- Filter by morphological class -->
+  <div class="filter-bar" id="classFilter" role="group" aria-label="Filtro sipas klasës morfologjike"></div>
+
+  <!-- Screen-reader live region for result counts -->
+  <div id="resultStatus" class="sr-only" role="status" aria-live="polite"></div>
 
   <!-- Main content -->
   <div id="container">

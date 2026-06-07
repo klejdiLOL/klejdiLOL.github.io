@@ -488,3 +488,34 @@ mark.search-hit { background: var(--color-shquar); color: #000; border-radius: 3
 @media (max-width: 420px) {
   .header-search #search.active { width: 62vw; }
 }
+
+/* ===== FIX: header search overlap + missing filter bar (mobile) ===== */
+@media (max-width: 768px) {
+  .top-right {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .header-search { position: static; }
+  .header-search #search {
+    position: fixed;
+    top: 64px;
+    right: 0.5rem;
+    transform: none;
+    z-index: 1300;
+  }
+  .header-search #search.active { width: 80vw; max-width: 80vw; }
+}
+
+@media (max-width: 768px) {
+  body { padding-top: 132px; }
+  .filter-bar {
+    position: relative;
+    z-index: 1000;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  body { padding-top: 140px; }
+}

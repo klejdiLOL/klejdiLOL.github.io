@@ -564,3 +564,33 @@ body.dark .manual-plain code { background: rgba(255,255,255,0.12); }
   white-space: nowrap;
   overflow-x: auto;
 }
+
+/* ===== Alphabet bar: flow under search, then stick when scrolled ===== */
+@media (max-width: 768px) {
+  /* body only needs to clear the fixed header now (bar is in normal flow) */
+  body { padding-top: 72px; }
+
+  .alphabet-sidebar {
+    position: sticky;
+    top: 64px;            /* sticks just under the fixed header when scrolled */
+    left: auto;
+    right: auto;
+    margin: 0.5rem 0 1rem;
+  }
+}
+@media (max-width: 420px) {
+  body { padding-top: 72px; }
+}
+
+/* Hide the collapsed header search field completely (no ghost box) */
+@media (max-width: 768px) {
+  .header-search #search:not(.active) {
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    width: 0;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+}

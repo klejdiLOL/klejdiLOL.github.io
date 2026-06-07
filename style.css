@@ -519,3 +519,48 @@ mark.search-hit { background: var(--color-shquar); color: #000; border-radius: 3
 @media (max-width: 420px) {
   body { padding-top: 140px; }
 }
+
+/* ===== Manual page: grammar guide styling ===== */
+.manual-plain h2 {
+  margin-top: 1.6rem;
+  font-size: 1.2rem;
+  border-bottom: 1px solid var(--entry-border);
+  padding-bottom: 0.2rem;
+}
+.manual-plain ul { padding-left: 1.2rem; }
+.manual-plain li { margin: 0.3rem 0; line-height: 1.5; }
+.manual-plain code {
+  background: rgba(0,0,0,0.06);
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+}
+body.dark .manual-plain code { background: rgba(255,255,255,0.12); }
+
+/* Color the form-parts in the manual (the .summary scope doesn't apply here) */
+.manual-plain .word-base { color: var(--color-base); font-weight: 700; }
+.manual-plain .word-pashquar { color: var(--color-pashquar); font-weight: 700; }
+.manual-plain .word-pashquar-shumes { color: var(--color-shquar); font-weight: 700; }
+.manual-plain .word-shquar { color: var(--color-shumes); font-weight: 700; }
+.manual-plain .word-shumes { color: var(--color-base); font-weight: 700; }
+
+.manual-legend {
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.8rem 0;
+}
+.manual-legend p { margin: 0.4rem 0; }
+
+.manual-example {
+  background: var(--entry-bg);
+  border: 1px solid var(--entry-border);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  margin: 0.8rem 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  overflow-x: auto;
+}
